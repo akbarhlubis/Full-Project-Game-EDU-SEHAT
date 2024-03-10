@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Level 1</name>
+    <events>
+        <event-group description="" sid="189750365142555" title="Grbuah" />
+        <event-block sid="266187553891651">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="471204563772230" type="player_test">
+                    <param id="0" name="Object">buah</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="630348389784695" type="buah" />
+                <action id="5" name="Set frame" sid="178331390236820" type="ebuah">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="225961569592393">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="504101245084995" type="player_test">
+                    <param id="0" name="Object">buah</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="957167050309936" type="buah" />
+                <action id="-11" name="Add to" sid="585406016757228" type="player_test">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="796198816125090" type="ebuah">
+                    <param id="0" name="Frame number">player_test.key</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573396586125784">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="541537962904785" type="player_test">
+                    <param id="0" name="Object">musuh</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="294865899214523" type="player_test">
+                    <param id="0" name="&apos;On&apos; time">0.4</param>
+                    <param id="1" name="&apos;Off&apos; time">0.4</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="177806534261717" type="player_test">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="971223214063287">
+            <conditions />
+            <actions>
+                <action id="5" name="Set frame" sid="282363715725862" type="Sprite8">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="370065307260940">
+            <conditions />
+            <actions>
+                <action id="5" name="Set frame" sid="510857839771432" type="Sprite8">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="559382134464034">
+            <conditions />
+            <actions>
+                <action id="5" name="Set frame" sid="179867954020346" type="Sprite8">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="710312634746121">
+            <conditions />
+            <actions>
+                <action id="-26" name="Restart layout" sid="166984513889014" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

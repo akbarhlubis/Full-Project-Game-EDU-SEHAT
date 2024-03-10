@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Splash Screen</name>
+    <events>
+        <event-block sid="307551325739108">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="505136722444958" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="943376736228813" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

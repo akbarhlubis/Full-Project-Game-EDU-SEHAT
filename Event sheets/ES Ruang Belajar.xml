@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Ruang Belajar</name>
+    <events>
+        <variable constant="0" name="Stage" sid="345015307428410" static="0" type="number">1</variable>
+        <include>ES Stage Function</include>
+        <event-block sid="525025309294242">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="743618066808135" type="PintuRuangBelajar">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="531735654683050" type="InfoPintuText">
+                    <param id="0" name="X">PintuRuangBelajar.X</param>
+                    <param id="1" name="Y">PintuRuangBelajar.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="552205091423700">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="763652985183289" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="239278387006993" type="TestInfoStage">
+                            <param id="0" name="Text">&quot;Variable Stage: &quot; &amp; Stage</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="388619038128713">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="752225670233969" type="System">
+                                    <param id="0" name="Variable">Stage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="672298389819771" type="PintuRuangBelajar">
+                                    <param id="0" name="Unique ID">174</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="241357832444982" type="PintuRuangBelajar">
+                                    <param id="0" name="Animation">&quot;Buka&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="476138187293138">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="645602289140397" type="System">
+                                    <param id="0" name="Variable">Stage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="258140512552117" type="PintuRuangBelajar">
+                                    <param id="0" name="Unique ID">175</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="698522087900590" type="PintuRuangBelajar">
+                                    <param id="0" name="Animation">&quot;Buka&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="242063328033349">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="968433388891446" type="PintuRuangBelajar">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="315229920732321" type="InfoPintuText">
+                    <param id="0" name="X">PintuRuangBelajar.X</param>
+                    <param id="1" name="Y">PintuRuangBelajar.Y-1000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="886097017586463">
+            <conditions>
+                <condition id="17" name="On tap object" sid="464062454831091" type="Touch">
+                    <param id="0" name="Object">PintuRuangBelajar</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="562924439745666" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="118842872515320" type="System">
+                    <param id="0" name="Layout">Stage 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="304362865163635">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="444801360843017" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="595582949381447" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608329329811259">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="630987205083313" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="412697911996950" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" disabled="1" sid="672603714137370">
+            <conditions>
+                <condition id="17" name="On tap object" sid="619050775861294" type="Touch">
+                    <param id="0" name="Object">PintuRuangBelajar</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="449404185946150" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="244917351626920">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="553746012010904" type="PintuRuangBelajar">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="146940364817355" type="InfoPintuText">
+                            <param id="0" name="X">PintuRuangBelajar.X</param>
+                            <param id="1" name="Y">PintuRuangBelajar.Y</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block disabled="1" sid="693034464797590">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="197189468876268" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

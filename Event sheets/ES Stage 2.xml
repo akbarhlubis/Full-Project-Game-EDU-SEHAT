@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Stage 2</name>
+    <events>
+        <include>ES Stage Function</include>
+        <event-block disabled="1" sid="945157432300779">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="526103700210516" type="DeadPlatformer">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="480122262004066" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="751840653436365" type="Function">
+                    <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="759580717192788" type="Player">
+                    <param id="0" name="Object">Petunjuk</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956298692119576">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="870381114463253" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="449805089118100">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="584697201979624" type="System">
+                            <param id="0" name="Object">SpawnerPeluruPohonKanan</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="490724384039367" type="SpawnerPeluruPohonKanan">
+                            <param id="0" name="Object">PeluruPohon</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="699517101076638" type="PeluruPohon">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-20" name="Rotate toward angle" sid="914653274339545" type="PeluruPohon">
+                            <param id="0" name="Degrees">90</param>
+                            <param id="1" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="165645652967889">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="291409283216817" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="843199278561315">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="117815955359781" type="System">
+                            <param id="0" name="Object">SpawnerPeluruPohonKiri</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="743969521892850" type="SpawnerPeluruPohonKanan">
+                            <param id="0" name="Object">PeluruPohon</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="112506988789228" type="PeluruPohon">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

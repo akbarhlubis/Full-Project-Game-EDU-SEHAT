@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Stage Function</name>
+    <events>
+        <variable constant="0" name="Key" sid="957707882712691" static="0" type="number">0</variable>
+        <variable constant="0" name="Health" sid="620457897361818" static="0" type="number">3</variable>
+        <event-group description="" sid="321867529475679" title="Function Penting Event">
+            <sub-events>
+                <event-block sid="123003171055900">
+                    <conditions>
+                        <condition id="0" name="On function" sid="254946373152051" type="Function">
+                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="947460029312897" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="440969966772802" type="HealthBar">
+                            <param id="0" name="Frame number">Health</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="489860558084702">
+                    <conditions>
+                        <condition id="0" name="On function" sid="485170163114927" type="Function">
+                            <param id="0" name="Name">&quot;DarahBertambah&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="143769421046386" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="193186335903136" type="HealthBar">
+                            <param id="0" name="Frame number">Health</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="457076597919150" title="touch 2">
+            <sub-events>
+                <event-block sid="497905184816244">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="299435792061677" type="Touch">
+                            <param id="0" name="Object">Sprite29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="809437634343707" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="761936890446112" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="870247024120975">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="487695720112582" type="Touch">
+                            <param id="0" name="Object">Sprite26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="847302513424850" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="238225308844008" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818490459683398">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="534013886262973" type="Touch">
+                            <param id="0" name="Object">Sprite27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="920888559186703" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="251996112821477">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="323327579944173" type="Touch">
+                            <param id="0" name="Object">Petunjuk</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment></comment>
+        <event-group description="" sid="720587899907637" title="Health2">
+            <sub-events>
+                <event-block sid="534942229047796">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="991712696910522" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="432667789373744" type="System" />
+                        <action id="-21" name="Reset global variables" sid="984018101804484" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="804358157172708">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="291380008591914" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="757041498674354" type="KotakP3K">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="156450019933857">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="454564346710226" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="562412841759856" type="KotakP3K">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159690278702850">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="479922214483449" type="Player">
+                            <param id="0" name="Object">e_keong</param>
+                        </condition>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="531211325170003" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="121136163900503" type="e_keong" />
+                    </actions>
+                </event-block>
+                <event-block sid="654857133746880">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="298268708562274" type="Player">
+                            <param id="0" name="Object">e_keong</param>
+                        </condition>
+                        <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="755294826160700" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="277275143150198" type="Function">
+                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="311145191304364" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="131191151058917">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="999856466676805" type="Player">
+                            <param id="0" name="Object">KotakP3K</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="230569814368215" type="Function">
+                            <param id="0" name="Name">&quot;DarahBertambah&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="692816246016365" type="KotakP3K" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="494243473454920" title="Enemey snail2" />
+        <event-block sid="835595706568825">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="178816848151815" type="e_keong">
+                    <param id="0" name="Instance variable">e_jalan</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="859565239592439" type="e_keong">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="707881701676401" type="e_keong">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="226874963000022">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="321562559092619" type="e_keong">
+                    <param id="0" name="Instance variable">e_jalan</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="864729268175270" type="e_keong">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="643532115257344" type="e_keong">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="412100827522172">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="539632040297496" type="e_keong">
+                    <param id="0" name="Object">DindingSnail</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="927522578229534">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="210873869200955" type="e_keong">
+                            <param id="0" name="Instance variable">e_jalan</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="355615868357653" type="e_keong">
+                            <param id="0" name="Instance variable">e_jalan</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="296599201500039">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="388055057221744" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="838518266914539" type="e_keong">
+                            <param id="0" name="Instance variable">e_jalan</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="426776879379556">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="331399844896467" type="Player">
+                    <param id="0" name="Object">TanggaFix</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="956631473044800">
+                    <conditions />
+                    <actions>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="882545069156286" type="TanggaFix">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="433234753899057">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="694304858044797" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="803316497741451" type="TanggaFix">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="778272396721565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="806667930742298" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="646966115206240">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="172579369670972" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="634623947515705" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571253544572226">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="438878859686076" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="956205601872792" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="828620233145638">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="582447502528567" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="944330969107558" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="381970407457468">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="860544048339004" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="593783911819292" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="320543210217292">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="115732543926630" type="Player">
+                    <param id="0" name="Object">Kunci</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="115312905239881" type="System">
+                    <param id="0" name="Variable">Key</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="341400581756478" type="Kunci" />
+            </actions>
+        </event-block>
+        <event-block sid="617559611471685">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="401015492668256" type="Player">
+                    <param id="0" name="Object">Gerbang</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="681616100812013">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422122585216351" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="857415601902695" type="Gerbang">
+                            <param id="0" name="Unique ID">147</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-3" name="Set position" sid="311136663259326" type="Gerbang">
+                            <param id="0" name="X">1053.567</param>
+                            <param id="1" name="Y">365.323</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="878242462458654" type="Gerbang">
+                            <param id="0" name="X">1054</param>
+                            <param id="1" name="Y">271</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="990514621566090" type="Gerbang">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="319831659180752">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="894538655126516" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="423773213435670" type="Gerbang">
+                            <param id="0" name="Unique ID">127</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-3" name="Set position" sid="765831009034134" type="Gerbang">
+                            <param id="0" name="X">1053.567</param>
+                            <param id="1" name="Y">365.323</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="184723486850103" type="Gerbang">
+                            <param id="0" name="X">1389</param>
+                            <param id="1" name="Y">241</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="336483783580297" type="Gerbang">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="912752481044968">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="366239253001831" type="Player">
+                    <param id="0" name="Object">BadFood</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" disabled="1" id="0" name="Shake" sid="120948488281458" type="Player">
+                    <param id="0" name="Magnitude">20</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+                <action behavior="Platform" disabled="1" id="4" name="Set jump strength" sid="511347212645733" type="Player">
+                    <param id="0" name="Jump strength">10</param>
+                </action>
+                <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="493380127572798" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="622378037015522" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="916693606840177" type="BadFood">
+                    <param id="0" name="Object">ParticlesBadFood</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Call function" sid="268568968072599" type="Function">
+                    <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Destroy" sid="710831623402978" type="BadFood" />
+                <action behavior="Platform" id="4" name="Set jump strength" sid="849146655870904" type="Player">
+                    <param id="0" name="Jump strength">650</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="564318591818360">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="805461915714030" type="Player">
+                    <param id="0" name="Object">GoodFood</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="866429248033923" type="System">
+                    <param id="0" name="Variable">SehatFood</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="100415426201529" type="GoodFood">
+                    <param id="0" name="Object">ParticlesGoodFoods</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="922684124232631" type="GoodFood" />
+            </actions>
+        </event-block>
+        <event-block sid="761947167481403">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="947272279959423" type="NextStage">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="940490371123049">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="620385541769974" type="NextStage">
+                            <param id="0" name="Unique ID">143</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="620353786060859" type="System">
+                            <param id="0" name="Layout">Stage 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="510857484089997">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="424277244331218" type="NextStage">
+                            <param id="0" name="Unique ID">141</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="434320804251337" type="System">
+                            <param id="0" name="Layout">Stage 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment></comment>
+        <event-group description="" sid="872350086565764" title="BoxItem">
+            <sub-events>
+                <event-block sid="629819346266344">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="191201852967770" type="Player">
+                            <param id="0" name="Object">boxitem</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="971148591717723" type="boxitem">
+                            <param id="0" name="Instance variable">Sundul</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="534487748838063" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">boxitem.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="122300896129327" type="boxitem">
+                            <param id="0" name="Object">Tomat</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="307006457747456" type="Tomat">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="149647248168117" type="Tomat">
+                            <param id="0" name="Acceleration">500</param>
+                            <param id="1" name="X">Tomat.X</param>
+                            <param id="2" name="Y">Tomat.Y -10</param>
+                        </action>
+                        <action behavior="CustomMovement" id="2" name="Set speed" sid="837909180899091" type="Tomat">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Speed">500</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="478043982207261" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="128290040257401" type="Tomat" />
+                        <action id="5" name="Set frame" sid="716485428270402" type="boxitem">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="421704658428520" type="boxitem">
+                            <param id="0" name="Instance variable">Sundul</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="361955018625316">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="260321927422322" type="DeadPlatformer">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="908190189098997" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="822068497555156" type="Function">
+                    <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="273023937110932" type="Player">
+                    <param id="0" name="Object">Petunjuk</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="576386941368331">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="926207571797262" type="Player">
+                    <param id="0" name="Object">batahancur</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="300130487635051" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">batahancur.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="211614832519746" type="batahancur">
+                    <param id="0" name="Object">Particlesbata</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="885847873126805" type="batahancur" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

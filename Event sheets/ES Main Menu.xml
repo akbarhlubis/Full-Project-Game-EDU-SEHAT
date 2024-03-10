@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Main Menu</name>
+    <events>
+        <event-block sid="118096564568043">
+            <conditions>
+                <condition id="3" name="On touched object" sid="816454020305367" type="Touch">
+                    <param id="0" name="Object">BtnMulai</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="582073588534795" type="System">
+                    <param id="0" name="Layout">Ruang Belajar</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158153820245511">
+            <conditions>
+                <condition id="3" name="On touched object" sid="289391129245152" type="Touch">
+                    <param id="0" name="Object">BtnKeluar</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

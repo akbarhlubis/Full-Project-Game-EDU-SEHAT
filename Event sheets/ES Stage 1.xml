@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Stage 1</name>
+    <events>
+        <variable constant="0" name="SehatFood" sid="679389855187201" static="0" type="number">0</variable>
+        <include>ES Stage Function</include>
+        <event-block sid="723096035941761">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="705071144216164" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="221440997043771" type="Textbuah">
+                    <param id="0" name="Text">SehatFood&amp;&quot;/4&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="462597566088703">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="117113599162937" type="System">
+                            <param id="0" name="Variable">SehatFood</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="571941464899216" type="pintu">
+                            <param id="0" name="Unique ID">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="909712630118090" type="pintu">
+                            <param id="0" name="X">4522.698</param>
+                            <param id="1" name="Y">375</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="623744164263212" type="NextStage">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="745500115948898" title="JebakanTanah">
+            <sub-events>
+                <event-block sid="837043876421975">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="835255063588195" type="CharacterStand">
+                            <param id="0" name="Object">JebakanTanah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="254762691586552" type="JebakanTanah">
+                            <param id="0" name="Animation">&quot;ON&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="894629368751012">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="329117650206926" type="CharacterStand">
+                            <param id="0" name="Object">JebakanTanah</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="839345811534541" type="JebakanTanah">
+                            <param id="0" name="Animation">&quot;OFF&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
