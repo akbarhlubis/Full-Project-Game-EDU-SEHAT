@@ -10,6 +10,7 @@
     <unique-id>3oa75pjz9idyz</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
@@ -24,17 +25,21 @@
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="exposure">Exposure</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
         <effect author="Scirra" id="warpmask">Warp Mask</effect>
         <effect author="Viktor Korsun" id="water">Water</effect>
     </used-effects>
@@ -47,7 +52,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Stage 1</first-layout>
+    <first-layout>Stage 3</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -357,6 +362,9 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="698650519623093">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="737169469193341">
+                    <behavior id="Flash" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1856,6 +1864,15 @@
                 <behavior-type name="DragDrop" sid="238693113333463">
                     <behavior id="DragnDrop" />
                 </behavior-type>
+                <behavior-type name="Platform" sid="212838681255271">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="681611957583516">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="315598930300045">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="217410353817659" speed="0">
@@ -2105,8 +2122,8 @@
                 <animation framecount="1" loop="0" name="OFF" pingpong="0" repeatcount="1" repeatto="0" sid="579872160809491" speed="5">
                     <frame duration="1" hotspotX="0.507692" hotspotY="0.508475" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\OFF.png">
                         <collision-poly>
-                            <point x="0.769231" y="0.847458" />
-                            <point x="0.230769" y="0.847458" />
+                            <point x="0.0500003" y="0.847458" />
+                            <point x="0.938461" y="0.838983" />
                             <point x="0.984615" y="0.983051" />
                             <point x="0.0153846" y="0.983051" />
                         </collision-poly>
@@ -2117,9 +2134,9 @@
                         <collision-poly>
                             <point x="0.5" y="0.0338983" />
                             <point x="0.757576" y="0.491525" />
-                            <point x="0.984848" y="0.983051" />
+                            <point x="1" y="1" />
                             <point x="0.5" y="1" />
-                            <point x="0.0151515" y="0.983051" />
+                            <point x="0" y="0.995763" />
                             <point x="0.242424" y="0.491525" />
                         </collision-poly>
                     </frame>
@@ -2166,10 +2183,185 @@
             <plugin id="Particles" />
             <texture original-source="C:\Users\aldin\Videos\asset\Textures\Particles.png" />
         </object-type>
+        <object-type name="Light" sid="518573131014073">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683710120354368" speed="5">
+                    <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Light.png">
+                        <collision-poly>
+                            <point x="0.382323" y="0.380368" />
+                            <point x="0.499486" y="0.332311" />
+                            <point x="0.617677" y="0.380368" />
+                            <point x="0.668037" y="0.5" />
+                            <point x="0.618705" y="0.620654" />
+                            <point x="0.499486" y="0.669734" />
+                            <point x="0.380267" y="0.621677" />
+                            <point x="0.329908" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bintang" sid="722869642565421">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="803339587591716">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600521061892952" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.510204" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Bintang.png">
+                        <collision-poly>
+                            <point x="0.346939" y="0.346939" />
+                            <point x="0.489796" y="0.0204082" />
+                            <point x="0.653061" y="0.346939" />
+                            <point x="0.979592" y="0.489796" />
+                            <point x="0.653061" y="0.653061" />
+                            <point x="0.489796" y="0.979592" />
+                            <point x="0.346939" y="0.653061" />
+                            <point x="0.0204082" y="0.489796" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BulanSabit" sid="622779725843017">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635699917771098" speed="5">
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.504854" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Bulan Sabit.png">
+                        <collision-poly>
+                            <point x="0.762887" y="0.718447" />
+                            <point x="0.494845" y="0" />
+                            <point x="0.845361" y="0.145631" />
+                            <point x="0.989691" y="0.495146" />
+                            <point x="0.845361" y="0.854369" />
+                            <point x="0.494845" y="1" />
+                            <point x="0.123711" y="0.883495" />
+                            <point x="0.85567" y="0.495146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Awan" sid="309159406206130">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707540344247751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Awan.png">
+                        <collision-poly>
+                            <point x="0.137931" y="0.457143" />
+                            <point x="0.863793" y="0.451429" />
+                            <point x="0.87931" y="0.497143" />
+                            <point x="0.915517" y="0.72" />
+                            <point x="0.0827586" y="0.725714" />
+                            <point x="0.127586" y="0.497143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AwanTiled" sid="264849541026108">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Awan.png" />
+        </object-type>
+        <object-type name="JebakanPohon" sid="915607995414337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="732772400032463">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691491477961985" speed="5">
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.566038" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerJebakanDinding" sid="637974092451069">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543958794868347" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Brokoli" sid="160795275551415">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="187761712556579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Brokoli.png">
+                        <collision-poly>
+                            <point x="0.2125" y="0.178947" />
+                            <point x="0.5" y="0" />
+                            <point x="0.7875" y="0.178947" />
+                            <point x="0.8875" y="0.494737" />
+                            <point x="0.6" y="0.663158" />
+                            <point x="0.5" y="0.905263" />
+                            <point x="0.425" y="0.642105" />
+                            <point x="0.1125" y="0.494737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Alpukat" sid="250737269701346">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459194944903082" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Alpukat.png">
+                        <collision-poly>
+                            <point x="0.22449" y="0.1375" />
+                            <point x="0.489796" y="0.0125" />
+                            <point x="0.734694" y="0.1625" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.755102" y="0.85" />
+                            <point x="0.489796" y="0.9" />
+                            <point x="0.244898" y="0.85" />
+                            <point x="0.122449" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spider" sid="190411680243667">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="StartPositionX" sid="751986146887891" type="number" />
+                <instance-variable name="StartPositionY" sid="111579735541040" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="367350060188327">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="529083497460871">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889890891595401" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackgroundMusic" sid="912203031673381">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="FallArea" sid="888140818834359">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663464289615707" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
             <members>
+                <member>Alpukat</member>
+                <member>Brokoli</member>
                 <member>Burger</member>
                 <member>Donat</member>
                 <member>KotakP3K</member>
@@ -2192,6 +2384,8 @@
         </family>
         <family name="GoodFood" plugin-id="Sprite" sid="450586443849170">
             <members>
+                <member>Alpukat</member>
+                <member>Brokoli</member>
                 <member>Semangka</member>
                 <member>Telor</member>
                 <member>Tomat</member>
@@ -2204,6 +2398,7 @@
             <layout>Stage 1.xml</layout>
             <layout>Stage 2.xml</layout>
             <layout>Stage 3.xml</layout>
+            <layout>Stage 4.xml</layout>
         </layout-folder>
         <layout>Splash Screen.xml</layout>
         <layout>Main Menu.xml</layout>
@@ -2221,6 +2416,7 @@
         <event-sheet>ES Stage 2.xml</event-sheet>
         <event-sheet>ES Ruang Belajar.xml</event-sheet>
         <event-sheet>ES Stage 3.xml</event-sheet>
+        <event-sheet>ES Stage 4.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="67" />
@@ -2230,8 +2426,24 @@
             </properties>
         </global-instance>
         <global-instance type="Function" uid="85" />
+        <global-instance type="BackgroundMusic" uid="274">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Aspiration-Woods-_Area-Theme_.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

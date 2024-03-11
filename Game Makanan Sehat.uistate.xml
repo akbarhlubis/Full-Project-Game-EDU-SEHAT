@@ -10,14 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Main Menu</layout>
-        <layout order="1">Ruang Belajar</layout>
-        <layout order="2">Stage 1</layout>
-        <layout active="1" order="5">Stage 2</layout>
-        <layout order="6">Stage 3</layout>
-        <event-sheet order="3">ES Stage 1</event-sheet>
-        <event-sheet order="4">ES Stage Function</event-sheet>
-        <event-sheet order="7">ES Stage 2</event-sheet>
+        <layout order="0">Stage 2</layout>
+        <layout order="3">Stage 3</layout>
+        <layout order="5">Stage 1</layout>
+        <event-sheet order="1">ES Stage 2</event-sheet>
+        <event-sheet order="2">ES Stage Function</event-sheet>
+        <event-sheet active="1" order="4">ES Stage 3</event-sheet>
+        <event-sheet order="6">ES Stage 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,18 +25,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="Items" />
+        <family expanded="1" name="Items" />
         <family expanded="1" name="BadFood" />
-        <family expanded="0" name="GoodFood" />
+        <family expanded="1" name="GoodFood" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/List Stage/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Function/" />
-        <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
@@ -143,5 +142,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/JebakanTanah/" />
         <folder expanded="1" path="animation-folder/batahancur/" />
         <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/Bintang/" />
+        <folder expanded="1" path="animation-folder/BulanSabit/" />
+        <folder expanded="1" path="animation-folder/Awan/" />
+        <folder expanded="1" path="animation-folder/JebakanPohon/" />
+        <folder expanded="1" path="animation-folder/TriggerJebakanDinding/" />
+        <folder expanded="1" path="animation-folder/Brokoli/" />
+        <folder expanded="1" path="animation-folder/Alpukat/" />
+        <folder expanded="1" path="animation-folder/Spider/" />
+        <folder expanded="1" path="animation-folder/FallArea/" />
     </folders-expanded>
 </c2uistate>

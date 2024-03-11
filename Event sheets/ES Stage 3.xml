@@ -5,8 +5,44 @@
     <events>
         <variable constant="0" name="Timer" sid="564611338943447" static="0" type="number">60</variable>
         <variable constant="0" name="TargetMakanan" sid="620818400532450" static="0" type="number">0</variable>
+        <event-block sid="359474037090315">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="822816531781225" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="350510484419246">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="867697422963601" type="BackgroundMusic">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="897487763704401" type="BackgroundMusic">
+                            <param id="0" name="Audio file">Aspiration-Woods-_Area-Theme_</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-group description="" sid="189205039893060" title="Group">
             <sub-events>
+                <event-block sid="711499973650502">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="983022763823632" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="589117979091881" type="System" />
+                        <action id="-21" name="Reset global variables" sid="392562268464253" type="System" />
+                    </actions>
+                </event-block>
                 <event-block sid="881853082806126">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="972545708209029" type="System" />
@@ -43,6 +79,24 @@
                                     <param id="0" name="State">0</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="831794266361648">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="169917090248507" type="MakananBerjalan">
+                                            <param id="0" name="Object">FallArea</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="329129391666913" type="MakananBerjalan">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="569760048162729" type="MakananBerjalan">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -139,6 +193,11 @@
                     <actions>
                         <action id="-16" name="Wait" sid="604049468455136" type="System">
                             <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="197860163911502" type="MakananBerjalan">
+                            <param id="0" name="Object">ParticlesGoodFoods</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                     <sub-events>
