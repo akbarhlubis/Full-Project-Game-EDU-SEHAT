@@ -125,7 +125,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-130</x>
-                        <y>220</y>
+                        <y>178</y>
                         <z>0</z>
                         <width>180</width>
                         <height>344</height>
@@ -138,7 +138,7 @@
                 </instance>
                 <instance type="Spawner" uid="192">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -162,11 +162,11 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>1</initial-frame>
+                        <initial-frame>4</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <JenisWadah>0</JenisWadah>
+                        <JenisWadah>1</JenisWadah>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -187,7 +187,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>2</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -242,8 +242,8 @@
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
                                 <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
+                                <gravity>500</gravity>
+                                <max-fall-speed>500</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
                                 <jump-sustain>0</jump-sustain>
                                 <default-controls>No</default-controls>
@@ -266,11 +266,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>876.333618164</x>
-                        <y>388</y>
+                        <x>875</x>
+                        <y>384</y>
                         <z>0</z>
-                        <width>75</width>
-                        <height>64</height>
+                        <width>67.984375</width>
+                        <height>58.013332367</height>
                         <depth>0</depth>
                         <hotspotX>0.50666666</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -365,10 +365,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>72.269630432</x>
-                        <y>402.497253418</y>
+                        <y>433.997253418</y>
                         <z>0</z>
                         <width>78</width>
-                        <height>106</height>
+                        <height>169</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -1692,6 +1692,9 @@
         </object-type>
         <object-type name="PintuRuangBelajar" sid="548682858516357">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Stage" sid="444664309748903" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Tutup" pingpong="0" repeatcount="0" repeatto="0" sid="434250855855909" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PintuRuangBelajarTutup.png">
@@ -1790,7 +1793,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372057614915410" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\BG_Stage 3,4 Alt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\stage 2 (copy).png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1824,10 +1827,10 @@
         <object-type name="Wadah" sid="721260582606808">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="0 = Vit A | 1 = Vit B | 2 = Vit K" name="JenisWadah" sid="260624800869437" type="number" />
+                <instance-variable comment="0 = Tidak Sehat| 1 = Sehat" name="JenisWadah" sid="260624800869437" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
                     <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_VitA.png">
                         <collision-poly>
                             <point x="0.0649351" y="0.122951" />
@@ -1846,6 +1849,28 @@
                             <point x="0.969697" y="0.942623" />
                             <point x="0.497835" y="1" />
                             <point x="0.04329" y="0.918033" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah Makanan Sehat.png">
+                        <collision-poly>
+                            <point x="0.0649351" y="0.122951" />
+                            <point x="0.497835" y="0" />
+                            <point x="0.935065" y="0.122951" />
+                            <point x="0.969697" y="0.942623" />
+                            <point x="0.497835" y="1" />
+                            <point x="0.04329" y="0.918033" />
+                            <point x="0.04329" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah makanan tidak sehat.png">
+                        <collision-poly>
+                            <point x="0.0649351" y="0.122951" />
+                            <point x="0.497835" y="0" />
+                            <point x="0.935065" y="0.122951" />
+                            <point x="0.969697" y="0.942623" />
+                            <point x="0.497835" y="1" />
+                            <point x="0.04329" y="0.918033" />
+                            <point x="0.04329" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1875,7 +1900,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="217410353817659" speed="0">
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="217410353817659" speed="0">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Donat.png">
                         <collision-poly>
                             <point x="0.186667" y="0.21875" />
@@ -1886,6 +1911,29 @@
                             <point x="0.493333" y="0.890625" />
                             <point x="0.2" y="0.765625" />
                             <point x="0.08" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.508475" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan.png">
+                        <collision-poly>
+                            <point x="0.043956" y="0.0677966" />
+                            <point x="0.494505" y="0.0169492" />
+                            <point x="0.945055" y="0.0847458" />
+                            <point x="0.945055" y="0.491525" />
+                            <point x="0.912088" y="0.864407" />
+                            <point x="0.0879121" y="0.864407" />
+                            <point x="0.043956" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan Cup.png">
+                        <collision-poly>
+                            <point x="0.1" y="0.0875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.914286" y="0.075" />
+                            <point x="0.885714" y="0.5" />
+                            <point x="0.814286" y="0.8375" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.185714" y="0.8375" />
+                            <point x="0.128571" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Burger.png">
@@ -2356,6 +2404,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="MieInstan" sid="450295631443089">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947627124636138" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MieInstanCup" sid="252849092807863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485997470005264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan Cup.png">
+                        <collision-poly>
+                            <point x="0.0793651" y="0.0671141" />
+                            <point x="0.5" y="0" />
+                            <point x="0.920635" y="0.0671141" />
+                            <point x="0.944444" y="0.496644" />
+                            <point x="0.880952" y="0.899329" />
+                            <point x="0.5" y="1" />
+                            <point x="0.119048" y="0.899329" />
+                            <point x="0.0555556" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
@@ -2366,6 +2441,8 @@
                 <member>Donat</member>
                 <member>KotakP3K</member>
                 <member>Kunci</member>
+                <member>MieInstan</member>
+                <member>MieInstanCup</member>
                 <member>Semangka</member>
                 <member>Telor</member>
                 <member>Wortel</member>
@@ -2380,6 +2457,8 @@
             <members>
                 <member>Burger</member>
                 <member>Donat</member>
+                <member>MieInstan</member>
+                <member>MieInstanCup</member>
             </members>
         </family>
         <family name="GoodFood" plugin-id="Sprite" sid="450586443849170">
@@ -2443,6 +2522,10 @@
     </global-instances>
     <sounds-folder>
         <file name="Aspiration-Woods-_Area-Theme_.ogg" />
+        <file name="appear-online.ogg" />
+        <file name="mixkit-game-ball-tap-2073.ogg" />
+        <file name="mixkit-game-level-completed-2059.ogg" />
+        <file name="mixkit-ominous-drums-227.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

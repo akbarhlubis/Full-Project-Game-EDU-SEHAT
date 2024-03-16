@@ -285,6 +285,25 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="117073978176337">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="623043992765578" type="Player">
+                            <param id="0" name="Object">PeluruPohon</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="439041569176202" type="Function">
+                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="113176849290014" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="855084033352327" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>

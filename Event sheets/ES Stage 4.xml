@@ -3,8 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Stage 4</name>
     <events>
-        <variable constant="0" name="Timer2" sid="967579874317219" static="0" type="number">60</variable>
-        <variable constant="0" name="TargetMakanan2" sid="976089431645323" static="0" type="number">0</variable>
         <event-group description="" sid="476329034837650" title="Group2">
             <sub-events>
                 <event-block sid="987416837561549">
