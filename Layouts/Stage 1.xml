@@ -2536,6 +2536,45 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ParticlesBadFood" uid="277">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>60</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>200</speed>
+                        <size>32</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>-150</acceleration>
+                        <gravity>0</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>800</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>1</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-151</x>
+                        <y>-121</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
