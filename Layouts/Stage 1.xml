@@ -2538,9 +2538,9 @@
                 </instance>
                 <instance type="ParticlesBadFood" uid="277">
                     <properties>
-                        <rate>50</rate>
-                        <spray-cone>60</spray-cone>
-                        <type>Continuous spray</type>
+                        <rate>25</rate>
+                        <spray-cone>350</spray-cone>
+                        <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>
                         <speed>200</speed>
                         <size>32</size>
