@@ -306,5 +306,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="276632800231885">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="534147880774245" type="Player">
+                    <param id="0" name="Object">BackToMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="297383365732921" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

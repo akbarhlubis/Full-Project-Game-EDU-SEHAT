@@ -35,6 +35,25 @@
                             <param id="0" name="Collisions">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="514734719164650">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="215784218000814" type="level_listBtn">
+                                    <param id="0" name="Instance variable">StageNum</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="656312198972991" type="level_listBtn">
+                                    <param id="0" name="Instance variable">Unlocked</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-14" name="Toggle boolean" sid="329361756677535" type="level_listBtn">
+                                    <param id="0" name="Instance variable">Unlocked</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -114,9 +133,6 @@
                 </action>
                 <action id="-16" name="Set opacity" sid="140332358182501" type="BGSky">
                     <param id="0" name="Opacity">100</param>
-                </action>
-                <action id="32" name="Add mute effect" sid="283041555816550" type="BackgroundMusic">
-                    <param id="0" name="Tag">&quot;rain&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -2632,6 +2632,14 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\AwanSiang.png" />
         </object-type>
+        <object-type name="BackToMenu" sid="712653860753154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938796398190248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
