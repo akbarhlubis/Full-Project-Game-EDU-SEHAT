@@ -501,6 +501,11 @@
         </object-type>
         <object-type name="BGSky" sid="261592414185037">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="367400052246477">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337675370680013" speed="5">
                     <frame duration="1" hotspotX="0.50011" hotspotY="0.500468" original-source="C:\Users\aldin\Videos\Taman Bermain (Level 1).png" />
@@ -2605,6 +2610,27 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="SplashRain" sid="346032088281014">
+            <plugin id="Particles" />
+            <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PNG\Splash.png" />
+        </object-type>
+        <object-type name="RainDrop" sid="779129649972676">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="205820950659692">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138754441856505" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PNG\Raindrop.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AwanSiangTiled" sid="475908809584952">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\AwanSiang.png" />
         </object-type>
     </object-folder>
     <families>
