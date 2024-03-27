@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES List Stage</name>
+    <events>
+        <event-block sid="833040517276292">
+            <conditions>
+                <condition id="17" name="On tap object" sid="487788716261006" type="Touch">
+                    <param id="0" name="Object">level_listBtn</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="758320186847507" type="level_listBtn">
+                    <param id="0" name="Instance variable">Unlocked</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="491506147406176">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="853862765480201" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="106804716626525" type="System">
+                            <param id="0" name="Layout">Stage 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="540475523895757">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="263212238866137" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="474953372014715" type="System">
+                            <param id="0" name="Layout">Stage 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="492501033853359">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="437563454151648" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="564101736447198" type="System">
+                            <param id="0" name="Layout">Stage 3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="500723446276666">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="990908267802795" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="847519839820080" type="System">
+                            <param id="0" name="Layout">Stage 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="567716025552391" title="Is Unlock Level">
+            <sub-events>
+                <event-block sid="249175665908502">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="437032362309414" type="level_listBtn">
+                            <param id="0" name="Instance variable">Unlocked</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="149435188347412" type="level_listBtn">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Sepia&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923426347088215">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="129890768263619" type="level_listBtn">
+                            <param id="0" name="Instance variable">Unlocked</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="550787836960679" type="level_listBtn">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Sepia&quot;</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="839069174778216" type="level_listBtn">
+                            <param id="0" name="Opacity">80</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="124496598255068">
+            <conditions>
+                <condition id="3" name="On touched object" sid="541948597279889" type="Touch">
+                    <param id="0" name="Object">btn_kembali</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="655594431743706" type="System">
+                    <param id="0" name="Which">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -3,6 +3,38 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Main Menu</name>
     <events>
+        <variable constant="0" name="MusicState" sid="686203359539556" static="0" type="number">1</variable>
+        <event-block sid="445730028325806">
+            <conditions />
+            <actions>
+                <action id="5" name="Set frame" sid="944011845871229" type="Sound">
+                    <param id="0" name="Frame number">MusicState</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655591268896696">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="283150437723627" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="551216054297170">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="740246736487012" type="BackgroundMusic">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="926095967792902" type="BackgroundMusic">
+                            <param id="0" name="Audio file">Aspiration-Woods-_Area-Theme_</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="118096564568043">
             <conditions>
                 <condition id="3" name="On touched object" sid="816454020305367" type="Touch">
@@ -11,7 +43,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="582073588534795" type="System">
-                    <param id="0" name="Layout">Ruang Belajar</param>
+                    <param id="0" name="Layout">List Stage</param>
                 </action>
             </actions>
         </event-block>
@@ -22,6 +54,68 @@
                 </condition>
             </conditions>
             <actions />
+        </event-block>
+        <event-block sid="139750110537558">
+            <conditions>
+                <condition id="3" name="On touched object" sid="792845803276081" type="Touch">
+                    <param id="0" name="Object">Sound</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="261699279790175">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="855081694930737" type="System">
+                            <param id="0" name="Variable">MusicState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="310018306412828" type="System">
+                            <param id="0" name="Variable">MusicState</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="735938166871646">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="385474409824610" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="556522363565394" type="System">
+                            <param id="0" name="Variable">MusicState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="966064358151128">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="738142337903461" type="System">
+                    <param id="0" name="Variable">MusicState</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="769466644443706" type="BackgroundMusic">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="870383618491429">
+            <conditions>
+                <condition id="-22" name="Else" sid="923852453956805" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="282322303541587" type="BackgroundMusic">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

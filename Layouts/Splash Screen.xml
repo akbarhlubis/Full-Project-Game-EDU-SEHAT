@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="4">
+                <instance type="BG_Menu" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,13 +39,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>570</x>
-                        <y>476</y>
+                        <x>427</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>1511.227661133</width>
-                        <height>244.549514771</height>
+                        <width>854</width>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0.500319898</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -73,29 +73,24 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="InfoText" uid="100">
+                <instance type="Txt_InfoMulai" uid="290">
                     <properties>
-                        <text>Tekan atau Mulai untuk memulai permainan</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
+                                <movement>Vertical</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
+                                <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
@@ -103,14 +98,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>278.248413086</x>
-                        <y>325.256408691</y>
+                        <x>427</x>
+                        <y>366.81930542</y>
                         <z>0</z>
-                        <width>314.876037598</width>
-                        <height>30</height>
+                        <width>358</width>
+                        <height>18</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

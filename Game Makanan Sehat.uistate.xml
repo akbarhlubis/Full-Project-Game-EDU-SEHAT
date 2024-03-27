@@ -10,11 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Stage 3</layout>
-        <layout order="1">Stage 2</layout>
-        <layout active="1" order="4">Stage 1</layout>
-        <event-sheet order="2">ES Stage 2</event-sheet>
-        <event-sheet order="3">ES Stage 3</event-sheet>
+        <layout active="1" order="0">Stage 1</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,13 +27,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/List Stage/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/Function/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/BtnMulai/" />
         <folder expanded="1" path="animation-folder/BtnKeluar/" />
@@ -99,7 +94,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite52/" />
         <folder expanded="1" path="animation-folder/DindingSnail/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
-        <folder expanded="1" path="animation-folder/Sprite47/" />
+        <folder expanded="1" path="animation-folder/Batu/" />
         <folder expanded="1" path="animation-folder/Sprite56/" />
         <folder expanded="1" path="animation-folder/Sprite57/" />
         <folder expanded="1" path="animation-folder/Sprite16/" />
@@ -152,5 +147,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/FallArea/" />
         <folder expanded="1" path="animation-folder/MieInstan/" />
         <folder expanded="1" path="animation-folder/MieInstanCup/" />
+        <folder expanded="1" path="animation-folder/BG_Menu/" />
+        <folder expanded="1" path="animation-folder/level_listBtn/" />
+        <folder expanded="1" path="animation-folder/btn_kembali/" />
+        <folder expanded="1" path="animation-folder/BG_gray/" />
+        <folder expanded="1" path="animation-folder/TriggerRain/" />
+        <folder expanded="1" path="animation-folder/Txt_InfoMulai/" />
+        <folder expanded="1" path="animation-folder/Sound/" />
     </folders-expanded>
 </c2uistate>

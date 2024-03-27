@@ -40,6 +40,7 @@
     <used-effects>
         <effect author="Scirra" id="exposure">Exposure</effect>
         <effect author="Scirra" id="multiply">Multiply</effect>
+        <effect author="Scirra" id="sepia">Sepia</effect>
         <effect author="Scirra" id="warpmask">Warp Mask</effect>
         <effect author="Viktor Korsun" id="water">Water</effect>
     </used-effects>
@@ -52,7 +53,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Stage 3</first-layout>
+    <first-layout>Splash Screen</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -70,25 +71,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="548566957470105">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601334661810779" speed="5">
-                    <frame duration="1" hotspotX="0.50032" hotspotY="0.5" original-source="C:\Users\aldin\OneDrive\Pictures\BG-Gunung.png">
-                        <collision-poly>
-                            <point x="0.0959693" y="0.333333" />
-                            <point x="0.49968" y="0.0733333" />
-                            <point x="0.840691" y="0.553333" />
-                            <point x="0.806142" y="0.5" />
-                            <point x="0.96801" y="0.888889" />
-                            <point x="0.49968" y="0.857778" />
-                            <point x="0.0409469" y="0.857778" />
-                            <point x="0.0307102" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite4" sid="511979518997801">
             <plugin id="Sprite" />
             <animation-folder>
@@ -112,7 +94,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451485856637239" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\aldin\OneDrive\Pictures\Frame 7.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\btn_mulai.png">
                         <collision-poly>
                             <point x="0.0141243" y="0.0877193" />
                             <point x="0.5" y="0" />
@@ -129,7 +111,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298130534990730" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\aldin\OneDrive\Pictures\Frame 8.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\btn_keluar.png">
                         <collision-poly>
                             <point x="0.0140449" y="0.0877193" />
                             <point x="0.5" y="0" />
@@ -1323,7 +1305,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Sprite47" sid="178886123127319">
+        <object-type name="Batu" sid="178886123127319">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494310769930777" speed="5">
@@ -1830,7 +1812,7 @@
                 <instance-variable comment="0 = Tidak Sehat| 1 = Sehat" name="JenisWadah" sid="260624800869437" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
                     <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_VitA.png">
                         <collision-poly>
                             <point x="0.0649351" y="0.122951" />
@@ -1863,6 +1845,39 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah makanan tidak sehat.png">
+                        <collision-poly>
+                            <point x="0.0649351" y="0.122951" />
+                            <point x="0.497835" y="0" />
+                            <point x="0.935065" y="0.122951" />
+                            <point x="0.969697" y="0.942623" />
+                            <point x="0.497835" y="1" />
+                            <point x="0.04329" y="0.918033" />
+                            <point x="0.04329" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_buah.png">
+                        <collision-poly>
+                            <point x="0.0649351" y="0.122951" />
+                            <point x="0.497835" y="0" />
+                            <point x="0.935065" y="0.122951" />
+                            <point x="0.969697" y="0.942623" />
+                            <point x="0.497835" y="1" />
+                            <point x="0.04329" y="0.918033" />
+                            <point x="0.04329" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_Hewani.png">
+                        <collision-poly>
+                            <point x="0.107023" y="0.178771" />
+                            <point x="0.498328" y="0" />
+                            <point x="0.892977" y="0.178771" />
+                            <point x="0.839465" y="0.497207" />
+                            <point x="0.795987" y="0.659218" />
+                            <point x="0.498328" y="1" />
+                            <point x="0.210702" y="0.648045" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_sayur.png">
                         <collision-poly>
                             <point x="0.0649351" y="0.122951" />
                             <point x="0.497835" y="0" />
@@ -2431,6 +2446,166 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BG_Menu" sid="105732540247683">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891426547850731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\BG_Menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level_listBtn" sid="967020530463567">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="StageNum" sid="550534369985361" type="number" />
+                <instance-variable comment="True or False" name="Unlocked" sid="200736821931080" type="boolean" />
+            </instance-variables>
+            <effects>
+                <effect-type name="Sepia">
+                    <effect id="sepia" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="850100444886381" speed="0">
+                    <frame duration="1" hotspotX="0.502645" hotspotY="0.50173" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\level 1_listBtn.png">
+                        <collision-poly>
+                            <point x="0.042328" y="0.0276817" />
+                            <point x="0.497355" y="0" />
+                            <point x="0.957672" y="0.0276817" />
+                            <point x="0.978836" y="0.49827" />
+                            <point x="0.936508" y="0.958477" />
+                            <point x="0.497355" y="0.972318" />
+                            <point x="0.0634921" y="0.958477" />
+                            <point x="0.021164" y="0.49827" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502645" hotspotY="0.50173" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\level 2_listBtn.png">
+                        <collision-poly>
+                            <point x="0.042328" y="0.0276817" />
+                            <point x="0.497355" y="0" />
+                            <point x="0.957672" y="0.0276817" />
+                            <point x="0.978836" y="0.49827" />
+                            <point x="0.936508" y="0.958477" />
+                            <point x="0.497355" y="0.972318" />
+                            <point x="0.0634921" y="0.958477" />
+                            <point x="0.021164" y="0.49827" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502762" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\level 3_listBtn.png">
+                        <collision-poly>
+                            <point x="0.0331492" y="0.0213523" />
+                            <point x="0.497238" y="0" />
+                            <point x="0.966851" y="0.0213523" />
+                            <point x="1" y="0.498221" />
+                            <point x="0.966851" y="0.978648" />
+                            <point x="0.497238" y="1" />
+                            <point x="0.0331492" y="0.978648" />
+                            <point x="0" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502762" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\level 4_listBtn.png">
+                        <collision-poly>
+                            <point x="0.0331492" y="0.0213523" />
+                            <point x="0.497238" y="0" />
+                            <point x="0.966851" y="0.0213523" />
+                            <point x="1" y="0.498221" />
+                            <point x="0.966851" y="0.978648" />
+                            <point x="0.497238" y="1" />
+                            <point x="0.0331492" y="0.978648" />
+                            <point x="0" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_kembali" sid="294571514086232">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186151642510924" speed="5">
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\btn_kembali.png">
+                        <collision-poly>
+                            <point x="0.0176678" y="0.0704225" />
+                            <point x="0.498233" y="0" />
+                            <point x="0.982332" y="0.0704225" />
+                            <point x="0.985866" y="0.492958" />
+                            <point x="0.968198" y="0.873239" />
+                            <point x="0.498233" y="0.887324" />
+                            <point x="0.0318021" y="0.873239" />
+                            <point x="0.0141343" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG_gray" sid="578187486123833">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643723933689795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Skripsi Fikho (2)\BG_gray.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerRain" sid="694535700961387">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537100834975651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Txt_InfoMulai" sid="603826430919069">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="250326001859640">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="622924993511100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Txt_InfoMulai.png">
+                        <collision-poly>
+                            <point x="0.0027933" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="0.997207" y="0.0555556" />
+                            <point x="0.997207" y="0.944444" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.0027933" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sound" sid="433061870394497">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="631581009328635" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SoundOFF.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SoundON.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
@@ -2481,6 +2656,7 @@
         </layout-folder>
         <layout>Splash Screen.xml</layout>
         <layout>Main Menu.xml</layout>
+        <layout>List Stage.xml</layout>
         <layout>Ruang Belajar.xml</layout>
         <layout>level 1.xml</layout>
     </layout-folder>
@@ -2496,6 +2672,7 @@
         <event-sheet>ES Ruang Belajar.xml</event-sheet>
         <event-sheet>ES Stage 3.xml</event-sheet>
         <event-sheet>ES Stage 4.xml</event-sheet>
+        <event-sheet>ES List Stage.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="67" />
