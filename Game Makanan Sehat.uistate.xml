@@ -13,8 +13,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Stage 1</layout>
         <layout order="2">Stage 2</layout>
         <layout order="4">List Stage</layout>
-        <event-sheet active="1" order="1">ES Stage 1</event-sheet>
+        <layout order="5">Stage 3</layout>
+        <layout order="6">Stage 4</layout>
+        <layout order="8">Main Menu</layout>
+        <event-sheet order="1">ES Stage 1</event-sheet>
         <event-sheet order="3">ES Stage 2</event-sheet>
+        <event-sheet active="1" order="7">ES Stage Function</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -66,10 +70,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite23/" />
         <folder expanded="1" path="animation-folder/Sprite24/" />
         <folder expanded="1" path="animation-folder/Sprite25/" />
-        <folder expanded="1" path="animation-folder/Sprite26/" />
-        <folder expanded="1" path="animation-folder/Sprite27/" />
+        <folder expanded="1" path="animation-folder/RightCtrl/" />
+        <folder expanded="1" path="animation-folder/UpCtrl/" />
         <folder expanded="1" path="animation-folder/Sprite28/" />
-        <folder expanded="1" path="animation-folder/Sprite29/" />
+        <folder expanded="1" path="animation-folder/LeftCtrl/" />
         <folder expanded="1" path="animation-folder/Sprite30/" />
         <folder expanded="1" path="animation-folder/Petunjuk/" />
         <folder expanded="1" path="animation-folder/Sprite32/" />
@@ -160,5 +164,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sound/" />
         <folder expanded="1" path="animation-folder/RainDrop/" />
         <folder expanded="1" path="animation-folder/BackToMenu/" />
+        <folder expanded="1" path="animation-folder/KunciFrame/" />
+        <folder expanded="1" path="animation-folder/btn_pause/" />
+        <folder expanded="1" path="animation-folder/PopupNotif/" />
+        <folder expanded="1" path="animation-folder/BtnPopup/" />
     </folders-expanded>
 </c2uistate>

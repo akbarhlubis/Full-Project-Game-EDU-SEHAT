@@ -4,48 +4,6 @@
     <name>ES Stage 2</name>
     <events>
         <include>ES Stage Function</include>
-        <event-block sid="502828414176915">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="236142801862368" type="System" />
-            </conditions>
-            <actions>
-                <action id="-24" name="Move to top" sid="542609681928914" type="Player" />
-            </actions>
-            <sub-events>
-                <event-block sid="369248345301222">
-                    <conditions>
-                        <condition id="5" inverted="1" name="Is tag playing" sid="676213164867024" type="BackgroundMusic">
-                            <param id="0" name="Tag">&quot;music&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="322135106609150" type="BackgroundMusic">
-                            <param id="0" name="Audio file">Aspiration-Woods-_Area-Theme_</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="924284959398102">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="364918346110389" type="System">
-                            <param id="0" name="Object">Spider</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="269395810841380" type="Spider">
-                            <param id="0" name="Instance variable">StartPositionX</param>
-                            <param id="1" name="Value">Spider.X</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="430454296662714" type="Spider">
-                            <param id="0" name="Instance variable">StartPositionY</param>
-                            <param id="1" name="Value">Spider.Y</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="543459311562519">
             <conditions>
                 <condition id="-1" name="Every tick" sid="258962997672673" type="System" />
@@ -206,106 +164,25 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="811583053322054" title="Spider">
-            <sub-events>
-                <event-block sid="864619690586322">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="735952395919669" type="System">
-                            <param id="0" name="Object">Spider</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="318256145592512">
-                            <conditions>
-                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="111508820954266" type="Spider">
-                                    <param id="0" name="Object">Player</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="-16" name="Set opacity" sid="865404265939137" type="Spider">
-                                    <param id="0" name="Opacity">50</param>
-                                </action>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="871003972197058" type="Spider">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="928495863391983">
-                            <conditions>
-                                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="837787303007437" type="Spider">
-                                    <param id="0" name="Object">Player</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="-16" name="Set opacity" sid="934506487584344" type="Spider">
-                                    <param id="0" name="Opacity">100</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="690622277117479">
-                                    <conditions>
-                                        <condition behavior="Platform" id="2" name="Is on floor" sid="382216003829079" type="Spider" />
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="11" name="Set enabled" sid="168124503267530" type="Spider">
-                                            <param id="0" name="State">0</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="269938189873902" type="System">
-                                            <param id="0" name="Seconds">1.0</param>
-                                        </action>
-                                        <action id="-2" name="Set Y" sid="658046446589055" type="Spider">
-                                            <param id="0" name="Y">Spider.StartPositionY</param>
-                                        </action>
-                                        <action disabled="1" id="-2" name="Set Y" sid="677270841307247" type="Spider">
-                                            <param id="0" name="Y">lerp(Spider.Y, Spider.StartPositionY, 0.5)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="179645332805294">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="552759259665990" type="Player">
-                            <param id="0" name="Object">Spider</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="429199980319344" type="Function">
-                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="986756357709697" type="Player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="382242394008723" type="Player">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="117073978176337">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="623043992765578" type="Player">
-                            <param id="0" name="Object">PeluruPohon</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="439041569176202" type="Function">
-                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="113176849290014" type="Player">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="855084033352327" type="Player">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <event-block sid="117073978176337">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="623043992765578" type="Player">
+                    <param id="0" name="Object">PeluruPohon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="439041569176202" type="Function">
+                    <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="113176849290014" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="855084033352327" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="276632800231885">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="534147880774245" type="Player">
