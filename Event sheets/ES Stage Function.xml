@@ -482,9 +482,26 @@
                     <param id="0" name="Object">Player</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set frame" sid="505184904475713" type="PopupNotif">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-10" name="Set value" sid="772838281978759" type="BtnPopup">
+                    <param id="0" name="Instance variable">TypeBtn</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="640090171048127" type="PopupNotif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="685299453876445" type="BtnPopup">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="381701055958455" type="BtnKembaliMenuUtama">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="940490371123049">
+                <event-block disabled="1" sid="940490371123049">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="620385541769974" type="NextStage">
                             <param id="0" name="Unique ID">143</param>
@@ -496,7 +513,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="510857484089997">
+                <event-block disabled="1" sid="510857484089997">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="424277244331218" type="NextStage">
                             <param id="0" name="Unique ID">141</param>

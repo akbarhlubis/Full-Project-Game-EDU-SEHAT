@@ -3,6 +3,39 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES List Stage</name>
     <events>
+        <event-group description="" sid="458286532665750" title="Check Global Variable Condition">
+            <sub-events>
+                <event-block sid="812745398603408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="956061181384166" type="System">
+                            <param id="0" name="Variable">SehatFood</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="357391385002194">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="797845400295070" type="level_listBtn">
+                                    <param id="0" name="Instance variable">StageNum</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="936268242792644" type="level_listBtn">
+                                    <param id="0" name="Instance variable">Unlocked</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-14" name="Toggle boolean" sid="350329450122796" type="level_listBtn">
+                                    <param id="0" name="Instance variable">Unlocked</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="833040517276292">
             <conditions>
                 <condition id="17" name="On tap object" sid="487788716261006" type="Touch">
