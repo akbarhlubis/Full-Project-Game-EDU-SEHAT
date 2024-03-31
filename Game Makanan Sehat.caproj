@@ -67,7 +67,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Edge</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -2658,16 +2658,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973605847488783" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PauseBtn.png">
-                        <collision-poly>
-                            <point x="0.266667" y="0.266667" />
-                            <point x="0.733333" y="0.266667" />
-                            <point x="0.766667" y="0.5" />
-                            <point x="0.733333" y="0.733333" />
-                            <point x="0.266667" y="0.733333" />
-                            <point x="0.233333" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PauseBtn.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2709,10 +2700,10 @@
         <object-type name="BtnPopup" sid="320944665159093">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="0 = Lanjut | 1 = Ke Menu | 2 = Berikutnya | 3 = Ulangi" name="TypeBtn" sid="906612599879779" type="number" />
+                <instance-variable comment="0 = Resume | 1 = Next | 2 = Restart" name="TypeBtn" sid="906612599879779" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="216944971169339" speed="0">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="216944971169339" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\btn_lanjutPermainan.png">
                         <collision-poly>
                             <point x="0.0141243" y="0.0704225" />
@@ -2733,16 +2724,6 @@
                             <point x="0.0254237" y="0.873239" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\btn_kembaliMenuUtama.png">
-                        <collision-poly>
-                            <point x="0.0140449" y="0.0704225" />
-                            <point x="0.5" y="0" />
-                            <point x="0.985955" y="0.0704225" />
-                            <point x="0.974719" y="0.873239" />
-                            <point x="0.5" y="0.887324" />
-                            <point x="0.0252809" y="0.873239" />
-                        </collision-poly>
-                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\btn_ulangi.png">
                         <collision-poly>
                             <point x="0.0141243" y="0.0704225" />
@@ -2751,6 +2732,23 @@
                             <point x="0.974576" y="0.873239" />
                             <point x="0.5" y="0.887324" />
                             <point x="0.0254237" y="0.873239" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnKembaliMenuUtama" sid="459860547452876">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507361844127158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\btn_kembaliMenuUtama.png">
+                        <collision-poly>
+                            <point x="0.0140449" y="0.0704225" />
+                            <point x="0.5" y="0" />
+                            <point x="0.985955" y="0.0704225" />
+                            <point x="0.974719" y="0.873239" />
+                            <point x="0.5" y="0.887324" />
+                            <point x="0.0252809" y="0.873239" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2794,6 +2792,17 @@
                 <member>Telor</member>
                 <member>Tomat</member>
                 <member>Wortel</member>
+            </members>
+        </family>
+        <family name="Buttons" plugin-id="Sprite" sid="853689623948532">
+            <members>
+                <member>btn_kembali</member>
+                <member>btn_pause</member>
+                <member>BtnKeluar</member>
+                <member>BtnKembaliMenuUtama</member>
+                <member>BtnMulai</member>
+                <member>BtnPopup</member>
+                <member>level_listBtn</member>
             </members>
         </family>
     </families>

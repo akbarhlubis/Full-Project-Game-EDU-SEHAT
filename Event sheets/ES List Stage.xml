@@ -117,5 +117,43 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="890274746879883">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="669108478531465" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="511566695239438">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="305233543536699" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="832568098920735" type="TestInfoStage">
+                            <param id="0" name="Text">&quot;Stage Number: &quot; &amp;level_listBtn.StageNum &amp; &quot;Stage Boolean: &quot; &amp;level_listBtn.Unlocked</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="347254782346314">
+            <conditions>
+                <condition id="3" name="On touched object" sid="646331387359357" type="Touch">
+                    <param id="0" name="Object">Buttons</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="315271121348633" type="Buttons" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="250730243677028" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

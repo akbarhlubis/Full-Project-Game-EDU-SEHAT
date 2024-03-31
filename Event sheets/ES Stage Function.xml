@@ -721,53 +721,123 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="953310929065752">
-            <conditions>
-                <condition id="3" name="On touched object" sid="389275020261343" type="Touch">
-                    <param id="0" name="Object">btn_pause</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set time scale" sid="340478672435541" type="System">
-                    <param id="0" name="Time scale">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="759423179295428" type="PopupNotif">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="606679032626268" type="BtnPopup">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="159006207271889">
-            <conditions>
-                <condition id="3" name="On touched object" sid="353933101969192" type="Touch">
-                    <param id="0" name="Object">BtnPopup</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="632461956944687" title="Popup">
             <sub-events>
-                <event-block sid="243911348326142">
+                <event-block sid="953310929065752">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="615058682623229" type="BtnPopup">
-                            <param id="0" name="Instance variable">TypeBtn</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="3" name="On touched object" sid="389275020261343" type="Touch">
+                            <param id="0" name="Object">btn_pause</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set time scale" sid="504280452866398" type="System">
-                            <param id="0" name="Time scale">1.0</param>
+                        <action id="-13" name="Set time scale" sid="340478672435541" type="System">
+                            <param id="0" name="Time scale">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="416166961523136" type="PopupNotif">
-                            <param id="0" name="Visibility">0</param>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="714164435689308" type="Player">
+                            <param id="0" name="Input">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="845800595047373" type="BtnPopup">
-                            <param id="0" name="Visibility">0</param>
+                        <action id="-15" name="Set visible" sid="874235891472910" type="PopupNotif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="406213780475184" type="BtnPopup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="835253256217304" type="BtnKembaliMenuUtama">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="492622128696777">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="459921630611689" type="Touch">
+                            <param id="0" name="Object">BtnKembaliMenuUtama</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="623349228056351" type="BtnKembaliMenuUtama" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="571304759533967" type="System">
+                            <param id="0" name="Layout">Main Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159006207271889">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="353933101969192" type="Touch">
+                            <param id="0" name="Object">BtnPopup</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="776963558401894" type="BtnPopup" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="243911348326142">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="615058682623229" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set time scale" sid="504280452866398" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="416166961523136" type="PopupNotif">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="845800595047373" type="BtnPopup">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="908116956175522" type="BtnKembaliMenuUtama">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="345946651759989" type="Player">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="915980552115883">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="892633265467070" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="308150989852667" type="System">
+                                    <param id="0" name="Layout">Stage 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="903050137420922">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="563069101988182" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="966642844442549" type="PopupNotif">
+                            <param id="0" name="Frame number">BtnPopup.TypeBtn</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-group>
+        <event-block sid="533076879850310">
+            <conditions>
+                <condition id="3" name="On touched object" sid="302498750908012" type="Touch">
+                    <param id="0" name="Object">Buttons</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="105672100824464" type="Buttons" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="698721273415313" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -117,5 +117,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="663490075966513">
+            <conditions>
+                <condition id="3" name="On touched object" sid="190760739456818" type="Touch">
+                    <param id="0" name="Object">Buttons</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="662816773138410" type="Buttons" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="366865516523807" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

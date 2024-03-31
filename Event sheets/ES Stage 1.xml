@@ -34,6 +34,22 @@
                         <action id="11" name="Set collisions enabled" sid="623744164263212" type="NextStage">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="5" name="Set frame" sid="123762346619000" type="PopupNotif">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="888334164051062" type="BtnPopup">
+                            <param id="0" name="Instance variable">TypeBtn</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="678798410248887" type="PopupNotif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="811448248173164" type="BtnPopup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="619934789055148" type="BtnKembaliMenuUtama">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="514734719164650">

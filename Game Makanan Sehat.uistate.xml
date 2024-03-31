@@ -11,14 +11,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Stage 1</layout>
-        <layout order="2">Stage 2</layout>
-        <layout order="4">List Stage</layout>
-        <layout order="5">Stage 3</layout>
-        <layout order="6">Stage 4</layout>
+        <layout order="1">List Stage</layout>
+        <layout order="5">Stage 2</layout>
+        <layout order="6">Stage 3</layout>
         <layout order="8">Main Menu</layout>
-        <event-sheet order="1">ES Stage 1</event-sheet>
-        <event-sheet order="3">ES Stage 2</event-sheet>
-        <event-sheet active="1" order="7">ES Stage Function</event-sheet>
+        <event-sheet order="2">ES List Stage</event-sheet>
+        <event-sheet order="3">ES Stage 1</event-sheet>
+        <event-sheet order="4">ES Stage Function</event-sheet>
+        <event-sheet order="7">ES Stage 3</event-sheet>
+        <event-sheet active="1" order="9">ES Main Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="Items" />
         <family expanded="1" name="BadFood" />
         <family expanded="1" name="GoodFood" />
+        <family expanded="0" name="Buttons" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -168,5 +170,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btn_pause/" />
         <folder expanded="1" path="animation-folder/PopupNotif/" />
         <folder expanded="1" path="animation-folder/BtnPopup/" />
+        <folder expanded="1" path="animation-folder/BtnKembaliMenuUtama/" />
     </folders-expanded>
 </c2uistate>
