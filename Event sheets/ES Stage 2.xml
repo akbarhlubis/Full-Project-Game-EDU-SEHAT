@@ -21,6 +21,34 @@
                             <param id="0" name="X">Player.X</param>
                             <param id="1" name="Y">Player.Y</param>
                         </action>
+                        <action id="0" name="Set text" sid="708921812943431" type="Textbuah">
+                            <param id="0" name="Text">SehatFood&amp;&quot;/4&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="309464366471361">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="248669271110559" type="System">
+                            <param id="0" name="Variable">SehatFood</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="408176583633544" type="pintu">
+                            <param id="0" name="Unique ID">166</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="259391493091139" type="pintu">
+                            <param id="0" name="X">157.631</param>
+                            <param id="1" name="Y">340</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="965724360994015" type="NextStage">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="633059307436683" type="System">
+                            <param id="0" name="Variable">Stage</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

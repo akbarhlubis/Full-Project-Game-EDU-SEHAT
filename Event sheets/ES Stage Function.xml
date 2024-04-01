@@ -5,6 +5,51 @@
     <events>
         <variable constant="0" name="Key" sid="957707882712691" static="0" type="number">0</variable>
         <variable constant="0" name="Health" sid="620457897361818" static="0" type="number">3</variable>
+        <event-block sid="778272396721565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="806667930742298" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="748741601584745" type="System">
+                    <param id="0" name="Variable">SehatFood</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="646966115206240">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="172579369670972" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="634623947515705" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571253544572226">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="438878859686076" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="956205601872792" type="System">
+                            <param id="0" name="Layer">5</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="409158916298572">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="179840809188067" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="440969966772802" type="HealthBar">
+                    <param id="0" name="Frame number">Health</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="321867529475679" title="Function Penting Event">
             <sub-events>
                 <event-block sid="123003171055900">
@@ -18,9 +63,6 @@
                             <param id="0" name="Variable">Health</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="5" name="Set frame" sid="440969966772802" type="HealthBar">
-                            <param id="0" name="Frame number">Health</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="489860558084702">
@@ -33,9 +75,6 @@
                         <action id="-10" name="Add to" sid="143769421046386" type="System">
                             <param id="0" name="Variable">Health</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="193186335903136" type="HealthBar">
-                            <param id="0" name="Frame number">Health</param>
                         </action>
                     </actions>
                 </event-block>
@@ -284,36 +323,6 @@
                     <actions>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="803316497741451" type="TanggaFix">
                             <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="778272396721565">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="806667930742298" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="646966115206240">
-                    <conditions>
-                        <condition id="-20" name="Is on mobile device" sid="172579369670972" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="634623947515705" type="System">
-                            <param id="0" name="Layer">5</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="571253544572226">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="438878859686076" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="956205601872792" type="System">
-                            <param id="0" name="Layer">5</param>
-                            <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -774,6 +783,9 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="571304759533967" type="System">
                             <param id="0" name="Layout">Main Menu</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="385066850646753" type="System">
+                            <param id="0" name="Time scale">1.0</param>
                         </action>
                     </actions>
                 </event-block>
