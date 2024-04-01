@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Main Menu</layout>
-        <layout order="1">Ruang Belajar</layout>
-        <layout order="2">Stage 1</layout>
+        <layout order="1">Stage 1</layout>
         <layout active="1" order="5">Stage 2</layout>
         <layout order="6">Stage 3</layout>
-        <event-sheet order="3">ES Stage 1</event-sheet>
-        <event-sheet order="4">ES Stage Function</event-sheet>
-        <event-sheet order="7">ES Stage 2</event-sheet>
+        <layout order="7">Stage 4</layout>
+        <event-sheet order="2">ES Stage 1</event-sheet>
+        <event-sheet order="3">ES Stage Function</event-sheet>
+        <event-sheet order="4">ES List Stage</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,9 +26,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="Items" />
+        <family expanded="1" name="Items" />
         <family expanded="1" name="BadFood" />
-        <family expanded="0" name="GoodFood" />
+        <family expanded="1" name="GoodFood" />
+        <family expanded="0" name="Buttons" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -36,11 +37,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/List Stage/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/Function/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/BtnMulai/" />
         <folder expanded="1" path="animation-folder/BtnKeluar/" />
@@ -70,10 +70,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite23/" />
         <folder expanded="1" path="animation-folder/Sprite24/" />
         <folder expanded="1" path="animation-folder/Sprite25/" />
-        <folder expanded="1" path="animation-folder/Sprite26/" />
-        <folder expanded="1" path="animation-folder/Sprite27/" />
+        <folder expanded="1" path="animation-folder/RightCtrl/" />
+        <folder expanded="1" path="animation-folder/UpCtrl/" />
         <folder expanded="1" path="animation-folder/Sprite28/" />
-        <folder expanded="1" path="animation-folder/Sprite29/" />
+        <folder expanded="1" path="animation-folder/LeftCtrl/" />
         <folder expanded="1" path="animation-folder/Sprite30/" />
         <folder expanded="1" path="animation-folder/Petunjuk/" />
         <folder expanded="1" path="animation-folder/Sprite32/" />
@@ -102,7 +102,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite52/" />
         <folder expanded="1" path="animation-folder/DindingSnail/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
-        <folder expanded="1" path="animation-folder/Sprite47/" />
+        <folder expanded="1" path="animation-folder/Batu/" />
         <folder expanded="1" path="animation-folder/Sprite56/" />
         <folder expanded="1" path="animation-folder/Sprite57/" />
         <folder expanded="1" path="animation-folder/Sprite16/" />
@@ -143,5 +143,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/JebakanTanah/" />
         <folder expanded="1" path="animation-folder/batahancur/" />
         <folder expanded="1" path="animation-folder/Sprite17/" />
+        <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/Bintang/" />
+        <folder expanded="1" path="animation-folder/BulanSabit/" />
+        <folder expanded="1" path="animation-folder/Awan/" />
+        <folder expanded="1" path="animation-folder/JebakanPohon/" />
+        <folder expanded="1" path="animation-folder/TriggerJebakanDinding/" />
+        <folder expanded="1" path="animation-folder/Brokoli/" />
+        <folder expanded="1" path="animation-folder/Alpukat/" />
+        <folder expanded="1" path="animation-folder/Spider/" />
+        <folder expanded="1" path="animation-folder/FallArea/" />
+        <folder expanded="1" path="animation-folder/MieInstan/" />
+        <folder expanded="1" path="animation-folder/MieInstanCup/" />
+        <folder expanded="1" path="animation-folder/BG_Menu/" />
+        <folder expanded="1" path="animation-folder/level_listBtn/" />
+        <folder expanded="1" path="animation-folder/btn_kembali/" />
+        <folder expanded="1" path="animation-folder/BG_gray/" />
+        <folder expanded="1" path="animation-folder/TriggerRain/" />
+        <folder expanded="1" path="animation-folder/Txt_InfoMulai/" />
+        <folder expanded="1" path="animation-folder/Sound/" />
+        <folder expanded="1" path="animation-folder/RainDrop/" />
+        <folder expanded="1" path="animation-folder/BackToMenu/" />
+        <folder expanded="1" path="animation-folder/KunciFrame/" />
+        <folder expanded="1" path="animation-folder/btn_pause/" />
+        <folder expanded="1" path="animation-folder/PopupNotif/" />
+        <folder expanded="1" path="animation-folder/BtnPopup/" />
+        <folder expanded="1" path="animation-folder/BtnKembaliMenuUtama/" />
     </folders-expanded>
 </c2uistate>

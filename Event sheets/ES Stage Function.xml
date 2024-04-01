@@ -46,7 +46,7 @@
                 <event-block sid="497905184816244">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="299435792061677" type="Touch">
-                            <param id="0" name="Object">Sprite29</param>
+                            <param id="0" name="Object">LeftCtrl</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -61,7 +61,7 @@
                 <event-block sid="870247024120975">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="487695720112582" type="Touch">
-                            <param id="0" name="Object">Sprite26</param>
+                            <param id="0" name="Object">RightCtrl</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -76,7 +76,7 @@
                 <event-block sid="818490459683398">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="534013886262973" type="Touch">
-                            <param id="0" name="Object">Sprite27</param>
+                            <param id="0" name="Object">UpCtrl</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -144,11 +144,21 @@
                         <condition id="0" name="On collision with another object" sid="479922214483449" type="Player">
                             <param id="0" name="Object">e_keong</param>
                         </condition>
-                        <condition behavior="Platform" id="4" name="Is falling" sid="531211325170003" type="Player" />
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="121136163900503" type="e_keong" />
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="861908594442074">
+                            <conditions>
+                                <condition behavior="Platform" id="4" name="Is falling" sid="531211325170003" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="121136163900503" type="e_keong" />
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="311145191304364" type="Player">
+                                    <param id="0" name="Vector Y">650</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="654857133746880">
                     <conditions>
@@ -161,9 +171,6 @@
                         <action id="0" name="Call function" sid="277275143150198" type="Function">
                             <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="311145191304364" type="Player">
-                            <param id="0" name="Control">2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -347,6 +354,10 @@
                     <param id="0" name="Variable">Key</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-27" name="Set effect enabled" sid="583001156356849" type="KunciFrame">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Grayscale&quot;</param>
+                </action>
                 <action id="-9" name="Destroy" sid="341400581756478" type="Kunci" />
             </actions>
         </event-block>
@@ -441,8 +452,8 @@
                     <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="-9" name="Destroy" sid="710831623402978" type="BadFood" />
-                <action behavior="Platform" id="4" name="Set jump strength" sid="849146655870904" type="Player">
-                    <param id="0" name="Jump strength">650</param>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="849146655870904" type="Player">
+                    <param id="0" name="Vector Y">650</param>
                 </action>
             </actions>
         </event-block>
@@ -471,9 +482,26 @@
                     <param id="0" name="Object">Player</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set frame" sid="505184904475713" type="PopupNotif">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-10" name="Set value" sid="772838281978759" type="BtnPopup">
+                    <param id="0" name="Instance variable">TypeBtn</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="640090171048127" type="PopupNotif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="685299453876445" type="BtnPopup">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="381701055958455" type="BtnKembaliMenuUtama">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="940490371123049">
+                <event-block disabled="1" sid="940490371123049">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="620385541769974" type="NextStage">
                             <param id="0" name="Unique ID">143</param>
@@ -485,7 +513,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="510857484089997">
+                <event-block disabled="1" sid="510857484089997">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="424277244331218" type="NextStage">
                             <param id="0" name="Unique ID">141</param>
@@ -585,6 +613,247 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="885847873126805" type="batahancur" />
+            </actions>
+        </event-block>
+        <event-block sid="978483871955954">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="935540342408362" type="System" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="755589246266141" type="Player" />
+            </actions>
+            <sub-events>
+                <event-block sid="405188978225541">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="464638378050937" type="BackgroundMusic">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="143697033479597" type="BackgroundMusic">
+                            <param id="0" name="Audio file">Aspiration-Woods-_Area-Theme_</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317384007110802">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="885195069096487" type="System">
+                            <param id="0" name="Object">Spider</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="534507083120930" type="Spider">
+                            <param id="0" name="Instance variable">StartPositionX</param>
+                            <param id="1" name="Value">Spider.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="972819415297636" type="Spider">
+                            <param id="0" name="Instance variable">StartPositionY</param>
+                            <param id="1" name="Value">Spider.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="539374664277809" title="Spider">
+            <sub-events>
+                <event-block sid="166410256270172">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="678693734347481" type="System">
+                            <param id="0" name="Object">Spider</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="430588891586024">
+                            <conditions>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="415931896942439" type="Spider">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-16" name="Set opacity" sid="442456778201751" type="Spider">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="602929332900292" type="Spider">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="163849621269015">
+                            <conditions>
+                                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="772236326496719" type="Spider">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-16" name="Set opacity" sid="358307888596798" type="Spider">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="103544627394133">
+                                    <conditions>
+                                        <condition behavior="Platform" id="2" name="Is on floor" sid="882250455874881" type="Spider" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="11" name="Set enabled" sid="992061666850688" type="Spider">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="506772944786660" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="803112750395483" type="Spider">
+                                            <param id="0" name="Y">Spider.StartPositionY</param>
+                                        </action>
+                                        <action disabled="1" id="-2" name="Set Y" sid="594284463802917" type="Spider">
+                                            <param id="0" name="Y">lerp(Spider.Y, Spider.StartPositionY, 0.5)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="382099922386383">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="248650670674912" type="Player">
+                            <param id="0" name="Object">Spider</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="953362822900598" type="Function">
+                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="333207768292481" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="659121599581414" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="632461956944687" title="Popup">
+            <sub-events>
+                <event-block sid="953310929065752">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="389275020261343" type="Touch">
+                            <param id="0" name="Object">btn_pause</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="340478672435541" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="714164435689308" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="874235891472910" type="PopupNotif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="406213780475184" type="BtnPopup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="835253256217304" type="BtnKembaliMenuUtama">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="492622128696777">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="459921630611689" type="Touch">
+                            <param id="0" name="Object">BtnKembaliMenuUtama</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="623349228056351" type="BtnKembaliMenuUtama" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="571304759533967" type="System">
+                            <param id="0" name="Layout">Main Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159006207271889">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="353933101969192" type="Touch">
+                            <param id="0" name="Object">BtnPopup</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="776963558401894" type="BtnPopup" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="243911348326142">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="615058682623229" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set time scale" sid="504280452866398" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="416166961523136" type="PopupNotif">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="845800595047373" type="BtnPopup">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="908116956175522" type="BtnKembaliMenuUtama">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="345946651759989" type="Player">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="915980552115883">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="892633265467070" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="308150989852667" type="System">
+                                    <param id="0" name="Layout">Stage 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="903050137420922">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="563069101988182" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="966642844442549" type="PopupNotif">
+                            <param id="0" name="Frame number">BtnPopup.TypeBtn</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="533076879850310">
+            <conditions>
+                <condition id="3" name="On touched object" sid="302498750908012" type="Touch">
+                    <param id="0" name="Object">Buttons</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="105672100824464" type="Buttons" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="698721273415313" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="0">
+                <instance type="BG_Menu" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,13 +39,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>567</x>
-                        <y>479</y>
+                        <x>427</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>1511.227661133</width>
-                        <height>244.549514771</height>
+                        <width>854</width>
+                        <height>480</height>
                         <depth>0</depth>
-                        <hotspotX>0.500319898</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -87,10 +87,10 @@
                         <y>318</y>
                         <z>0</z>
                         <width>354</width>
-                        <height>57</height>
+                        <height>71</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.508771956</hotspotY>
+                        <hotspotY>0.507042229</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -109,10 +109,32 @@
                         <y>396</y>
                         <z>0</z>
                         <width>356</width>
-                        <height>57</height>
+                        <height>71</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.508771956</hotspotY>
+                        <hotspotY>0.507042229</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sound" uid="100">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>780</x>
+                        <y>391</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

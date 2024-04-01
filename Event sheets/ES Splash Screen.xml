@@ -5,7 +5,7 @@
     <events>
         <event-block sid="307551325739108">
             <conditions>
-                <condition id="2" name="Is in touch" sid="505136722444958" type="Touch" />
+                <condition id="1" name="On any touch end" sid="505136722444958" type="Touch" />
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="943376736228813" type="System">

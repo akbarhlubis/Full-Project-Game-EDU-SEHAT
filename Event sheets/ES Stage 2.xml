@@ -4,83 +4,196 @@
     <name>ES Stage 2</name>
     <events>
         <include>ES Stage Function</include>
-        <event-block disabled="1" sid="945157432300779">
+        <event-block sid="543459311562519">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="526103700210516" type="DeadPlatformer">
-                    <param id="0" name="Object">Player</param>
+                <condition id="-1" name="Every tick" sid="258962997672673" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="674897557884614">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="860312437046256" type="Light">
+                            <param id="0" name="Unique ID">251</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="347235126768844" type="Light">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="558238394256166" title="Spawn Peluru">
+            <sub-events>
+                <event-block sid="956298692119576">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="870381114463253" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="449805089118100">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="584697201979624" type="System">
+                                    <param id="0" name="Object">SpawnerPeluruPohonKanan</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="885183386846804" type="System">
+                                    <param id="0" name="Seconds">random(3,5)</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="490724384039367" type="SpawnerPeluruPohonKanan">
+                                    <param id="0" name="Object">PeluruPohon</param>
+                                    <param id="1" name="Layer">5</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action disabled="1" id="7" name="Set mirrored" sid="699517101076638" type="PeluruPohon">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action disabled="1" id="-20" name="Rotate toward angle" sid="914653274339545" type="PeluruPohon">
+                                    <param id="0" name="Degrees">90</param>
+                                    <param id="1" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="131409157150908" title="Jebakan Tanah Logic">
+            <sub-events>
+                <event-block sid="775090400693838">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="761117737039891" type="Player">
+                            <param id="0" name="Object">JebakanTanah</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="257926528024997" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="854992476860241" type="JebakanTanah">
+                            <param id="0" name="Animation">&quot;ON&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="875399581250508">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="299091082017255" type="JebakanTanah">
+                                    <param id="0" name="Animation">&quot;ON&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="608148837880143" type="Function">
+                                    <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="532615096203592" type="Player">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="125426471328556" type="Player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="314220178081438">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="658548788159237" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="896227666103858" type="JebakanTanah">
+                            <param id="0" name="Animation">&quot;OFF&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="812259505898788" title="JebakanDinding Logic">
+            <sub-events>
+                <event-block sid="808404008128898">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="307346622029440" type="Player">
+                            <param id="0" name="Object">TriggerJebakanDinding</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-3" name="Set position" sid="745028662060952" type="JebakanPohon">
+                            <param id="0" name="X">5792.139</param>
+                            <param id="1" name="Y">357.253</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="691397742580358" type="JebakanPohon">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="127792387316987">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="833672515596982" type="Player">
+                            <param id="0" name="Object">JebakanPohon</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="345482967435124" type="Function">
+                            <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="279417364138699" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="380360283356465" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="337776994152866">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="388557242213410" type="JebakanPohon" />
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="0" name="Shake" sid="629369932790993" type="Player">
+                            <param id="0" name="Magnitude">500</param>
+                            <param id="1" name="Duration">0.4</param>
+                            <param id="2" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="117073978176337">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="623043992765578" type="Player">
+                    <param id="0" name="Object">PeluruPohon</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-16" name="Wait" sid="480122262004066" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="0" name="Call function" sid="751840653436365" type="Function">
+                <action id="0" name="Call function" sid="439041569176202" type="Function">
                     <param id="0" name="Name">&quot;DarahBerkurang&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
-                <action id="-4" name="Set position to another object" sid="759580717192788" type="Player">
-                    <param id="0" name="Object">Petunjuk</param>
-                    <param id="1" name="Image point (optional)">0</param>
+                <action behavior="Platform" id="7" name="Simulate control" sid="113176849290014" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="855084033352327" type="Player">
+                    <param id="0" name="Control">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="956298692119576">
+        <event-block sid="276632800231885">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="870381114463253" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                <condition id="0" name="On collision with another object" sid="534147880774245" type="Player">
+                    <param id="0" name="Object">BackToMenu</param>
                 </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="449805089118100">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="584697201979624" type="System">
-                            <param id="0" name="Object">SpawnerPeluruPohonKanan</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="490724384039367" type="SpawnerPeluruPohonKanan">
-                            <param id="0" name="Object">PeluruPohon</param>
-                            <param id="1" name="Layer">3</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="7" name="Set mirrored" sid="699517101076638" type="PeluruPohon">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="-20" name="Rotate toward angle" sid="914653274339545" type="PeluruPohon">
-                            <param id="0" name="Degrees">90</param>
-                            <param id="1" name="Angle">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="165645652967889">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="291409283216817" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="843199278561315">
-                    <conditions>
-                        <condition id="-11" name="For Each" sid="117815955359781" type="System">
-                            <param id="0" name="Object">SpawnerPeluruPohonKiri</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="743969521892850" type="SpawnerPeluruPohonKanan">
-                            <param id="0" name="Object">PeluruPohon</param>
-                            <param id="1" name="Layer">3</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="7" name="Set mirrored" sid="112506988789228" type="PeluruPohon">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action id="-2" name="Go to layout" sid="297383365732921" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
