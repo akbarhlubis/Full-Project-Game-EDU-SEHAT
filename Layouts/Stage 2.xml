@@ -818,8 +818,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5796</x>
-                        <y>91</y>
+                        <x>1785</x>
+                        <y>132</y>
                         <z>0</z>
                         <width>33</width>
                         <height>55</height>
@@ -1347,28 +1347,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JebakanTanah" uid="242">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5216</x>
-                        <y>139</y>
-                        <z>0</z>
-                        <width>65</width>
-                        <height>59</height>
-                        <depth>0</depth>
-                        <hotspotX>0.507692337</hotspotX>
-                        <hotspotY>0.508474588</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="JebakanTanah" uid="243">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1545,7 +1523,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5974</x>
+                        <x>6058</x>
                         <y>291</y>
                         <z>0</z>
                         <width>54.689502716</width>
@@ -1632,8 +1610,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4087</x>
-                        <y>307</y>
+                        <x>4412</x>
+                        <y>151</y>
                         <z>0</z>
                         <width>61.535873413</width>
                         <height>37.425327301</height>
@@ -1887,7 +1865,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5949</x>
+                        <x>6009</x>
                         <y>177</y>
                         <z>0</z>
                         <width>17</width>
@@ -1960,6 +1938,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <OpenedState>false</OpenedState>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
                             <properties>
@@ -2095,11 +2076,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1341.743896484</x>
-                        <y>273.598876953</y>
+                        <x>1344.470703125</x>
+                        <y>260.288635254</y>
                         <z>0</z>
                         <width>178.578735352</width>
-                        <height>10</height>
+                        <height>4.32220459</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -2253,7 +2234,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>200</speed>
+                                <speed>100</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -2574,8 +2555,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>234</x>
-                        <y>318</y>
+                        <x>345</x>
+                        <y>327</y>
                         <z>0</z>
                         <width>53.351726532</width>
                         <height>101.682113647</height>

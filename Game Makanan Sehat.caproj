@@ -1493,6 +1493,9 @@
         </object-type>
         <object-type name="Gerbang" sid="380443230186487">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="OpenedState" sid="855100493959766" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="578597056150826">
                     <behavior id="solid" />

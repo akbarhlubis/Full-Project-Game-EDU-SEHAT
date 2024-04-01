@@ -214,7 +214,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="832568098920735" type="TestInfoStage">
-                    <param id="0" name="Text">&quot;Stage Number: &quot; &amp; Stage</param>
+                    <param id="0" name="Text">&quot;Stage Number: &quot; &amp; Stage &amp; &quot;Key: &quot; &amp; Key</param>
                 </action>
             </actions>
             <sub-events>

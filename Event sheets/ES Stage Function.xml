@@ -63,6 +63,11 @@
                             <param id="0" name="Variable">Health</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="959789901265004" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">3.0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="489860558084702">
@@ -359,9 +364,12 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="115312905239881" type="System">
+                <action disabled="1" id="-10" name="Add to" sid="115312905239881" type="System">
                     <param id="0" name="Variable">Key</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-14" name="Toggle boolean" sid="405744987703471" type="Gerbang">
+                    <param id="0" name="Instance variable">OpenedState</param>
                 </action>
                 <action id="-27" name="Set effect enabled" sid="583001156356849" type="KunciFrame">
                     <param id="0" name="Mode">0</param>
@@ -375,10 +383,53 @@
                 <condition id="0" name="On collision with another object" sid="401015492668256" type="Player">
                     <param id="0" name="Object">Gerbang</param>
                 </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="413940240718921" type="Gerbang">
+                    <param id="0" name="Instance variable">OpenedState</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="681616100812013">
+                <event-block sid="668840749614807">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="189468986658845" type="Gerbang">
+                            <param id="0" name="Unique ID">147</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-3" name="Set position" sid="606339170433507" type="Gerbang">
+                            <param id="0" name="X">1053.567</param>
+                            <param id="1" name="Y">365.323</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="132062208541906" type="Gerbang">
+                            <param id="0" name="X">1054</param>
+                            <param id="1" name="Y">271</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="671996765176535" type="Gerbang">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="156373935436428">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="910623321752511" type="Gerbang">
+                            <param id="0" name="Unique ID">127</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-3" name="Set position" sid="230230479089244" type="Gerbang">
+                            <param id="0" name="X">1053.567</param>
+                            <param id="1" name="Y">365.323</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="725208013337282" type="Gerbang">
+                            <param id="0" name="X">1389</param>
+                            <param id="1" name="Y">223</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="728593126117322" type="Gerbang">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="681616100812013">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="422122585216351" type="System">
                             <param id="0" name="Variable">Key</param>
@@ -403,7 +454,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="319831659180752">
+                <event-block disabled="1" sid="319831659180752">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="894538655126516" type="System">
                             <param id="0" name="Variable">Key</param>
@@ -865,6 +916,56 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897777442389444">
+            <conditions>
+                <condition behavior="Flash" id="0" name="Is flashing" sid="539327979544815" type="Player" />
+            </conditions>
+            <actions>
+                <action id="11" name="Set collisions enabled" sid="857815091811811" type="BadFood">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="835860979872777" type="PeluruPohon">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="833620527527278" type="Spider">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="406203054892735" type="JebakanPohon">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="772714902469424" type="e_keong">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="854779977747864" type="JebakanTanah">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508242634799707">
+            <conditions>
+                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="340700819446985" type="Player" />
+            </conditions>
+            <actions>
+                <action id="11" name="Set collisions enabled" sid="243600837644857" type="BadFood">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="607210380183069" type="PeluruPohon">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="698308476525886" type="Spider">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="456978348611243" type="JebakanPohon">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="647172237538345" type="e_keong">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="910051842735012" type="JebakanTanah">
+                    <param id="0" name="Collisions">1</param>
                 </action>
             </actions>
         </event-block>
