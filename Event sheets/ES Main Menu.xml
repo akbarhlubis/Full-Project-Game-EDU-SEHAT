@@ -40,26 +40,73 @@
                 <condition id="3" name="On touched object" sid="816454020305367" type="Touch">
                     <param id="0" name="Object">BtnMulai</param>
                 </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="814645664537894" type="PopupInfoAuthor" />
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="582073588534795" type="System">
-                    <param id="0" name="Layout">List Stage</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="805199503073332">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="662469263781569" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="582073588534795" type="System">
+                            <param id="0" name="Layout">List Stage</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="158153820245511">
             <conditions>
                 <condition id="3" name="On touched object" sid="289391129245152" type="Touch">
-                    <param id="0" name="Object">BtnKeluar</param>
+                    <param id="0" name="Object">InfoAuthor</param>
                 </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="702368921810847" type="PopupInfoAuthor" />
             </conditions>
             <actions />
+            <sub-events>
+                <event-block sid="293711521254348">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="746360043732735" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="136407455939404" type="PopupInfoAuthor">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="546523318096313">
+            <conditions>
+                <condition id="3" name="On touched object" sid="976309144191105" type="Touch">
+                    <param id="0" name="Object">PopupInfoAuthor</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="265311976357108" type="PopupInfoAuthor" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="184250310180705" type="PopupInfoAuthor">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994531967101072">
+            <conditions>
+                <condition id="3" name="On touched object" sid="196263607331915" type="Touch">
+                    <param id="0" name="Object">BtnKeluar</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="472532302530923" type="PopupInfoAuthor" />
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="689474284778984" type="Browser" />
+            </actions>
         </event-block>
         <event-block sid="139750110537558">
             <conditions>
                 <condition id="3" name="On touched object" sid="792845803276081" type="Touch">
                     <param id="0" name="Object">Sound</param>
                 </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="756043359825099" type="PopupInfoAuthor" />
             </conditions>
             <actions />
             <sub-events>
