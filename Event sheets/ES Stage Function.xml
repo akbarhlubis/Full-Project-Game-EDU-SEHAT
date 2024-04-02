@@ -930,13 +930,13 @@
                 <action id="11" name="Set collisions enabled" sid="835860979872777" type="PeluruPohon">
                     <param id="0" name="Collisions">0</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="833620527527278" type="Spider">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="833620527527278" type="Spider">
                     <param id="0" name="Collisions">0</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="406203054892735" type="JebakanPohon">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="406203054892735" type="JebakanPohon">
                     <param id="0" name="Collisions">0</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="772714902469424" type="e_keong">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="772714902469424" type="e_keong">
                     <param id="0" name="Collisions">0</param>
                 </action>
                 <action id="11" name="Set collisions enabled" sid="854779977747864" type="JebakanTanah">
@@ -955,13 +955,13 @@
                 <action id="11" name="Set collisions enabled" sid="607210380183069" type="PeluruPohon">
                     <param id="0" name="Collisions">1</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="698308476525886" type="Spider">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="698308476525886" type="Spider">
                     <param id="0" name="Collisions">1</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="456978348611243" type="JebakanPohon">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="456978348611243" type="JebakanPohon">
                     <param id="0" name="Collisions">1</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="647172237538345" type="e_keong">
+                <action disabled="1" id="11" name="Set collisions enabled" sid="647172237538345" type="e_keong">
                     <param id="0" name="Collisions">1</param>
                 </action>
                 <action id="11" name="Set collisions enabled" sid="910051842735012" type="JebakanTanah">

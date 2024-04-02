@@ -2234,7 +2234,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>100</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -2833,8 +2833,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>170</x>
-                        <y>218</y>
+                        <x>-78</x>
+                        <y>241</y>
                         <z>0</z>
                         <width>30</width>
                         <height>64</height>
@@ -2870,8 +2870,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1371</x>
-                        <y>116</y>
+                        <x>938</x>
+                        <y>287</y>
                         <z>0</z>
                         <width>51.09331131</width>
                         <height>60.673305511</height>
@@ -2907,8 +2907,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1537</x>
-                        <y>121</y>
+                        <x>3257</x>
+                        <y>131</y>
                         <z>0</z>
                         <width>51.09331131</width>
                         <height>60.673305511</height>
