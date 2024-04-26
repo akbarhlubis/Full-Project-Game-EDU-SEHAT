@@ -10,9 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 2</layout>
+        <layout order="0">Stage 2</layout>
+        <layout active="1" order="3">Stage 1</layout>
+        <layout order="4">Stage 3</layout>
+        <layout order="5">Stage 4</layout>
         <event-sheet order="1">ES Stage 2</event-sheet>
         <event-sheet order="2">ES Stage Function</event-sheet>
+        <event-sheet order="6">ES Stage 3</event-sheet>
+        <event-sheet order="7">ES Stage 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -130,7 +135,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BulletArea/" />
         <folder expanded="1" path="animation-folder/Jam/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/boxitem/" />
+        <folder expanded="1" path="animation-folder/boxitem1/" />
         <folder expanded="1" path="animation-folder/PohonPenyerangMalam/" />
         <folder expanded="1" path="animation-folder/PeluruPohon/" />
         <folder expanded="1" path="animation-folder/SpawnerPeluruPohonKanan/" />
@@ -166,5 +171,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BtnKembaliMenuUtama/" />
         <folder expanded="1" path="animation-folder/InfoAuthor/" />
         <folder expanded="1" path="animation-folder/PopupInfoAuthor/" />
+        <folder expanded="1" path="animation-folder/soda/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/airPutih/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/Sprite19/" />
+        <folder expanded="1" path="animation-folder/Sprite20/" />
+        <folder expanded="1" path="animation-folder/boxitem2/" />
+        <folder expanded="1" path="animation-folder/boxobstaqle/" />
+        <folder expanded="1" path="animation-folder/camilan/" />
+        <folder expanded="1" path="animation-folder/Sprite21/" />
+        <folder expanded="1" path="animation-folder/Sprite22/" />
+        <folder expanded="1" path="animation-folder/Sprite26/" />
+        <folder expanded="1" path="animation-folder/Sprite27/" />
+        <folder expanded="1" path="animation-folder/Sprite29/" />
+        <folder expanded="1" path="animation-folder/Sprite31/" />
+        <folder expanded="1" path="animation-folder/Sprite33/" />
     </folders-expanded>
 </c2uistate>

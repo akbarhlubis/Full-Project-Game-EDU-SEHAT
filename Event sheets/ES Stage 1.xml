@@ -11,7 +11,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="221440997043771" type="Textbuah">
-                    <param id="0" name="Text">SehatFood&amp;&quot;/4&quot;</param>
+                    <param id="0" name="Text">SehatFood&amp;&quot;/5&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -20,7 +20,7 @@
                         <condition id="-14" name="Compare variable" sid="117113599162937" type="System">
                             <param id="0" name="Variable">SehatFood</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">4</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="571941464899216" type="pintu">
                             <param id="0" name="Unique ID">120</param>

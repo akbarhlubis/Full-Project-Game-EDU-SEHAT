@@ -16,7 +16,7 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="646966115206240">
+                <event-block disabled="1" sid="646966115206240">
                     <conditions>
                         <condition id="-20" name="Is on mobile device" sid="172579369670972" type="System" />
                     </conditions>
@@ -27,7 +27,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="571253544572226">
+                <event-block disabled="1" sid="571253544572226">
                     <conditions>
                         <condition id="-22" name="Else" sid="438878859686076" type="System" />
                     </conditions>
@@ -593,18 +593,18 @@
                 <event-block sid="629819346266344">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="191201852967770" type="Player">
-                            <param id="0" name="Object">boxitem</param>
+                            <param id="0" name="Object">boxitem1</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="971148591717723" type="boxitem">
+                        <condition id="-8" name="Is boolean instance variable set" sid="971148591717723" type="boxitem1">
                             <param id="0" name="Instance variable">Sundul</param>
                         </condition>
                         <condition id="-2" name="Compare Y" sid="534487748838063" type="Player">
                             <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Y co-ordinate">boxitem.Y</param>
+                            <param id="1" name="Y co-ordinate">boxitem1.Y</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="122300896129327" type="boxitem">
+                        <action id="0" name="Spawn another object" sid="122300896129327" type="boxitem1">
                             <param id="0" name="Object">Tomat</param>
                             <param id="1" name="Layer">3</param>
                             <param id="2" name="Image point">0</param>
@@ -625,11 +625,99 @@
                             <param id="0" name="Seconds">0.2</param>
                         </action>
                         <action behavior="CustomMovement" id="0" name="Stop" sid="128290040257401" type="Tomat" />
-                        <action id="5" name="Set frame" sid="716485428270402" type="boxitem">
+                        <action id="5" name="Set frame" sid="716485428270402" type="boxitem1">
                             <param id="0" name="Frame number">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="421704658428520" type="boxitem">
+                        <action id="-13" name="Set boolean" sid="421704658428520" type="boxitem1">
                             <param id="0" name="Instance variable">Sundul</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="984153345212293">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="169267088994864" type="Player">
+                            <param id="0" name="Object">boxitem2</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="606233639756209" type="boxitem2">
+                            <param id="0" name="Instance variable">sundul2</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="193660575944300" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">boxitem2.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="784784298298574" type="boxitem2">
+                            <param id="0" name="Object">airPutih</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="803499179004325" type="airPutih">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="595587982491627" type="airPutih">
+                            <param id="0" name="Acceleration">500</param>
+                            <param id="1" name="X">airPutih.X</param>
+                            <param id="2" name="Y">airPutih.Y -10</param>
+                        </action>
+                        <action behavior="CustomMovement" id="2" name="Set speed" sid="208512691576121" type="airPutih">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Speed">500</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="625023721683988" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="924538072403338" type="airPutih" />
+                        <action id="5" name="Set frame" sid="584123413365100" type="boxitem2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="776035184040133" type="boxitem2">
+                            <param id="0" name="Instance variable">sundul2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="622837881012666">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="714647036182413" type="Player">
+                            <param id="0" name="Object">boxobstaqle</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="795883245194954" type="boxobstaqle">
+                            <param id="0" name="Instance variable">sundulobstaqle</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="521619976658185" type="Player">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">boxobstaqle.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="554437660340852" type="boxobstaqle">
+                            <param id="0" name="Object">camilan</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="CustomMovement" id="12" name="Set enabled" sid="437415973684417" type="camilan">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="CustomMovement" id="5" name="Accelerate toward position" sid="342438996222581" type="camilan">
+                            <param id="0" name="Acceleration">500</param>
+                            <param id="1" name="X">camilan.X</param>
+                            <param id="2" name="Y">camilan.Y -10</param>
+                        </action>
+                        <action behavior="CustomMovement" id="2" name="Set speed" sid="507433436451149" type="camilan">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="Speed">500</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="790011073730822" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="510946676538419" type="camilan" />
+                        <action id="5" name="Set frame" sid="188483164125783" type="boxobstaqle">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="448809864872242" type="boxobstaqle">
+                            <param id="0" name="Instance variable">sundulobstaqle</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
