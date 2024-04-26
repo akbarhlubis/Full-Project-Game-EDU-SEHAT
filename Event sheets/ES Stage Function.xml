@@ -193,6 +193,24 @@
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="499637172834478">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="366882448313482" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="367232016084001" type="BackgroundMusic">
+                                    <param id="0" name="Tag">&quot;music&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="371202988836915" type="BackgroundMusic">
+                                    <param id="0" name="Audio file">mixkit-ominous-drums-227</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;level-failed&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="804358157172708">
                     <conditions>
@@ -541,6 +559,12 @@
                 <action behavior="Platform" disabled="1" id="7" name="Simulate control" sid="622378037015522" type="Player">
                     <param id="0" name="Control">2</param>
                 </action>
+                <action id="0" name="Play" sid="471130127172179" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-tech-break-fail-2947</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="916693606840177" type="BadFood">
                     <param id="0" name="Object">ParticlesBadFood</param>
                     <param id="1" name="Layer">3</param>
@@ -563,6 +587,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="404242009649338" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-achievement-completed-2068</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-10" name="Add to" sid="866429248033923" type="System">
                     <param id="0" name="Variable">SehatFood</param>
                     <param id="1" name="Value">1</param>
@@ -582,6 +612,15 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="432914056720824" type="BackgroundMusic">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="467310358102273" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-level-completed-2059</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;level-complete&quot;</param>
+                </action>
                 <action id="5" name="Set frame" sid="505184904475713" type="PopupNotif">
                     <param id="0" name="Frame number">2</param>
                 </action>
@@ -1125,6 +1164,51 @@
                 </action>
                 <action id="11" name="Set collisions enabled" sid="910051842735012" type="JebakanTanah">
                     <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="323696908869418">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="724685039096015" type="Player">
+                    <param id="0" name="Object">Water</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="382712277972140" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-fish-flapping-2457</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="590734345094312">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="227504014966367" type="Player">
+                    <param id="0" name="Object">Enemies</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="595948282985502" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-tech-break-fail-2947</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="561947238985390">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="250508975838425" type="Player">
+                    <param id="0" name="Object">Items</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="851598811041635" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-achievement-completed-2068</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

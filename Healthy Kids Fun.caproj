@@ -54,7 +54,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Splash Screen</first-layout>
+    <first-layout>Stage 1</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -2310,6 +2310,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TextPetunjuk" sid="246904684345710">
+            <plugin id="rex_bbcodeText" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
@@ -2369,6 +2372,15 @@
                 <member>level_listBtn</member>
             </members>
         </family>
+        <family name="Enemies" plugin-id="Sprite" sid="384404979438547">
+            <members>
+                <member>e_keong</member>
+                <member>JebakanPohon</member>
+                <member>JebakanTanah</member>
+                <member>PeluruPohon</member>
+                <member>Spider</member>
+            </members>
+        </family>
     </families>
     <layout-folder>
         <layout-folder name="List Stage">
@@ -2425,6 +2437,9 @@
         <file name="mixkit-game-ball-tap-2073.ogg" />
         <file name="mixkit-game-level-completed-2059.ogg" />
         <file name="mixkit-ominous-drums-227.ogg" />
+        <file name="mixkit-fish-flapping-2457.ogg" />
+        <file name="mixkit-achievement-completed-2068.ogg" />
+        <file name="mixkit-tech-break-fail-2947.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

@@ -2017,8 +2017,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2180</x>
-                        <y>306</y>
+                        <x>137</x>
+                        <y>261</y>
                         <z>0</z>
                         <width>53.351726532</width>
                         <height>101.682113647</height>
@@ -3556,6 +3556,50 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TextPetunjuk" uid="7">
+                    <properties>
+                        <text>Cari 5 Makanan sehat</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                        <baseline>Top</baseline>
+                        <shift-down>13</shift-down>
+                        <force-render>No</force-render>
+                        <lock-canvas-size>No</lock-canvas-size>
+                        <stroke></stroke>
+                        <stroke-line-width>1</stroke-line-width>
+                        <stroke-line-join>Miter</stroke-line-join>
+                        <underline></underline>
+                        <underline-thickness>1</underline-thickness>
+                        <underline-offset-y>0</underline-offset-y>
+                        <shadow></shadow>
+                        <shadow-offset-x>10</shadow-offset-x>
+                        <shadow-offset-y>10</shadow-offset-y>
+                        <shadow-blur>20</shadow-blur>
+                        <shadow-color>0,0,0</shadow-color>
+                        <background></background>
+                        <background-color></background-color>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>307</x>
+                        <y>-70</y>
+                        <z>0</z>
+                        <width>136</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

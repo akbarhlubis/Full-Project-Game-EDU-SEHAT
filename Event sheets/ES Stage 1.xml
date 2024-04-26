@@ -72,5 +72,29 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="589698310450731">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="266524889530726" type="Player">
+                    <param id="0" name="Object">Petunjuk</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="574238564291542" type="TextPetunjuk">
+                    <param id="0" name="X">307</param>
+                    <param id="1" name="Y">292.814</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365142699233118">
+            <conditions>
+                <condition id="-22" name="Else" sid="923494941308805" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="365278756980335" type="TextPetunjuk">
+                    <param id="0" name="X">307</param>
+                    <param id="1" name="Y">-70</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
