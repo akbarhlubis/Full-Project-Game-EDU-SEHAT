@@ -15,6 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Main Menu</layout>
         <layout order="6">List Stage</layout>
         <layout order="7">Ruang Belajar</layout>
+        <layout order="8">Stage 3</layout>
         <event-sheet order="1">ES Stage 1</event-sheet>
         <event-sheet order="2">ES Stage Function</event-sheet>
         <event-sheet order="5">ES Main Menu</event-sheet>
@@ -44,58 +45,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LogoGame/" />
         <folder expanded="1" path="animation-folder/BtnMulai/" />
         <folder expanded="1" path="animation-folder/BtnKeluar/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/ebuah/" />
         <folder expanded="1" path="animation-folder/buah/" />
         <folder expanded="1" path="animation-folder/pintu/" />
-        <folder expanded="1" path="animation-folder/nyawa/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite12/" />
         <folder expanded="1" path="animation-folder/Player/" />
-        <folder expanded="1" path="animation-folder/Sprite14/" />
-        <folder expanded="1" path="animation-folder/Sprite15/" />
+        <folder expanded="1" path="animation-folder/sekolah/" />
         <folder expanded="1" path="animation-folder/Burger/" />
         <folder expanded="1" path="animation-folder/Donat/" />
         <folder expanded="1" path="animation-folder/Semangka/" />
         <folder expanded="1" path="animation-folder/Telor/" />
         <folder expanded="1" path="animation-folder/Wortel/" />
         <folder expanded="1" path="animation-folder/BGSky/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite23/" />
-        <folder expanded="1" path="animation-folder/Sprite24/" />
-        <folder expanded="1" path="animation-folder/Sprite25/" />
         <folder expanded="1" path="animation-folder/RightCtrl/" />
         <folder expanded="1" path="animation-folder/UpCtrl/" />
-        <folder expanded="1" path="animation-folder/Sprite28/" />
         <folder expanded="1" path="animation-folder/LeftCtrl/" />
-        <folder expanded="1" path="animation-folder/Sprite30/" />
         <folder expanded="1" path="animation-folder/Petunjuk/" />
-        <folder expanded="1" path="animation-folder/Sprite32/" />
         <folder expanded="1" path="animation-folder/Pohon/" />
-        <folder expanded="1" path="animation-folder/Sprite34/" />
-        <folder expanded="1" path="animation-folder/Sprite35/" />
         <folder expanded="1" path="animation-folder/Pembatas/" />
-        <folder expanded="1" path="animation-folder/Sprite37/" />
         <folder expanded="1" path="animation-folder/BataTerbang/" />
-        <folder expanded="1" path="animation-folder/Sprite39/" />
         <folder expanded="1" path="animation-folder/e_keong/" />
-        <folder expanded="1" path="animation-folder/Sprite40/" />
-        <folder expanded="1" path="animation-folder/Sprite41/" />
-        <folder expanded="1" path="animation-folder/Sprite42/" />
-        <folder expanded="1" path="animation-folder/Sprite43/" />
-        <folder expanded="1" path="animation-folder/Sprite44/" />
-        <folder expanded="1" path="animation-folder/Sprite45/" />
-        <folder expanded="1" path="animation-folder/Sprite46/" />
         <folder expanded="1" path="animation-folder/HealthBar/" />
         <folder expanded="1" path="animation-folder/KotakP3K/" />
-        <folder expanded="1" path="animation-folder/Sprite48/" />
-        <folder expanded="1" path="animation-folder/Sprite49/" />
         <folder expanded="1" path="animation-folder/DindingSnail/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
         <folder expanded="1" path="animation-folder/Batu/" />
-        <folder expanded="1" path="animation-folder/Sprite56/" />
-        <folder expanded="1" path="animation-folder/Sprite16/" />
         <folder expanded="1" path="animation-folder/DataranGembok/" />
         <folder expanded="1" path="animation-folder/DataranMelayang/" />
         <folder expanded="1" path="animation-folder/DataranFull/" />
@@ -124,7 +98,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MakananBerjalan/" />
         <folder expanded="1" path="animation-folder/BulletArea/" />
         <folder expanded="1" path="animation-folder/Jam/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/boxitem1/" />
         <folder expanded="1" path="animation-folder/PohonPenyerangMalam/" />
         <folder expanded="1" path="animation-folder/PeluruPohon/" />
@@ -132,7 +105,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SpawnerPeluruPohonKiri/" />
         <folder expanded="1" path="animation-folder/JebakanTanah/" />
         <folder expanded="1" path="animation-folder/batahancur/" />
-        <folder expanded="1" path="animation-folder/Sprite17/" />
         <folder expanded="1" path="animation-folder/Light/" />
         <folder expanded="1" path="animation-folder/Bintang/" />
         <folder expanded="1" path="animation-folder/BulanSabit/" />
@@ -161,19 +133,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/soda/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/airPutih/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/Permen/" />
         <folder expanded="1" path="animation-folder/pijakan/" />
-        <folder expanded="1" path="animation-folder/Sprite20/" />
         <folder expanded="1" path="animation-folder/boxitem2/" />
         <folder expanded="1" path="animation-folder/boxobstaqle/" />
         <folder expanded="1" path="animation-folder/camilan/" />
         <folder expanded="1" path="animation-folder/Jamur1/" />
         <folder expanded="1" path="animation-folder/Jamur2/" />
-        <folder expanded="1" path="animation-folder/Sprite26/" />
         <folder expanded="1" path="animation-folder/Rumput/" />
-        <folder expanded="1" path="animation-folder/Sprite29/" />
-        <folder expanded="1" path="animation-folder/Sprite31/" />
-        <folder expanded="1" path="animation-folder/Sprite33/" />
     </folders-expanded>
 </c2uistate>
