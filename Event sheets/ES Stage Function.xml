@@ -83,6 +83,30 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="715427646807866">
+                    <conditions>
+                        <condition id="0" name="On function" sid="534559362339461" type="Function">
+                            <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="490865078454430" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="528480003418919" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="725968920378083" type="PopupNotif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="476755648508419" type="BtnPopup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="951734776998802" type="BtnKembaliMenuUtama">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="457076597919150" title="touch 2">
@@ -142,6 +166,7 @@
         <comment></comment>
         <event-group description="" sid="720587899907637" title="Health2">
             <sub-events>
+                <comment>Jika darah habis, maka munculkan popup game over</comment>
                 <event-block sid="534942229047796">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="991712696910522" type="System">
@@ -151,8 +176,22 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-26" name="Restart layout" sid="432667789373744" type="System" />
-                        <action id="-21" name="Reset global variables" sid="984018101804484" type="System" />
+                        <action disabled="1" id="-26" name="Restart layout" sid="432667789373744" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="984018101804484" type="System" />
+                        <action id="5" name="Set frame" sid="331350762113993" type="PopupNotif">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="151869984767863" type="BtnPopup">
+                            <param id="0" name="Instance variable">TypeBtn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="585158764953508" type="BtnPopup">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="768003200765076" type="Function">
+                            <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="804358157172708">
@@ -895,20 +934,24 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set time scale" sid="340478672435541" type="System">
+                        <action disabled="1" id="-13" name="Set time scale" sid="340478672435541" type="System">
                             <param id="0" name="Time scale">0</param>
                         </action>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="714164435689308" type="Player">
+                        <action behavior="Platform" disabled="1" id="0" name="Set ignoring input" sid="714164435689308" type="Player">
                             <param id="0" name="Input">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="874235891472910" type="PopupNotif">
+                        <action disabled="1" id="-15" name="Set visible" sid="874235891472910" type="PopupNotif">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="406213780475184" type="BtnPopup">
+                        <action disabled="1" id="-15" name="Set visible" sid="406213780475184" type="BtnPopup">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="835253256217304" type="BtnKembaliMenuUtama">
+                        <action disabled="1" id="-15" name="Set visible" sid="835253256217304" type="BtnKembaliMenuUtama">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="718605984626161" type="Function">
+                            <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -961,6 +1004,34 @@
                                 <action behavior="Platform" id="0" name="Set ignoring input" sid="345946651759989" type="Player">
                                     <param id="0" name="Input">0</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="202060867803177">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="129844421766849" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="905234474303740" type="PopupNotif">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="490032083011960" type="BtnPopup">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="616843945221969" type="BtnKembaliMenuUtama">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="180657146372072" type="Player">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="197408676914490" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="675775295549276" type="System" />
+                                <action id="-21" name="Reset global variables" sid="748762130333138" type="System" />
                             </actions>
                         </event-block>
                         <event-block sid="915980552115883">

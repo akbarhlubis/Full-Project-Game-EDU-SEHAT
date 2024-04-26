@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="165028019464269">
             <initially-visible>1</initially-visible>
-            <background-color>0,0,0</background-color>
+            <background-color>153,255,255</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -29,41 +29,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BGSky" uid="64">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Opacity</tweened-property>
-                                <function>EaseOutBounce</function>
-                                <target>100,100</target>
-                                <target-mode>Absolute</target-mode>
-                                <duration>2.5</duration>
-                                <enforce-mode>Enforce</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2493.040771484</x>
-                        <y>238</y>
-                        <z>0</z>
-                        <width>5095</width>
-                        <height>528</height>
-                        <depth>0</depth>
-                        <hotspotX>0.50011003</hotspotX>
-                        <hotspotY>0.500467718</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Tomat" uid="200">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -867,7 +832,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite21" uid="350">
+                <instance type="Jamur1" uid="350">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -889,7 +854,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="338">
+                <instance type="Rumput" uid="338">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1748,7 +1713,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite22" uid="332">
+                <instance type="Jamur2" uid="332">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1863,8 +1828,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4046</x>
-                        <y>274</y>
+                        <x>4074</x>
+                        <y>327</y>
                         <z>0</z>
                         <width>53.351726532</width>
                         <height>101.682113647</height>
@@ -2294,7 +2259,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite22" uid="349">
+                <instance type="Jamur2" uid="349">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2990,7 +2955,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite18" uid="291">
+                <instance type="Permen" uid="291">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3380,7 +3345,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite21" uid="328">
+                <instance type="Jamur1" uid="328">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3402,29 +3367,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite26" uid="335">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2392.977539063</x>
-                        <y>239.242507935</y>
-                        <z>0</z>
-                        <width>49.181430817</width>
-                        <height>26.564044952</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.502857149</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite27" uid="337">
+                <instance type="Rumput" uid="337">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3446,7 +3389,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="340">
+                <instance type="Rumput" uid="340">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3468,7 +3411,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="341">
+                <instance type="Rumput" uid="341">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3490,7 +3433,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="342">
+                <instance type="Rumput" uid="342">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3512,7 +3455,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="343">
+                <instance type="Rumput" uid="343">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3534,7 +3477,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="344">
+                <instance type="Rumput" uid="344">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3556,7 +3499,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="339">
+                <instance type="Rumput" uid="339">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3578,7 +3521,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="345">
+                <instance type="Rumput" uid="345">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3600,7 +3543,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="346">
+                <instance type="Rumput" uid="346">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3622,7 +3565,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="347">
+                <instance type="Rumput" uid="347">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3644,7 +3587,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite27" uid="348">
+                <instance type="Rumput" uid="348">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -3745,7 +3688,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>630</x>
-                        <y>22</y>
+                        <y>28.293209076</y>
                         <z>0</z>
                         <width>119.203613281</width>
                         <height>41</height>
@@ -3836,16 +3779,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>754.6171875</x>
-                        <y>449.013946533</y>
+                        <x>768</x>
+                        <y>407</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>86.463867188</width>
+                        <height>86.463867188</height>
                         <depth>0</depth>
                         <hotspotX>0.50149256</hotspotX>
                         <hotspotY>0.50149256</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="RightCtrl" uid="68">
@@ -3858,16 +3801,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>151</x>
-                        <y>447</y>
+                        <x>210</x>
+                        <y>405</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>86.463867188</width>
+                        <height>86.463867188</height>
                         <depth>0</depth>
                         <hotspotX>0.50149256</hotspotX>
                         <hotspotY>0.50149256</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="LeftCtrl" uid="71">
@@ -3880,16 +3823,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>56</x>
-                        <y>446</y>
+                        <x>70</x>
+                        <y>404</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>86.463867188</width>
+                        <height>86.463867188</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="2">
+                <instance type="LogoGame" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -62,13 +62,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>439</x>
-                        <y>118</y>
+                        <y>160</y>
                         <z>0</z>
-                        <width>444.316467285</width>
-                        <height>226.327423096</height>
+                        <width>486</width>
+                        <height>159</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.503144681</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
