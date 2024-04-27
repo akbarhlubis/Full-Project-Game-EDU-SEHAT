@@ -217,7 +217,8 @@
                     </properties>
                     <instance-variables>
                         <JenisMakanan>0</JenisMakanan>
-                        <PosY>0</PosY>
+                        <LastPosY>0</LastPosY>
+                        <LastPosX>0</LastPosX>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
@@ -316,7 +317,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>664.253845215</x>
-                        <y>217.2603302</y>
+                        <y>219.2603302</y>
                         <z>0</z>
                         <width>105</width>
                         <height>38</height>

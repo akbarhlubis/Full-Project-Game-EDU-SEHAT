@@ -54,7 +54,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Stage 1</first-layout>
+    <first-layout>Stage 3</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1184,7 +1184,8 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="JenisMakanan" sid="227553186615192" type="number" />
-                <instance-variable name="PosY" sid="166517000566707" type="number" />
+                <instance-variable name="LastPosY" sid="166517000566707" type="number" />
+                <instance-variable name="LastPosX" sid="972800175765828" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="898740419332040">
@@ -2397,6 +2398,7 @@
     <event-folder>
         <event-folder name="Function">
             <event-sheet>ES Stage Function.xml</event-sheet>
+            <event-sheet>ES DragDrop Function.xml</event-sheet>
         </event-folder>
         <event-sheet>ES Splash Screen.xml</event-sheet>
         <event-sheet>ES Main Menu.xml</event-sheet>

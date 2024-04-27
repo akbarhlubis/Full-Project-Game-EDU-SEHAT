@@ -34,6 +34,31 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="887168355541784" title="Function Penting DragAndDrop">
+            <sub-events>
+                <event-block sid="345584704911179">
+                    <conditions>
+                        <condition id="0" name="On function" sid="879234736622381" type="Function">
+                            <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="566949029772522" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="264391913042288" type="PopupNotif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="652444400915564" type="BtnPopup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="785640828714933" type="BtnKembaliMenuUtama">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="189205039893060" title="Group">
             <sub-events>
                 <event-block sid="711499973650502">
@@ -60,11 +85,22 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;level-complete&quot;</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="495180283605674" type="System">
+                                <action id="5" name="Set frame" sid="523888243341598" type="PopupNotif">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="284293142503977" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="195127286143443" type="Function">
+                                    <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action disabled="1" id="-16" name="Wait" sid="495180283605674" type="System">
                                     <param id="0" name="Seconds">1.0</param>
                                 </action>
-                                <action id="-21" name="Reset global variables" sid="160437975725775" type="System" />
-                                <action id="-43" name="Go to next/previous layout" sid="266888246415428" type="System">
+                                <action disabled="1" id="-21" name="Reset global variables" sid="160437975725775" type="System" />
+                                <action disabled="1" id="-43" name="Go to next/previous layout" sid="266888246415428" type="System">
                                     <param id="0" name="Which">1</param>
                                 </action>
                             </actions>
@@ -73,12 +109,40 @@
                 </event-block>
                 <event-block any="1" sid="908640058388992">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="453348868485746" type="System">
+                        <condition id="-14" name="Compare variable" sid="269449681972016" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="816768729336761" type="Timer">
+                            <param id="0" name="Color">rgb(255, 128, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="449292274706496">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="803130494125500" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="297693910588247" type="Timer">
+                            <param id="0" name="Color">rgb(255, 51, 51)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="790965337115556">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="457299960709276" type="System">
                             <param id="0" name="Variable">TargetMakanan</param>
                             <param id="1" name="Comparison">2</param>
                             <param id="2" name="Value">0</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="269449681972016" type="System">
+                        <condition id="-14" name="Compare variable" sid="172855174383998" type="System">
                             <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
@@ -86,25 +150,39 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="182478848571029">
+                        <event-block sid="884295962855440">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="637001990972628" type="System" />
+                                <condition id="-4" name="Trigger once while true" sid="423234241217326" type="System" />
                             </conditions>
                             <actions>
-                                <action id="6" name="Stop" sid="994111461728220" type="BackgroundMusic">
+                                <action id="6" name="Stop" sid="140478804312229" type="BackgroundMusic">
                                     <param id="0" name="Tag">&quot;music&quot;</param>
                                 </action>
-                                <action id="0" name="Play" sid="972767377079479" type="BackgroundMusic">
+                                <action id="0" name="Play" sid="555783752893060" type="BackgroundMusic">
                                     <param id="0" name="Audio file">mixkit-ominous-drums-227</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;level-failed&quot;</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="604132876037529" type="System">
+                                <action id="5" name="Set frame" sid="908355770441731" type="PopupNotif">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="858560738131688" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="922318320191812" type="BtnPopup">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="987439513084902" type="Function">
+                                    <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action disabled="1" id="-16" name="Wait" sid="746778554353185" type="System">
                                     <param id="0" name="Seconds">1.0</param>
                                 </action>
-                                <action id="-21" name="Reset global variables" sid="701916058907635" type="System" />
-                                <action id="-26" name="Restart layout" sid="365688204155395" type="System" />
+                                <action disabled="1" id="-21" name="Reset global variables" sid="843941202092978" type="System" />
+                                <action disabled="1" id="-26" name="Restart layout" sid="983383490895488" type="System" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -121,82 +199,6 @@
                             <param id="0" name="Text">Timer&amp;&quot;.00&quot;</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="830040888804166">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="407743051809147" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="135632681816926" type="MakananBerjalan">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="146451138840093">
-                            <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="220828382695300" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="877578637999691" type="MakananBerjalan">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="831794266361648">
-                                    <conditions>
-                                        <condition id="1" name="Is overlapping another object" sid="169917090248507" type="MakananBerjalan">
-                                            <param id="0" name="Object">FallArea</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="Platform" id="11" name="Set enabled" sid="329129391666913" type="MakananBerjalan">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="4" name="Set tweened property" sid="444938004419942" type="MakananBerjalan">
-                                            <param id="0" name="Tweened property">5</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="5" name="Set easing" sid="915593311735341" type="MakananBerjalan">
-                                            <param id="0" name="Function">2</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="380558125496811" type="MakananBerjalan">
-                                            <param id="0" name="Target is">3</param>
-                                            <param id="1" name="Relativity">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="1" name="Set duration" sid="414539811169042" type="MakananBerjalan">
-                                            <param id="0" name="Duration">0.5</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="10" name="Start" sid="569760048162729" type="MakananBerjalan">
-                                            <param id="0" name="Start Mode">0</param>
-                                            <param id="1" name="Force use current">0</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="4" name="Set tweened property" sid="791919088217214" type="MakananBerjalan">
-                                            <param id="0" name="Tweened property">9</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="5" name="Set easing" sid="117262233712280" type="MakananBerjalan">
-                                            <param id="0" name="Function">2</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="290645809314103" type="MakananBerjalan">
-                                            <param id="0" name="Target is">3</param>
-                                            <param id="1" name="Relativity">0</param>
-                                            <param id="2" name="Value">-2</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="1" name="Set duration" sid="261996969256453" type="MakananBerjalan">
-                                            <param id="0" name="Duration">1</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="10" name="Start" sid="157944030252517" type="MakananBerjalan">
-                                            <param id="0" name="Start Mode">0</param>
-                                            <param id="1" name="Force use current">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -269,6 +271,14 @@
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-10" name="Set value" sid="241135476964570" type="MakananBerjalan">
+                    <param id="0" name="Instance variable">LastPosY</param>
+                    <param id="1" name="Value">MakananBerjalan.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="832859980116341" type="MakananBerjalan">
+                    <param id="0" name="Instance variable">LastPosX</param>
+                    <param id="1" name="Value">MakananBerjalan.X</param>
+                </action>
             </actions>
         </event-block>
         <event-block disabled="1" sid="169937253620648">
@@ -296,80 +306,207 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="794892720486733">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="641065086349108" type="Wadah">
-                    <param id="0" name="Object">MakananBerjalan</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="738455911145826" type="MakananBerjalan">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
+        <event-group description="Kondisi setelah menjatuhkan makanan ke wadah" sid="842564937060101" title="Bersentuhan WadahMakanan">
             <sub-events>
-                <event-block sid="182366040373699">
+                <event-block sid="794892720486733">
                     <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="866148483163193" type="MakananBerjalan" />
+                        <condition id="1" name="Is overlapping another object" sid="641065086349108" type="Wadah">
+                            <param id="0" name="Object">MakananBerjalan</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="604049468455136" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="0" name="Play" sid="338248000589907" type="BackgroundMusic">
-                            <param id="0" name="Audio file">appear-online</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="197860163911502" type="MakananBerjalan">
-                            <param id="0" name="Object">ParticlesGoodFoods</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="Image point">0</param>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="738455911145826" type="MakananBerjalan">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="302341461091214">
+                        <event-block sid="182366040373699">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="931670336134763" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="866148483163193" type="MakananBerjalan" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="604049468455136" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Play" sid="338248000589907" type="BackgroundMusic">
+                                    <param id="0" name="Audio file">appear-online</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="197860163911502" type="MakananBerjalan">
+                                    <param id="0" name="Object">ParticlesGoodFoods</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="302341461091214">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="931670336134763" type="MakananBerjalan">
+                                            <param id="0" name="Instance variable">JenisMakanan</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Wadah.JenisWadah</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="990150749178151" type="MakananBerjalan" />
+                                        <action id="-10" name="Add to" sid="714779818526539" type="System">
+                                            <param id="0" name="Variable">TargetMakanan</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="842841400889159">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="308280119740972" type="MakananBerjalan">
+                                            <param id="0" name="Instance variable">JenisMakanan</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">Wadah.JenisWadah</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="544394273503961" type="MakananBerjalan" />
+                                        <action id="-11" name="Subtract from" sid="286580471480257" type="System">
+                                            <param id="0" name="Variable">TargetMakanan</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="597448713024969" type="System">
+                                            <param id="0" name="Variable">Timer</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Kondisi awal ketika makanan berjalan" sid="160408588595156" title="Start MakananBerjalan">
+            <sub-events>
+                <event-block sid="996096317844924">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="365124204555404" type="MakananBerjalan">
+                            <param id="0" name="Object">BulletArea</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="948219773730411" type="MakananBerjalan">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="409668624229432">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="301239397521208" type="MakananBerjalan">
+                            <param id="0" name="Object">BulletArea</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="823936876127724" type="MakananBerjalan">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="348989144891405">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="394542403085920" type="MakananBerjalan">
+                                    <param id="0" name="Object">FallArea</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="990150749178151" type="MakananBerjalan" />
-                                <action id="-10" name="Add to" sid="714779818526539" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="236667642245469" type="MakananBerjalan">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="LiteTween" id="4" name="Set tweened property" sid="710360651049161" type="MakananBerjalan">
+                                    <param id="0" name="Tweened property">5</param>
+                                </action>
+                                <action behavior="LiteTween" id="5" name="Set easing" sid="612459125783484" type="MakananBerjalan">
+                                    <param id="0" name="Function">2</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="243072609914282" type="MakananBerjalan">
+                                    <param id="0" name="Target is">3</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="1" name="Set duration" sid="796323089008921" type="MakananBerjalan">
+                                    <param id="0" name="Duration">0.5</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="914710977690118" type="MakananBerjalan">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="4" name="Set tweened property" sid="327479852578234" type="MakananBerjalan">
+                                    <param id="0" name="Tweened property">9</param>
+                                </action>
+                                <action behavior="LiteTween" id="5" name="Set easing" sid="968904248853307" type="MakananBerjalan">
+                                    <param id="0" name="Function">2</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="743823910156509" type="MakananBerjalan">
+                                    <param id="0" name="Target is">3</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">-2</param>
+                                </action>
+                                <action behavior="LiteTween" id="1" name="Set duration" sid="415722570212444" type="MakananBerjalan">
+                                    <param id="0" name="Duration">1</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="853298276737891" type="MakananBerjalan">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="842841400889159">
+                        <event-block sid="204818147114587">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="308280119740972" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
+                                <condition behavior="DragDrop" id="2" name="On drop" sid="772511925205203" type="MakananBerjalan" />
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="878306666929945" type="MakananBerjalan">
+                                    <param id="0" name="Object">FallArea</param>
+                                </condition>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="257038147216995" type="Wadah">
+                                    <param id="0" name="Object">MakananBerjalan</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="544394273503961" type="MakananBerjalan" />
-                                <action id="-11" name="Subtract from" sid="286580471480257" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="-16" name="Wait" sid="637182291703661" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
                                 </action>
-                                <action id="-11" name="Subtract from" sid="597448713024969" type="System">
-                                    <param id="0" name="Variable">Timer</param>
-                                    <param id="1" name="Value">1</param>
+                                <action disabled="1" id="-2" name="Set Y" sid="451703658166397" type="MakananBerjalan">
+                                    <param id="0" name="Y">MakananBerjalan.LastPosY</param>
+                                </action>
+                                <action disabled="1" id="-1" name="Set X" sid="244083718452621" type="MakananBerjalan">
+                                    <param id="0" name="X">MakananBerjalan.LastPosX</param>
+                                </action>
+                                <action behavior="LiteTween" id="4" name="Set tweened property" sid="414259959763331" type="MakananBerjalan">
+                                    <param id="0" name="Tweened property">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="5" name="Set easing" sid="134551954230300" type="MakananBerjalan">
+                                    <param id="0" name="Function">2</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="876470085597780" type="MakananBerjalan">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">MakananBerjalan.LastPosX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="495489255101739" type="MakananBerjalan">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">MakananBerjalan.LastPosY</param>
+                                </action>
+                                <action behavior="LiteTween" id="1" name="Set duration" sid="858472646483350" type="MakananBerjalan">
+                                    <param id="0" name="Duration">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="647103434587620" type="MakananBerjalan">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-group description="" sid="653278342578846" title="Popup2">
+        </event-group>
+        <event-group description="" sid="653278342578846" title="Popup Level Drag and Drop">
             <sub-events>
                 <event-block sid="231231496914530">
                     <conditions>
@@ -378,20 +515,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set time scale" sid="952338679748559" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="111929219212657" type="Player">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="507154366261253" type="PopupNotif">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="364374501263768" type="BtnPopup">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="917920818303379" type="BtnKembaliMenuUtama">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="0" name="Call function" sid="625243007746345" type="Function">
+                            <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -441,9 +567,31 @@
                                 <action id="-15" name="Set visible" sid="655485573262964" type="BtnKembaliMenuUtama">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action behavior="Platform" id="0" name="Set ignoring input" sid="764763609031297" type="Player">
-                                    <param id="0" name="Input">0</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="841898315208599">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="397470647505768" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="215151590155243" type="PopupNotif">
+                                    <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="363194228235001" type="BtnPopup">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="372043352806320" type="BtnKembaliMenuUtama">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="451120888530099" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="504180372439445" type="System" />
+                                <action id="-21" name="Reset global variables" sid="737410289984602" type="System" />
                             </actions>
                         </event-block>
                         <event-block sid="424822645258475">
