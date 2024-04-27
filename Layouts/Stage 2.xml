@@ -3136,7 +3136,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
@@ -3156,7 +3156,7 @@
                 </instance>
                 <instance type="Textbuah" uid="302">
                     <properties>
-                        <text>0/4</text>
+                        <text>0/6</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,700,0</font>
                         <color>255,255,255</color>

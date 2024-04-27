@@ -825,7 +825,7 @@
         <object-type name="ItemBar" sid="427021502399844">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723387110717767" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="723387110717767" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aldin\Videos\asset\frameiconn.png">
                         <collision-poly>
                             <point x="0.5" y="0.344828" />
@@ -834,6 +834,15 @@
                             <point x="0.81746" y="0.603448" />
                             <point x="0.5" y="0.758621" />
                             <point x="0.444444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\FrameIkonBuah2 (2).png">
+                        <collision-poly>
+                            <point x="0.5" y="0.224138" />
+                            <point x="0.785714" y="0.465517" />
+                            <point x="0.801587" y="0.5" />
+                            <point x="0.809524" y="0.586207" />
+                            <point x="0.5" y="0.534483" />
                         </collision-poly>
                     </frame>
                 </animation>

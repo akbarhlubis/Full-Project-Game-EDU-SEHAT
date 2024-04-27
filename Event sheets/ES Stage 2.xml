@@ -22,7 +22,7 @@
                             <param id="1" name="Y">Player.Y</param>
                         </action>
                         <action id="0" name="Set text" sid="708921812943431" type="Textbuah">
-                            <param id="0" name="Text">SehatFood&amp;&quot;/4&quot;</param>
+                            <param id="0" name="Text">SehatFood&amp;&quot;/6&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -31,7 +31,7 @@
                         <condition id="-14" name="Compare variable" sid="248669271110559" type="System">
                             <param id="0" name="Variable">SehatFood</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">4</param>
+                            <param id="2" name="Value">6</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="408176583633544" type="pintu">
                             <param id="0" name="Unique ID">166</param>

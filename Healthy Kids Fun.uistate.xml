@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Stage 2</layout>
-        <event-sheet active="1" order="1">ES Stage 2</event-sheet>
+        <layout active="1" order="0">Stage 2</layout>
+        <event-sheet order="1">ES Stage 2</event-sheet>
         <event-sheet order="2">ES Stage Function</event-sheet>
     </open-tabs>
     <properties>
@@ -21,7 +21,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="Items" />
+        <family expanded="1" name="Items" />
         <family expanded="0" name="BadFood" />
         <family expanded="0" name="GoodFood" />
         <family expanded="0" name="Buttons" />
