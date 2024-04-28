@@ -4,6 +4,16 @@
     <name>ES Stage 2</name>
     <events>
         <include>ES Stage Function</include>
+        <event-block sid="124500048270789">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="960128481892226" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="522122889066074" type="ItemBar">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="543459311562519">
             <conditions>
                 <condition id="-1" name="Every tick" sid="258962997672673" type="System" />

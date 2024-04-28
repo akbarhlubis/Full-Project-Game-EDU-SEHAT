@@ -164,7 +164,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="PopUp" sid="316401093334506">
+        <layer name="PopUpMainMenu" sid="316401093334506">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

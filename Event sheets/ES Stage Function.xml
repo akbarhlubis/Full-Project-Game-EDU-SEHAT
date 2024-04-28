@@ -246,7 +246,14 @@
                             <param id="0" name="Object">e_keong</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="440453753822405" type="BackgroundMusic">
+                            <param id="0" name="Audio file">mixkit-tech-break-fail-2947</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="861908594442074">
                             <conditions>
@@ -282,6 +289,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="180849954839717" type="BackgroundMusic">
+                            <param id="0" name="Audio file">mixkit-achievement-completed-2068</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="230569814368215" type="Function">
                             <param id="0" name="Name">&quot;DarahBertambah&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -421,9 +434,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-10" name="Add to" sid="115312905239881" type="System">
-                    <param id="0" name="Variable">Key</param>
-                    <param id="1" name="Value">1</param>
+                <action id="0" name="Play" sid="626442827293885" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-achievement-completed-2068</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-14" name="Toggle boolean" sid="405744987703471" type="Gerbang">
                     <param id="0" name="Instance variable">OpenedState</param>
@@ -444,7 +459,14 @@
                     <param id="0" name="Instance variable">OpenedState</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="747942337245854" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-automatic-door-shut-204</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="668840749614807">
                     <conditions>
@@ -457,9 +479,20 @@
                             <param id="0" name="X">1053.567</param>
                             <param id="1" name="Y">365.323</param>
                         </action>
-                        <action id="-3" name="Set position" sid="132062208541906" type="Gerbang">
+                        <action disabled="1" id="-3" name="Set position" sid="132062208541906" type="Gerbang">
                             <param id="0" name="X">1054</param>
                             <param id="1" name="Y">271</param>
+                        </action>
+                        <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="715213003605908" type="Gerbang">
+                            <param id="0" name="Tweened property">0</param>
+                            <param id="1" name="Function">2</param>
+                            <param id="2" name="Target">&quot;1054,271&quot;</param>
+                            <param id="3" name="Duration">0.5</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="651257350365275" type="Gerbang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="671996765176535" type="Gerbang">
                             <param id="0" name="Collisions">0</param>
@@ -477,61 +510,22 @@
                             <param id="0" name="X">1053.567</param>
                             <param id="1" name="Y">365.323</param>
                         </action>
-                        <action id="-3" name="Set position" sid="725208013337282" type="Gerbang">
+                        <action disabled="1" id="-3" name="Set position" sid="725208013337282" type="Gerbang">
                             <param id="0" name="X">1389</param>
                             <param id="1" name="Y">223</param>
                         </action>
+                        <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="433084672722723" type="Gerbang">
+                            <param id="0" name="Tweened property">0</param>
+                            <param id="1" name="Function">2</param>
+                            <param id="2" name="Target">&quot;1389,233&quot;</param>
+                            <param id="3" name="Duration">0.5</param>
+                            <param id="4" name="Enforce mode">1</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="629821260788966" type="Gerbang">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
                         <action id="11" name="Set collisions enabled" sid="728593126117322" type="Gerbang">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="681616100812013">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="422122585216351" type="System">
-                            <param id="0" name="Variable">Key</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="857415601902695" type="Gerbang">
-                            <param id="0" name="Unique ID">147</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-3" name="Set position" sid="311136663259326" type="Gerbang">
-                            <param id="0" name="X">1053.567</param>
-                            <param id="1" name="Y">365.323</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="878242462458654" type="Gerbang">
-                            <param id="0" name="X">1054</param>
-                            <param id="1" name="Y">271</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="990514621566090" type="Gerbang">
-                            <param id="0" name="Collisions">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="319831659180752">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="894538655126516" type="System">
-                            <param id="0" name="Variable">Key</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="423773213435670" type="Gerbang">
-                            <param id="0" name="Unique ID">127</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-3" name="Set position" sid="765831009034134" type="Gerbang">
-                            <param id="0" name="X">1053.567</param>
-                            <param id="1" name="Y">365.323</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="184723486850103" type="Gerbang">
-                            <param id="0" name="X">1389</param>
-                            <param id="1" name="Y">241</param>
-                        </action>
-                        <action id="11" name="Set collisions enabled" sid="336483783580297" type="Gerbang">
                             <param id="0" name="Collisions">0</param>
                         </action>
                     </actions>
@@ -628,14 +622,9 @@
                     <param id="0" name="Instance variable">TypeBtn</param>
                     <param id="1" name="Value">2</param>
                 </action>
-                <action id="-15" name="Set visible" sid="640090171048127" type="PopupNotif">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="685299453876445" type="BtnPopup">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="381701055958455" type="BtnKembaliMenuUtama">
-                    <param id="0" name="Visibility">1</param>
+                <action id="0" name="Call function" sid="818336120239390" type="Function">
+                    <param id="0" name="Name">&quot;ActivePopUp&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
             <sub-events>
@@ -839,6 +828,12 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="885847873126805" type="batahancur" />
+                <action id="0" name="Play" sid="171522343039519" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-tree-branch-brake-2943</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="978483871955954">
@@ -931,11 +926,34 @@
                                         <action id="-16" name="Wait" sid="506772944786660" type="System">
                                             <param id="0" name="Seconds">1.0</param>
                                         </action>
-                                        <action id="-2" name="Set Y" sid="803112750395483" type="Spider">
+                                        <action disabled="1" id="-2" name="Set Y" sid="803112750395483" type="Spider">
                                             <param id="0" name="Y">Spider.StartPositionY</param>
                                         </action>
                                         <action disabled="1" id="-2" name="Set Y" sid="594284463802917" type="Spider">
                                             <param id="0" name="Y">lerp(Spider.Y, Spider.StartPositionY, 0.5)</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="4" name="Set tweened property" sid="729794244767824" type="Spider">
+                                            <param id="0" name="Tweened property">0</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="5" name="Set easing" sid="838500632771546" type="Spider">
+                                            <param id="0" name="Function">2</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="660396233879449" type="Spider">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Spider.StartPositionY</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="975768542962216" type="Spider">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Spider.StartPositionX</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="1" name="Set duration" sid="363675002449056" type="Spider">
+                                            <param id="0" name="Duration">0.3</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="741857602447199" type="Spider">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1008,6 +1026,7 @@
                         <action id="-13" name="Set time scale" sid="385066850646753" type="System">
                             <param id="0" name="Time scale">1.0</param>
                         </action>
+                        <action id="-21" name="Reset global variables" sid="914395946609447" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="159006207271889">
@@ -1200,11 +1219,30 @@
         <event-block sid="561947238985390">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="250508975838425" type="Player">
-                    <param id="0" name="Object">Items</param>
+                    <param id="0" name="Object">Breakable</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="698131936087823" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">Breakable.Y</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="851598811041635" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-tree-branch-brake-2943</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="467403887124321">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="828235431058357" type="Player">
+                    <param id="0" name="Object">Items</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="801254409393035" type="BackgroundMusic">
                     <param id="0" name="Audio file">mixkit-achievement-completed-2068</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">-10</param>

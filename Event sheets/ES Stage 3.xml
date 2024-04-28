@@ -477,24 +477,12 @@
                                 <action disabled="1" id="-1" name="Set X" sid="244083718452621" type="MakananBerjalan">
                                     <param id="0" name="X">MakananBerjalan.LastPosX</param>
                                 </action>
-                                <action behavior="LiteTween" id="4" name="Set tweened property" sid="414259959763331" type="MakananBerjalan">
+                                <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="414259959763331" type="MakananBerjalan">
                                     <param id="0" name="Tweened property">0</param>
-                                </action>
-                                <action behavior="LiteTween" id="5" name="Set easing" sid="134551954230300" type="MakananBerjalan">
-                                    <param id="0" name="Function">2</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="876470085597780" type="MakananBerjalan">
-                                    <param id="0" name="Target is">0</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">MakananBerjalan.LastPosX</param>
-                                </action>
-                                <action behavior="LiteTween" id="3" name="Set target" sid="495489255101739" type="MakananBerjalan">
-                                    <param id="0" name="Target is">1</param>
-                                    <param id="1" name="Relativity">0</param>
-                                    <param id="2" name="Value">MakananBerjalan.LastPosY</param>
-                                </action>
-                                <action behavior="LiteTween" id="1" name="Set duration" sid="858472646483350" type="MakananBerjalan">
-                                    <param id="0" name="Duration">0.2</param>
+                                    <param id="1" name="Function">23</param>
+                                    <param id="2" name="Target">&quot;MakananBerjalan.LastPosX,MakananBerjalan.LastPosY&quot;</param>
+                                    <param id="3" name="Duration">0.3</param>
+                                    <param id="4" name="Enforce mode">0</param>
                                 </action>
                                 <action behavior="LiteTween" id="10" name="Start" sid="647103434587620" type="MakananBerjalan">
                                     <param id="0" name="Start Mode">0</param>

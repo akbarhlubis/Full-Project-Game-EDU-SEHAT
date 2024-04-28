@@ -10,9 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 2</layout>
-        <event-sheet order="1">ES Stage 2</event-sheet>
-        <event-sheet order="2">ES Stage Function</event-sheet>
+        <layout order="0">Stage 1</layout>
+        <layout order="1">Stage 2</layout>
+        <layout order="2">Stage 3</layout>
+        <event-sheet order="3">ES Stage 2</event-sheet>
+        <event-sheet active="1" order="4">ES Stage Function</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -22,10 +24,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1">
         <family expanded="1" name="Items" />
-        <family expanded="0" name="BadFood" />
-        <family expanded="0" name="GoodFood" />
+        <family expanded="1" name="BadFood" />
+        <family expanded="1" name="GoodFood" />
         <family expanded="0" name="Buttons" />
         <family expanded="0" name="Enemies" />
+        <family expanded="1" name="Breakable" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -136,5 +139,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Jamur1/" />
         <folder expanded="1" path="animation-folder/Jamur2/" />
         <folder expanded="1" path="animation-folder/Rumput/" />
+        <folder expanded="1" path="animation-folder/Ikan/" />
+        <folder expanded="1" path="animation-folder/Pisang/" />
+        <folder expanded="1" path="animation-folder/Susu/" />
+        <folder expanded="1" path="animation-folder/Nasi/" />
     </folders-expanded>
 </c2uistate>

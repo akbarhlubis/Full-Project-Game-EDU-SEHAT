@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Healthy Kids Fun</name>
-    <description>healthy kids fun</description>
+    <description>Permainan belajar makanan sehat</description>
     <version>1.0.0.0</version>
     <author>Fikho Aldino</author>
     <author-email></author-email>
     <author-website>http://</author-website>
-    <app-id>com.healthy.kidsfun</app-id>
+    <app-id>com.teknokrat.healthykidsfun</app-id>
     <unique-id>3oa75pjz9idyz</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
@@ -54,7 +54,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Stage 2</first-layout>
+    <first-layout>Splash Screen</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -190,14 +190,10 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762067192268509" speed="5">
                     <frame duration="1" hotspotX="0.505882" hotspotY="0.506173" original-source="C:\Users\aldin\Videos\Group 6.png">
                         <collision-poly>
-                            <point x="0.141176" y="0.0740741" />
-                            <point x="0.494118" y="0.0185185" />
-                            <point x="0.870588" y="0.0679012" />
-                            <point x="0.694118" y="0.5" />
-                            <point x="0.811765" y="0.901235" />
-                            <point x="0.494118" y="0.790123" />
-                            <point x="0.223529" y="0.882716" />
-                            <point x="0.235294" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.938272" />
+                            <point x="0" y="0.944444" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -730,16 +726,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106904998795142" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\DataranMelayang.png">
-                        <collision-poly>
-                            <point x="0.00694444" y="0.0363636" />
-                            <point x="0.5" y="0" />
-                            <point x="0.989583" y="0.0545455" />
-                            <point x="0.989583" y="0.945455" />
-                            <point x="0.5" y="0.963636" />
-                            <point x="0.0104167" y="0.945455" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\DataranMelayang.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -775,6 +762,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="578597056150826">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="895997142497204">
+                    <behavior id="lunarray_LiteTween" />
                 </behavior-type>
             </behaviors>
             <effects>
@@ -825,7 +815,7 @@
         <object-type name="ItemBar" sid="427021502399844">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="723387110717767" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="723387110717767" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aldin\Videos\asset\frameiconn.png">
                         <collision-poly>
                             <point x="0.5" y="0.344828" />
@@ -1684,6 +1674,9 @@
                 <behavior-type name="Platform" sid="529083497460871">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="LiteTween" sid="221555654984280">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889890891595401" speed="5">
@@ -2323,6 +2316,82 @@
         <object-type name="TextPetunjuk" sid="246904684345710">
             <plugin id="rex_bbcodeText" />
         </object-type>
+        <object-type name="Ikan" sid="720380459469301">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682551066518765" speed="5">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.515152" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Ikan.png">
+                        <collision-poly>
+                            <point x="0.113924" y="0.272727" />
+                            <point x="0.493671" y="0.0606061" />
+                            <point x="0.860759" y="0.333333" />
+                            <point x="0.936709" y="0.484848" />
+                            <point x="0.898734" y="0.757576" />
+                            <point x="0.493671" y="0.939394" />
+                            <point x="0.0759494" y="0.818182" />
+                            <point x="0.0253165" y="0.484848" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pisang" sid="406783161636981">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837619190091508" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Pisang.png">
+                        <collision-poly>
+                            <point x="0.567568" y="0.506024" />
+                            <point x="0.5" y="0.566265" />
+                            <point x="0.837838" y="0.144578" />
+                            <point x="0.932432" y="0.493976" />
+                            <point x="0.77027" y="0.795181" />
+                            <point x="0.5" y="0.927711" />
+                            <point x="0.121622" y="0.891566" />
+                            <point x="0.567568" y="0.493976" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Susu" sid="122521765546291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="307478908029362" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Susu.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.09375" />
+                            <point x="0.481481" y="0" />
+                            <point x="0.777778" y="0.09375" />
+                            <point x="0.962963" y="0.5" />
+                            <point x="0.962963" y="0.984375" />
+                            <point x="0.481481" y="1" />
+                            <point x="0.037037" y="0.984375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Nasi" sid="356294713469517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421115530155938" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Nasi.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.166667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.82" y="0.8125" />
+                            <point x="0.5" y="0.916667" />
+                            <point x="0.18" y="0.8125" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
@@ -2337,7 +2406,10 @@
                 <member>Kunci</member>
                 <member>MieInstan</member>
                 <member>MieInstanCup</member>
+                <member>Nasi</member>
+                <member>Pisang</member>
                 <member>Semangka</member>
+                <member>Susu</member>
                 <member>Telor</member>
                 <member>Tomat</member>
                 <member>Wortel</member>
@@ -2364,8 +2436,12 @@
                 <member>airPutih</member>
                 <member>Alpukat</member>
                 <member>Brokoli</member>
+                <member>Ikan</member>
+                <member>Nasi</member>
+                <member>Pisang</member>
                 <member>Semangka</member>
                 <member>Sprite</member>
+                <member>Susu</member>
                 <member>Telor</member>
                 <member>Tomat</member>
                 <member>Wortel</member>
@@ -2389,6 +2465,14 @@
                 <member>JebakanTanah</member>
                 <member>PeluruPohon</member>
                 <member>Spider</member>
+            </members>
+        </family>
+        <family name="Breakable" plugin-id="Sprite" sid="594409557099210">
+            <members>
+                <member>batahancur</member>
+                <member>boxitem1</member>
+                <member>boxitem2</member>
+                <member>boxobstaqle</member>
             </members>
         </family>
     </families>
@@ -2451,6 +2535,8 @@
         <file name="mixkit-fish-flapping-2457.ogg" />
         <file name="mixkit-achievement-completed-2068.ogg" />
         <file name="mixkit-tech-break-fail-2947.ogg" />
+        <file name="mixkit-tree-branch-brake-2943.ogg" />
+        <file name="mixkit-automatic-door-shut-204.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
