@@ -188,14 +188,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762067192268509" speed="5">
-                    <frame duration="1" hotspotX="0.505882" hotspotY="0.506173" original-source="C:\Users\aldin\Videos\Group 6.png">
-                        <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.938272" />
-                            <point x="0" y="0.944444" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\Idle.png" />
+                </animation>
+                <animation framecount="5" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="425693740178483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494624" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_4.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2487,6 +2487,7 @@
         <layout>Main Menu.xml</layout>
         <layout>List Stage.xml</layout>
         <layout>Ruang Belajar.xml</layout>
+        <layout>Menu Belajar.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Function">
@@ -2501,6 +2502,7 @@
         <event-sheet>ES Stage 3.xml</event-sheet>
         <event-sheet>ES Stage 4.xml</event-sheet>
         <event-sheet>ES List Stage.xml</event-sheet>
+        <event-sheet>ES Menu Belajar.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="67" />
