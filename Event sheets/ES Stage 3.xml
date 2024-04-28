@@ -479,10 +479,20 @@
                                 </action>
                                 <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="414259959763331" type="MakananBerjalan">
                                     <param id="0" name="Tweened property">0</param>
-                                    <param id="1" name="Function">23</param>
-                                    <param id="2" name="Target">&quot;MakananBerjalan.LastPosX,MakananBerjalan.LastPosY&quot;</param>
-                                    <param id="3" name="Duration">0.3</param>
-                                    <param id="4" name="Enforce mode">0</param>
+                                    <param id="1" name="Function">1</param>
+                                    <param id="2" name="Target">&quot;&quot;</param>
+                                    <param id="3" name="Duration">0.4</param>
+                                    <param id="4" name="Enforce mode">1</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="499384479363706" type="MakananBerjalan">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">MakananBerjalan.LastPosX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="227758704604198" type="MakananBerjalan">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">MakananBerjalan.LastPosY</param>
                                 </action>
                                 <action behavior="LiteTween" id="10" name="Start" sid="647103434587620" type="MakananBerjalan">
                                     <param id="0" name="Start Mode">0</param>
