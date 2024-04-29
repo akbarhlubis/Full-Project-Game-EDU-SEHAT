@@ -199,7 +199,7 @@
         <event-block sid="124496598255068">
             <conditions>
                 <condition id="3" name="On touched object" sid="541948597279889" type="Touch">
-                    <param id="0" name="Object">btn_kembali</param>
+                    <param id="0" name="Object">BtnKembali</param>
                 </condition>
             </conditions>
             <actions>

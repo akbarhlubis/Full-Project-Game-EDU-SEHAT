@@ -16,7 +16,12 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="283150437723627" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="935963099020926" type="CloseIcon">
+                    <param id="0" name="Pin to">PopupInfoAuthor</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="551216054297170">
                     <conditions>
@@ -35,108 +40,145 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="118096564568043">
+        <event-block sid="919093130286431">
             <conditions>
-                <condition id="3" name="On touched object" sid="816454020305367" type="Touch">
-                    <param id="0" name="Object">BtnMulai</param>
-                </condition>
-                <condition id="-9" inverted="1" name="Is visible" sid="814645664537894" type="PopupInfoAuthor" />
+                <condition id="-4" name="Is outside layout" sid="559981828987716" type="PopupInfoAuthor" />
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="805199503073332">
+                <event-block sid="857548169914557">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="662469263781569" type="System" />
+                        <condition id="3" name="On touched object" sid="888054258186837" type="Touch">
+                            <param id="0" name="Object">Buttons</param>
+                        </condition>
+                        <condition disabled="1" id="-9" name="Is visible" sid="984568211710364" type="Buttons" />
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="582073588534795" type="System">
-                            <param id="0" name="Layout">List Stage</param>
+                        <action id="0" name="Play" sid="696595111997082" type="BackgroundMusic">
+                            <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="158153820245511">
-            <conditions>
-                <condition id="3" name="On touched object" sid="289391129245152" type="Touch">
-                    <param id="0" name="Object">InfoAuthor</param>
-                </condition>
-                <condition id="-9" inverted="1" name="Is visible" sid="702368921810847" type="PopupInfoAuthor" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="293711521254348">
+                <event-block sid="118096564568043">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="746360043732735" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="136407455939404" type="PopupInfoAuthor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="546523318096313">
-            <conditions>
-                <condition id="3" name="On touched object" sid="976309144191105" type="Touch">
-                    <param id="0" name="Object">PopupInfoAuthor</param>
-                </condition>
-                <condition id="-9" name="Is visible" sid="265311976357108" type="PopupInfoAuthor" />
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="184250310180705" type="PopupInfoAuthor">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="994531967101072">
-            <conditions>
-                <condition id="3" name="On touched object" sid="196263607331915" type="Touch">
-                    <param id="0" name="Object">BtnKeluar</param>
-                </condition>
-                <condition id="-9" inverted="1" name="Is visible" sid="472532302530923" type="PopupInfoAuthor" />
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="689474284778984" type="Browser" />
-            </actions>
-        </event-block>
-        <event-block sid="139750110537558">
-            <conditions>
-                <condition id="3" name="On touched object" sid="792845803276081" type="Touch">
-                    <param id="0" name="Object">Sound</param>
-                </condition>
-                <condition id="-9" inverted="1" name="Is visible" sid="756043359825099" type="PopupInfoAuthor" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="261699279790175">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="855081694930737" type="System">
-                            <param id="0" name="Variable">MusicState</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="11" name="On Nth touch end" sid="864519481941995" type="Touch">
+                            <param id="0" name="Touch number">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="310018306412828" type="System">
-                            <param id="0" name="Variable">MusicState</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="806743676706494">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="347310122364278" type="Touch">
+                                    <param id="0" name="Object">BtnMulai</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="332537605278600" type="System">
+                                    <param id="0" name="Layout">List Stage</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="158153820245511">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="289391129245152" type="Touch">
+                                    <param id="0" name="Object">InfoAuthor</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="389225378744500" type="PopupInfoAuthor">
+                                    <param id="0" name="Tweened property">0</param>
+                                    <param id="1" name="Function">27</param>
+                                    <param id="2" name="Target">&quot;427, 240.5&quot;</param>
+                                    <param id="3" name="Duration">1.5</param>
+                                    <param id="4" name="Enforce mode">1</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="981998856217014" type="PopupInfoAuthor">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="994531967101072">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="196263607331915" type="Touch">
+                                    <param id="0" name="Object">BtnBelajar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="689474284778984" type="System">
+                                    <param id="0" name="Layout">Menu Belajar</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="735938166871646">
+                <event-block sid="139750110537558">
                     <conditions>
-                        <condition id="-22" name="Else" sid="385474409824610" type="System" />
+                        <condition id="3" name="On touched object" sid="792845803276081" type="Touch">
+                            <param id="0" name="Object">Sound</param>
+                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="556522363565394" type="System">
-                            <param id="0" name="Variable">MusicState</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="261699279790175">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="855081694930737" type="System">
+                                    <param id="0" name="Variable">MusicState</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="310018306412828" type="System">
+                                    <param id="0" name="Variable">MusicState</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735938166871646">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="385474409824610" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="556522363565394" type="System">
+                                    <param id="0" name="Variable">MusicState</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="902278776184874">
+            <conditions>
+                <condition id="3" name="On touched object" sid="801752359957304" type="Touch">
+                    <param id="0" name="Object">CloseIcon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="767182369759762" type="BackgroundMusic">
+                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="LiteTween" id="26" name="Create/Initialize tween" sid="563606746788432" type="PopupInfoAuthor">
+                    <param id="0" name="Tweened property">0</param>
+                    <param id="1" name="Function">27</param>
+                    <param id="2" name="Target">&quot;427, -191&quot;</param>
+                    <param id="3" name="Duration">1.5</param>
+                    <param id="4" name="Enforce mode">1</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="228212987138343" type="PopupInfoAuthor">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="966064358151128">
             <conditions>
@@ -161,22 +203,6 @@
                 <action id="2" name="Set muted" sid="282322303541587" type="BackgroundMusic">
                     <param id="0" name="Tag">&quot;music&quot;</param>
                     <param id="1" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="663490075966513">
-            <conditions>
-                <condition id="3" name="On touched object" sid="190760739456818" type="Touch">
-                    <param id="0" name="Object">Buttons</param>
-                </condition>
-                <condition id="-9" name="Is visible" sid="662816773138410" type="Buttons" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="366865516523807" type="BackgroundMusic">
-                    <param id="0" name="Audio file">mixkit-game-ball-tap-2073</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

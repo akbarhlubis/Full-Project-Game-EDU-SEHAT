@@ -3,312 +3,69 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Stage 4</name>
     <events>
-        <event-block sid="131559062575221">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="497602504998192" type="System" />
-            </conditions>
-            <actions>
-                <action id="-24" name="Move to top" sid="298365366170805" type="Spawner" />
-                <action id="-9" name="Set value" sid="565472658437533" type="System">
-                    <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">60</param>
-                </action>
-            </actions>
+        <event-group description="" sid="550320465863743" title="Spawn Makanan berjalan Stage 4">
             <sub-events>
-                <event-block sid="258991907064711">
+                <comment>Untuk Spawner MakananBerjalan Level 4</comment>
+                <event-block sid="623679090870230">
                     <conditions>
-                        <condition id="5" inverted="1" name="Is tag playing" sid="714038813965467" type="BackgroundMusic">
-                            <param id="0" name="Tag">&quot;music&quot;</param>
-                        </condition>
+                        <condition id="-18" name="On created" sid="240133889558275" type="MakananBerjalan" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="602168936522269" type="BackgroundMusic">
-                            <param id="0" name="Audio file">Aspiration-Woods-_Area-Theme_</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        <action id="5" name="Set frame" sid="858029314943363" type="MakananBerjalan">
+                            <param id="0" name="Frame number">random(10)</param>
                         </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-group description="" sid="476329034837650" title="Group2">
-            <sub-events>
-                <event-block sid="987416837561549">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="779835075765761" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="258050828625560" type="TargetMakanan">
-                            <param id="0" name="Text">TargetMakanan&amp;&quot;/20&quot;</param>
-                        </action>
-                        <action id="0" name="Set text" sid="466804114204915" type="Timer">
-                            <param id="0" name="Text">Timer&amp;&quot;.00&quot;</param>
+                        <action id="-2" name="Set Y" sid="778714072048176" type="MakananBerjalan">
+                            <param id="0" name="Y">Self.Y</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="382451678714153">
+                        <event-block sid="190794676562000">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="883139913371096" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
+                                <condition id="3" name="Compare frame" sid="836336715582238" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Number">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="607774748107324" type="MakananBerjalan">
-                                    <param id="0" name="State">1</param>
+                                <action id="-10" name="Set value" sid="369904499521149" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="314894059906124">
+                        <event-block sid="238296048437988">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="381281529245479" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
-                                </condition>
+                                <condition id="-22" name="Else" sid="542980410503876" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="470953276588017" type="MakananBerjalan">
-                                    <param id="0" name="State">0</param>
+                                <action id="-10" name="Set value" sid="976738056875219" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="270757369597584">
-            <conditions>
-                <condition id="-18" name="On created" sid="686536077362697" type="MakananBerjalan" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="762067369438006" type="MakananBerjalan">
-                    <param id="0" name="Frame number">random(8)</param>
-                </action>
-                <action id="-2" name="Set Y" sid="560917894884665" type="MakananBerjalan">
-                    <param id="0" name="Y">Self.Y</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="211610738008737">
+                <event-block sid="400346341404577">
                     <conditions>
-                        <condition id="3" name="Compare frame" sid="209917157505490" type="MakananBerjalan">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Number">1</param>
+                        <condition id="-6" name="Every X seconds" sid="725647167888211" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="487289659817155" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
+                        <action id="0" name="Spawn another object" sid="190023537869887" type="Spawner">
+                            <param id="0" name="Object">MakananBerjalan</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="598437754457266" type="System">
+                            <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="515800818022737">
-                    <conditions>
-                        <condition id="3" name="Compare frame" sid="555597412567655" type="MakananBerjalan">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Number">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="632295197138782" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="467759461849086">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="568318849136414" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="427154190378052" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="876798693233438">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="878073530887526" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="180494464046766" type="Spawner">
-                    <param id="0" name="Object">MakananBerjalan</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="799200559221602" type="System">
-                    <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="738557297489927">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="122513178870873" type="Wadah">
-                    <param id="0" name="Object">MakananBerjalan</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="809615162800158" type="MakananBerjalan">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="716306370622079">
-                    <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="181733470587587" type="MakananBerjalan" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="716653782734472" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="571853108942447">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="188870000769813" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="175180071268787" type="MakananBerjalan" />
-                                <action id="-10" name="Add to" sid="120477660361920" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="725864243785613">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="305501676899659" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="715225474712145" type="MakananBerjalan" />
-                                <action id="-11" name="Subtract from" sid="115666965946203" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-group description="" sid="474715331414524" title="Popup3">
-            <sub-events>
-                <event-block sid="865165555698778">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="789089100365633" type="Touch">
-                            <param id="0" name="Object">btn_pause</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set time scale" sid="714424482965121" type="System">
-                            <param id="0" name="Time scale">0</param>
-                        </action>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="612284998394750" type="Player">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="164420870454838" type="PopupNotif">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="123229788852568" type="BtnPopup">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="609828363874026" type="BtnKembaliMenuUtama">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="257838712709974">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="383983952275497" type="Touch">
-                            <param id="0" name="Object">BtnKembaliMenuUtama</param>
-                        </condition>
-                        <condition id="-9" name="Is visible" sid="423804146902870" type="BtnKembaliMenuUtama" />
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="187951898229998" type="System">
-                            <param id="0" name="Layout">Main Menu</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="978559502266004" type="System">
-                            <param id="0" name="Time scale">1.0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="818420373775264">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="517240786022689" type="Touch">
-                            <param id="0" name="Object">BtnPopup</param>
-                        </condition>
-                        <condition id="-9" name="Is visible" sid="878693407892944" type="BtnPopup" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="460320142544229">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="150442257094188" type="BtnPopup">
-                                    <param id="0" name="Instance variable">TypeBtn</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set time scale" sid="449754909126596" type="System">
-                                    <param id="0" name="Time scale">1.0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="617862194228886" type="PopupNotif">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="244162454896611" type="BtnPopup">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="496868476367027" type="BtnKembaliMenuUtama">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action behavior="Platform" id="0" name="Set ignoring input" sid="390562744456633" type="Player">
-                                    <param id="0" name="Input">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="971612642440468">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="177169835448992" type="BtnPopup">
-                                    <param id="0" name="Instance variable">TypeBtn</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="169967682464236" type="System">
-                                    <param id="0" name="Layout">Stage 2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block disabled="1" sid="535103469950140">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="602228731673346" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="247989748683010" type="PopupNotif">
-                            <param id="0" name="Frame number">BtnPopup.TypeBtn</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
+        <include>ES DragDrop Function</include>
     </events>
 </c2eventsheet>

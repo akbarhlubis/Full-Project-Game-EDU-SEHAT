@@ -10,13 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">List Stage</layout>
+        <layout order="0">Stage 4</layout>
         <layout order="1">Stage 3</layout>
-        <layout order="4">Menu Belajar</layout>
-        <layout active="1" order="5">Stage 1</layout>
-        <layout order="6">Stage 2</layout>
         <event-sheet order="2">ES Stage 3</event-sheet>
-        <event-sheet order="3">ES Stage Function</event-sheet>
+        <event-sheet active="1" order="3">ES DragDrop Function</event-sheet>
+        <event-sheet order="4">ES Stage 4</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="Items" />
         <family expanded="1" name="BadFood" />
         <family expanded="1" name="GoodFood" />
-        <family expanded="0" name="Buttons" />
+        <family expanded="1" name="Buttons" />
         <family expanded="0" name="Enemies" />
         <family expanded="1" name="Breakable" />
     </families-expanded>
@@ -119,7 +117,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MieInstanCup/" />
         <folder expanded="1" path="animation-folder/BG_Menu/" />
         <folder expanded="1" path="animation-folder/level_listBtn/" />
-        <folder expanded="1" path="animation-folder/btn_kembali/" />
+        <folder expanded="1" path="animation-folder/BtnKembali/" />
         <folder expanded="1" path="animation-folder/BG_gray/" />
         <folder expanded="1" path="animation-folder/Txt_InfoMulai/" />
         <folder expanded="1" path="animation-folder/Sound/" />
@@ -145,5 +143,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Pisang/" />
         <folder expanded="1" path="animation-folder/Susu/" />
         <folder expanded="1" path="animation-folder/Nasi/" />
+        <folder expanded="1" path="animation-folder/CloseIcon/" />
+        <folder expanded="1" path="animation-folder/BtnBelajar/" />
+        <folder expanded="1" path="animation-folder/SliderMateri/" />
+        <folder expanded="1" path="animation-folder/BtnSlide/" />
     </folders-expanded>
 </c2uistate>

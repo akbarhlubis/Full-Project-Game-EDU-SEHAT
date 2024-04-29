@@ -2135,7 +2135,7 @@
                         </behavior-instance>
                         <behavior-instance type="Jumpthru">
                             <properties>
-                                <initial-state>Enabled</initial-state>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -3582,7 +3582,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>2485</x>
-                        <y>-4</y>
+                        <y>-10</y>
                         <z>0</z>
                         <width>5032</width>
                         <height>22</height>
@@ -3807,11 +3807,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>768</x>
-                        <y>407</y>
+                        <x>768.287719727</x>
+                        <y>408.287750244</y>
                         <z>0</z>
-                        <width>86.463867188</width>
-                        <height>86.463867188</height>
+                        <width>95.916633606</width>
+                        <height>95.916633606</height>
                         <depth>0</depth>
                         <hotspotX>0.50149256</hotspotX>
                         <hotspotY>0.50149256</hotspotY>
@@ -3829,11 +3829,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>210</x>
-                        <y>405</y>
+                        <x>210.287719727</x>
+                        <y>406.287750244</y>
                         <z>0</z>
-                        <width>86.463867188</width>
-                        <height>86.463867188</height>
+                        <width>95.916633606</width>
+                        <height>95.916633606</height>
                         <depth>0</depth>
                         <hotspotX>0.50149256</hotspotX>
                         <hotspotY>0.50149256</hotspotY>
@@ -3851,11 +3851,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>70</x>
-                        <y>404</y>
+                        <x>70.287719727</x>
+                        <y>405.287750244</y>
                         <z>0</z>
-                        <width>86.463867188</width>
-                        <height>86.463867188</height>
+                        <width>95.916633606</width>
+                        <height>95.916633606</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

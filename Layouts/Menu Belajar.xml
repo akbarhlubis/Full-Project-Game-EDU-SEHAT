@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_kembali" uid="19">
+                <instance type="BtnKembali" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -69,6 +69,72 @@
                         <depth>0</depth>
                         <hotspotX>0.501766801</hotspotX>
                         <hotspotY>0.507042229</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SliderMateri" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>433</x>
+                        <y>212</y>
+                        <z>0</z>
+                        <width>599</width>
+                        <height>281</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500834703</hotspotX>
+                        <hotspotY>0.501779377</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BtnSlide" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>92.636062622</x>
+                        <y>205</y>
+                        <z>0</z>
+                        <width>53</width>
+                        <height>59</height>
+                        <depth>0</depth>
+                        <hotspotX>0.509433985</hotspotX>
+                        <hotspotY>0.508474588</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BtnSlide" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>777.545776367</x>
+                        <y>209</y>
+                        <z>0</z>
+                        <width>53</width>
+                        <height>59</height>
+                        <depth>0</depth>
+                        <hotspotX>0.490566045</hotspotX>
+                        <hotspotY>0.508474588</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
