@@ -114,28 +114,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="CharacterStand" uid="191">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-130</x>
-                        <y>178</y>
-                        <z>0</z>
-                        <width>180</width>
-                        <height>344</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Spawner" uid="192">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -267,7 +245,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>875</x>
+                        <x>873</x>
                         <y>384</y>
                         <z>0</z>
                         <width>67.984375</width>
@@ -319,8 +297,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>664.253845215</x>
-                        <y>219.2603302</y>
+                        <x>664</x>
+                        <y>214</y>
                         <z>0</z>
                         <width>105</width>
                         <height>38</height>

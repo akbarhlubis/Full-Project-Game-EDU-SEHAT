@@ -189,7 +189,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762067192268509" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\Idle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\Idle.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.0967742" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.833333" y="0.0967742" />
+                            <point x="0.824074" y="0.408602" />
+                            <point x="0.74537" y="0.981183" />
+                            <point x="0.5" y="0.983871" />
+                            <point x="0.268518" y="0.986559" />
+                            <point x="0.12963" y="0.333333" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="5" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="425693740178483" speed="6">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.494624" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\sprite_0.png" />
@@ -308,16 +319,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599972309564094" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502994" original-source="C:\Users\aldin\Videos\Wortel.png">
+                    <frame duration="1" hotspotX="0.524752" hotspotY="0.483444" original-source="C:\Users\aldin\Videos\Wortel.png">
                         <collision-poly>
-                            <point x="0.430769" y="0.335329" />
-                            <point x="0.5" y="0.251497" />
-                            <point x="0.8" y="0.155689" />
-                            <point x="0.7" y="0.497006" />
-                            <point x="0.553846" y="0.652695" />
-                            <point x="0.5" y="0.700599" />
-                            <point x="0.138462" y="0.892216" />
-                            <point x="0.323077" y="0.497006" />
+                            <point x="0.435643" y="0.298013" />
+                            <point x="0.524752" y="0.205298" />
+                            <point x="0.910891" y="0.0993382" />
+                            <point x="0.782178" y="0.476821" />
+                            <point x="0.594059" y="0.649007" />
+                            <point x="0.524752" y="0.701987" />
+                            <point x="0.0594065" y="0.913908" />
+                            <point x="0.29703" y="0.476821" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -454,6 +465,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="203039717725705">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="149699632574882">
+                    <behavior id="jumpthru" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -898,6 +912,9 @@
                 <behavior-type name="Jumpthru" sid="294747784178658">
                     <behavior id="jumpthru" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="651108487570755">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500624060889915" speed="5">
@@ -1235,7 +1252,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="217410353817659" speed="0">
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="217410353817659" speed="0">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Donat.png">
                         <collision-poly>
                             <point x="0.186667" y="0.21875" />
@@ -1246,17 +1263,6 @@
                             <point x="0.493333" y="0.890625" />
                             <point x="0.2" y="0.765625" />
                             <point x="0.08" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.505495" hotspotY="0.508475" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan.png">
-                        <collision-poly>
-                            <point x="0.043956" y="0.0677966" />
-                            <point x="0.494505" y="0.0169492" />
-                            <point x="0.945055" y="0.0847458" />
-                            <point x="0.945055" y="0.491525" />
-                            <point x="0.912088" y="0.864407" />
-                            <point x="0.0879121" y="0.864407" />
-                            <point x="0.043956" y="0.491525" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan Cup.png">
@@ -1726,14 +1732,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663464289615707" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MieInstan" sid="450295631443089">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947627124636138" speed="5">
-                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Mie Instan.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2492,6 +2490,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="910903430402757">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834944252042701" speed="5">
+                    <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\aldin\Videos\asset\ice cream true.png">
+                        <collision-poly>
+                            <point x="0.148014" y="0.0590778" />
+                            <point x="0.498195" y="0" />
+                            <point x="0.851986" y="0.0590778" />
+                            <point x="1" y="0.5" />
+                            <point x="0.599278" y="0.840058" />
+                            <point x="0.498195" y="1" />
+                            <point x="0.407942" y="0.837176" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Items" plugin-id="Sprite" sid="571179706825991">
@@ -2504,7 +2521,6 @@
                 <member>Donat</member>
                 <member>KotakP3K</member>
                 <member>Kunci</member>
-                <member>MieInstan</member>
                 <member>MieInstanCup</member>
                 <member>Nasi</member>
                 <member>Pisang</member>
@@ -2525,7 +2541,6 @@
                 <member>Burger</member>
                 <member>camilan</member>
                 <member>Donat</member>
-                <member>MieInstan</member>
                 <member>MieInstanCup</member>
                 <member>Permen</member>
                 <member>soda</member>
@@ -2592,7 +2607,6 @@
         <layout>Main Menu.xml</layout>
         <layout>List Stage.xml</layout>
         <layout>Menu Belajar.xml</layout>
-        <layout>Ruang Belajar.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="Function">
