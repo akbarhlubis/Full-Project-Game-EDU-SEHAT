@@ -63,7 +63,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -75,9 +75,17 @@
     <object-folder>
         <object-type name="LogoGame" sid="511979518997801">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="446457040185847">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="718436705239350">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589395329614665" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Logo In-Game.png" />
+                    <frame duration="1" hotspotX="0.500719" hotspotY="0.501916" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PNG\LogoHealthyKidsFun.png" />
                 </animation>
             </animation-folder>
         </object-type>

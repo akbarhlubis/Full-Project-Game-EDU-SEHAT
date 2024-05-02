@@ -64,9 +64,7 @@
                 </event-block>
                 <event-block sid="118096564568043">
                     <conditions>
-                        <condition id="11" name="On Nth touch end" sid="864519481941995" type="Touch">
-                            <param id="0" name="Touch number">0</param>
-                        </condition>
+                        <condition id="14" name="On tap" sid="864519481941995" type="Touch" />
                     </conditions>
                     <actions />
                     <sub-events>
