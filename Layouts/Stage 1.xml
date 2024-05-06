@@ -455,6 +455,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Jumpthru">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -506,11 +511,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2715</x>
-                        <y>393</y>
+                        <x>2700.710449219</x>
+                        <y>361.066192627</y>
                         <z>0</z>
                         <width>265</width>
-                        <height>55</height>
+                        <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5090909</hotspotY>
@@ -922,6 +927,11 @@
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Jumpthru">
                             <properties>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -2825,8 +2835,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-10</x>
-                        <y>-288</y>
+                        <x>-92</x>
+                        <y>-36</y>
                         <z>0</z>
                         <width>5346</width>
                         <height>193</height>
@@ -2934,11 +2944,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3248.105224609</x>
-                        <y>64.027107239</y>
+                        <x>3248.588867188</x>
+                        <y>65.564041138</y>
                         <z>0</z>
-                        <width>18.509008408</width>
-                        <height>58.849170685</height>
+                        <width>19.475788116</width>
+                        <height>61.923034668</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -3007,11 +3017,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2727.224609375</x>
-                        <y>45.04807663</y>
+                        <x>2712.749267578</x>
+                        <y>83.818099976</y>
                         <z>0</z>
-                        <width>19.02712059</width>
-                        <height>49.118923187</height>
+                        <width>19.563232422</width>
+                        <height>50.502902985</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501052618</hotspotY>
@@ -3573,6 +3583,11 @@
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Jumpthru">
                             <properties>
                                 <initial-state>Enabled</initial-state>
                             </properties>
