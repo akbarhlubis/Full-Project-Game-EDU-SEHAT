@@ -425,7 +425,7 @@
             <sub-events>
                 <event-block sid="789289356245011">
                     <conditions>
-                        <condition id="3" name="On touched object" sid="127896355077461" type="Touch">
+                        <condition id="17" name="On tap object" sid="127896355077461" type="Touch">
                             <param id="0" name="Object">btn_pause</param>
                         </condition>
                     </conditions>
@@ -442,7 +442,7 @@
                 </event-block>
                 <event-block sid="948245999339316">
                     <conditions>
-                        <condition id="3" name="On touched object" sid="197877257629671" type="Touch">
+                        <condition id="17" name="On tap object" sid="197877257629671" type="Touch">
                             <param id="0" name="Object">BtnKembaliMenuUtama</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="492529164365716" type="BtnKembaliMenuUtama" />
@@ -458,7 +458,7 @@
                 </event-block>
                 <event-block sid="871044868959556">
                     <conditions>
-                        <condition id="3" name="On touched object" sid="908599407651317" type="Touch">
+                        <condition id="17" name="On tap object" sid="908599407651317" type="Touch">
                             <param id="0" name="Object">BtnPopup</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="991450326899545" type="BtnPopup" />
