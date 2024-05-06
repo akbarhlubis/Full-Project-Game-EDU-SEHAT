@@ -1,0 +1,6 @@
+# Ignoring UIstate
+*.uistate.xml
+
+# Ignoring backup and autosave files
+*.backup1
+*.autosave
