@@ -188,6 +188,42 @@
                 </event-block>
                 <event-group description="" sid="801652106709820" title="Player Animation">
                     <sub-events>
+                        <comment>Tidak terpakai karena bikin player keluar dari map</comment>
+                        <event-block disabled="1" sid="247629852100370">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="782446091363444" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="250334900825200" type="Player">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="913364147045737">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="421495157592764" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="353836265628095" type="Player">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Ini yang bisa</comment>
+                        <event-block sid="278034798522366">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="282699476193462" type="Player" />
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="809951463030316" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="567160642455704" type="Player">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="707225036651356">
                             <conditions>
                                 <condition behavior="Platform" id="0" name="Is moving" sid="898358116298358" type="Player" />
@@ -200,22 +236,9 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="278034798522366">
-                            <conditions>
-                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="282699476193462" type="Player" />
-                                <condition behavior="Platform" id="2" name="Is on floor" sid="809951463030316" type="Player" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="567160642455704" type="Player">
-                                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="725778868588493">
                             <conditions>
-                                <condition behavior="Platform" id="3" name="Is jumping" sid="137298824820400" type="Player" />
-                                <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="801201382888571" type="Player" />
+                                <condition behavior="Platform" id="5" name="On jump" sid="137298824820400" type="Player" />
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="650840925482129" type="Player">
@@ -576,7 +599,7 @@
                 </action>
                 <action id="0" name="Spawn another object" sid="916693606840177" type="BadFood">
                     <param id="0" name="Object">ParticlesBadFood</param>
-                    <param id="1" name="Layer">3</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="0" name="Call function" sid="268568968072599" type="Function">
@@ -608,7 +631,7 @@
                 </action>
                 <action id="0" name="Spawn another object" sid="100415426201529" type="GoodFood">
                     <param id="0" name="Object">ParticlesGoodFoods</param>
-                    <param id="1" name="Layer">3</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="922684124232631" type="GoodFood" />

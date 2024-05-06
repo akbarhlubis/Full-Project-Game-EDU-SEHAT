@@ -10,25 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Stage 4</layout>
-        <layout order="1">Stage 3</layout>
-        <layout order="5">Stage 2</layout>
-        <layout order="6">Stage 1</layout>
-        <layout order="7">List Stage</layout>
-        <layout order="8">Splash Screen</layout>
-        <layout order="9">Menu Belajar</layout>
-        <layout order="18">Main Menu</layout>
-        <event-sheet order="2">ES Stage 3</event-sheet>
-        <event-sheet order="3">ES DragDrop Function</event-sheet>
-        <event-sheet order="4">ES Stage 4</event-sheet>
-        <event-sheet order="10">ES Stage Function</event-sheet>
-        <event-sheet order="11">ES List Stage</event-sheet>
-        <event-sheet order="12">ES Main Menu</event-sheet>
-        <event-sheet order="13">ES Menu Belajar</event-sheet>
-        <event-sheet order="14">ES Ruang Belajar</event-sheet>
-        <event-sheet order="15">ES Splash Screen</event-sheet>
-        <event-sheet order="16">ES Stage 1</event-sheet>
-        <event-sheet order="17">ES Stage 2</event-sheet>
+        <layout active="1" order="0">Splash Screen</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
