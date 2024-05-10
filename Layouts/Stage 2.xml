@@ -2846,28 +2846,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JebakanTanah" uid="248">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5544.387695313</x>
-                        <y>140.327590942</y>
-                        <z>0</z>
-                        <width>65</width>
-                        <height>59</height>
-                        <depth>0</depth>
-                        <hotspotX>0.507692337</hotspotX>
-                        <hotspotY>0.508474588</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Player" uid="130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -3348,8 +3326,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5801</x>
-                        <y>92</y>
+                        <x>5549</x>
+                        <y>72</y>
                         <z>0</z>
                         <width>94</width>
                         <height>69</height>
@@ -3611,7 +3589,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="45">
+                <instance type="iceCream" uid="45">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

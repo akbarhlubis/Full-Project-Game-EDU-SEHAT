@@ -2498,7 +2498,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="910903430402757">
+        <object-type name="iceCream" sid="910903430402757">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834944252042701" speed="5">
@@ -2549,6 +2549,7 @@
                 <member>Burger</member>
                 <member>camilan</member>
                 <member>Donat</member>
+                <member>iceCream</member>
                 <member>MieInstanCup</member>
                 <member>Permen</member>
                 <member>soda</member>
