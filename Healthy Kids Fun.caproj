@@ -24,7 +24,6 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -158,25 +157,6 @@
                             <point x="0.947368" y="0.938462" />
                             <point x="0.0394737" y="0.953846" />
                             <point x="0.0394737" y="0.492308" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite12" sid="206753575597605">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380082466829198" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500348" original-source="C:\Users\aldin\OneDrive\Documents\gambar\karakter\berjalan\0.png">
-                        <collision-poly>
-                            <point x="0.143059" y="0.0703833" />
-                            <point x="0.5" y="0.0118467" />
-                            <point x="0.889518" y="0.0543554" />
-                            <point x="0.61898" y="0.499652" />
-                            <point x="0.652974" y="0.829268" />
-                            <point x="0.5" y="0.997213" />
-                            <point x="0.296034" y="0.854355" />
-                            <point x="0.29745" y="0.499652" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -635,23 +615,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite13" sid="928876037066765">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301854307870454" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\aldin\Videos\dataran.png">
-                        <collision-poly>
-                            <point x="0.004363" y="0.0139665" />
-                            <point x="0.5" y="0" />
-                            <point x="0.993892" y="0.0195531" />
-                            <point x="0.992147" y="0.97486" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0078534" y="0.97486" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Batu" sid="178886123127319">
             <plugin id="Sprite" />
             <animation-folder>
@@ -755,30 +718,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="106904998795142" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\DataranMelayang.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TanggaFix" sid="454729845861405">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="8Direction" sid="125990745658762">
-                    <behavior id="EightDir" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175578734997184" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502994" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Tangga Fix.png">
-                        <collision-poly>
-                            <point x="0.0384615" y="0.00598802" />
-                            <point x="0.5" y="0.0359281" />
-                            <point x="0.961538" y="0.00598802" />
-                            <point x="1" y="0.497006" />
-                            <point x="0.961538" y="0.994012" />
-                            <point x="0.5" y="0.958084" />
-                            <point x="0.0384615" y="0.994012" />
-                            <point x="0" y="0.497006" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1095,25 +1034,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372057614915410" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\stage 2 (copy).png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="CharacterStand" sid="831180370196962">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="190358309924946" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\CharacterStand.png">
-                        <collision-poly>
-                            <point x="0.133333" y="0.0697674" />
-                            <point x="0.5" y="0.0116279" />
-                            <point x="0.872222" y="0.0668605" />
-                            <point x="0.683333" y="0.5" />
-                            <point x="0.816667" y="0.90407" />
-                            <point x="0.5" y="0.787791" />
-                            <point x="0.205556" y="0.892442" />
-                            <point x="0.222222" y="0.5" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1914,10 +1834,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SplashRain" sid="346032088281014">
-            <plugin id="Particles" />
-            <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PNG\Splash.png" />
-        </object-type>
         <object-type name="AwanSiangTiled" sid="475908809584952">
             <plugin id="TiledBg" />
             <texture original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\AwanSiang.png" />
@@ -2105,7 +2021,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="424306598070498">
+        <object-type name="jagung" sid="424306598070498">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="300726110692666">
@@ -2527,6 +2443,8 @@
                 <member>Burger</member>
                 <member>camilan</member>
                 <member>Donat</member>
+                <member>iceCream</member>
+                <member>Ikan</member>
                 <member>KotakP3K</member>
                 <member>Kunci</member>
                 <member>MieInstanCup</member>
@@ -2561,10 +2479,10 @@
                 <member>Alpukat</member>
                 <member>Brokoli</member>
                 <member>Ikan</member>
+                <member>jagung</member>
                 <member>Nasi</member>
                 <member>Pisang</member>
                 <member>Semangka</member>
-                <member>Sprite</member>
                 <member>Susu</member>
                 <member>Telor</member>
                 <member>Tomat</member>

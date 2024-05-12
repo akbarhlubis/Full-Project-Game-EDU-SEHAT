@@ -55,11 +55,7 @@
         <event-group description="" sid="745500115948898" title="JebakanTanah">
             <sub-events>
                 <event-block sid="837043876421975">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="835255063588195" type="CharacterStand">
-                            <param id="0" name="Object">JebakanTanah</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="254762691586552" type="JebakanTanah">
                             <param id="0" name="Animation">&quot;ON&quot;</param>
@@ -68,11 +64,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="894629368751012">
-                    <conditions>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="329117650206926" type="CharacterStand">
-                            <param id="0" name="Object">JebakanTanah</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="839345811534541" type="JebakanTanah">
                             <param id="0" name="Animation">&quot;OFF&quot;</param>
