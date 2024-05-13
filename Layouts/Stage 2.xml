@@ -2914,7 +2914,7 @@
                 </instance>
                 <instance type="SpawnerPeluruPohonKanan" uid="219">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -3764,6 +3764,50 @@
                         <hotspotY>2</hotspotY>
                         <angle>0</angle>
                         <opacity>0.5</opacity>
+                    </world>
+                </instance>
+                <instance type="TextPetunjuk" uid="222">
+                    <properties>
+                        <text>Cari 6 Makanan sehat</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                        <baseline>Top</baseline>
+                        <shift-down>13</shift-down>
+                        <force-render>No</force-render>
+                        <lock-canvas-size>No</lock-canvas-size>
+                        <stroke></stroke>
+                        <stroke-line-width>1</stroke-line-width>
+                        <stroke-line-join>Miter</stroke-line-join>
+                        <underline></underline>
+                        <underline-thickness>1</underline-thickness>
+                        <underline-offset-y>0</underline-offset-y>
+                        <shadow></shadow>
+                        <shadow-offset-x>10</shadow-offset-x>
+                        <shadow-offset-y>10</shadow-offset-y>
+                        <shadow-blur>20</shadow-blur>
+                        <shadow-color>0,0,0</shadow-color>
+                        <background></background>
+                        <background-color></background-color>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>441</x>
+                        <y>-91</y>
+                        <z>0</z>
+                        <width>136</width>
+                        <height>46</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

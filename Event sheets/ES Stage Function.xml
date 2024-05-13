@@ -1130,17 +1130,17 @@
                                 <action id="-21" name="Reset global variables" sid="748762130333138" type="System" />
                             </actions>
                         </event-block>
-                        <event-block sid="915980552115883">
+                        <event-block sid="953848421946226">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="892633265467070" type="BtnPopup">
+                                <condition id="-7" name="Compare instance variable" sid="345029002187223" type="BtnPopup">
                                     <param id="0" name="Instance variable">TypeBtn</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" sid="308150989852667" type="System">
-                                    <param id="0" name="Layout">Stage 2</param>
+                                <action id="-43" name="Go to next/previous layout" sid="713310888094620" type="System">
+                                    <param id="0" name="Which">0</param>
                                 </action>
                             </actions>
                         </event-block>

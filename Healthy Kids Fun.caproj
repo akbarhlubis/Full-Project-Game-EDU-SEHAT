@@ -62,7 +62,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -177,7 +177,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762067192268509" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\Idle.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Karakter\Idle Fix.png">
                         <collision-poly>
                             <point x="0.166667" y="0.0967742" />
                             <point x="0.5" y="0.0322581" />
@@ -1290,6 +1290,61 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="25" loop="0" name="Stage3" pingpong="0" repeatcount="0" repeatto="0" sid="464152982186200" speed="0">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Donat.png" />
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\chiki 1.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\soda botol 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\permen2 1.png" />
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.507692" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Burger.png" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.507246" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Mie Instan Cup.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\ice cream 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\gorengan 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Alpukat.png" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Brokoli.png" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\air minum 1.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Daging Ayam.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Jagung.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Kentang.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Nasi.png" />
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Pisang.png" />
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.507463" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Semangka.png" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\singkong 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Susu.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\tahu tempe 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Telor Ceplok.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Tomat.png" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\ubi ungu 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Wortel.png" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Yogurt.png" />
+                </animation>
+                <animation framecount="26" loop="0" name="Stage4" pingpong="0" repeatcount="0" repeatto="0" sid="113352797766729" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.507463" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.508772" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Ikan.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" />
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.508197" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Timer" sid="326180915360262">
@@ -2388,13 +2443,18 @@
         <object-type name="SliderMateri" sid="547739054442466">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="110109981186749" speed="0">
-                    <frame duration="1" hotspotX="0.500835" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SliderMateri.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\level 10_listBtn.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\level 6_listBtn.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\level 7_listBtn.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\level 8_listBtn.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\level 9_listBtn.png" />
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="110109981186749" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 11.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2428,6 +2488,46 @@
                             <point x="0.498195" y="1" />
                             <point x="0.407942" y="0.837176" />
                             <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Txt_Ending" sid="313125079706211">
+            <plugin id="rex_bbcodeText" />
+        </object-type>
+        <object-type name="KetukAtauKlikUntukPindahKeMenuUtama" sid="250364249610392">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="248036134730015">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534131688243602" speed="5">
+                    <frame duration="1" hotspotX="0.501222" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Ketuk atau Klik untuk pindah ke menu utama.png">
+                        <collision-poly>
+                            <point x="0.00244499" y="0.0555556" />
+                            <point x="0.992665" y="0.166667" />
+                            <point x="0.997555" y="0.944444" />
+                            <point x="0.00244499" y="0.944444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EndCredit" sid="514278431842643">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277682595107928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\EndCredit.png">
+                        <collision-poly>
+                            <point x="0.0100334" y="0.0213523" />
+                            <point x="0.5" y="0" />
+                            <point x="0.989967" y="0.0213523" />
+                            <point x="0.989967" y="0.978648" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0100334" y="0.978648" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2530,6 +2630,7 @@
             <layout>Stage 3.xml</layout>
             <layout>Stage 4.xml</layout>
         </layout-folder>
+        <layout>Ending Scene.xml</layout>
         <layout>Splash Screen.xml</layout>
         <layout>Main Menu.xml</layout>
         <layout>List Stage.xml</layout>
@@ -2549,6 +2650,7 @@
         <event-sheet>ES Stage 4.xml</event-sheet>
         <event-sheet>ES List Stage.xml</event-sheet>
         <event-sheet>ES Menu Belajar.xml</event-sheet>
+        <event-sheet>ES Ending.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="67" />

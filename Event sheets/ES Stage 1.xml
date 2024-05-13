@@ -13,6 +13,10 @@
                 <action id="5" name="Set frame" sid="988214016334229" type="ItemBar">
                     <param id="0" name="Frame number">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="115757954119307" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="723096035941761">

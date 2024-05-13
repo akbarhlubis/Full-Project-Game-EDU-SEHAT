@@ -14,6 +14,13 @@
                     <param id="0" name="Variable">Timer</param>
                     <param id="1" name="Value">60</param>
                 </action>
+                <action id="-9" name="Set value" sid="759988757990853" type="System">
+                    <param id="0" name="Variable">TargetMakanan</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="838277272672460" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="580797309027825">
@@ -225,6 +232,7 @@
         </event-block>
         <event-group description="Kondisi setelah menjatuhkan makanan ke wadah" sid="220419057731205" title="Bersentuhan WadahMakanan">
             <sub-events>
+                <comment>Jika MakananSehat bersentuhan dengan wadah maka behavior makanan akan jatuh (hilang behavior bullet nya)</comment>
                 <event-block sid="930196982918209">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="486197872980097" type="Wadah">
@@ -237,6 +245,7 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <comment>Setelah itu makanan dijatuhkan, tunggu 0.5 detik lalu mainkan efek suara lalu munculkan partikelnya</comment>
                         <event-block sid="602965090202393">
                             <conditions>
                                 <condition behavior="DragDrop" id="2" name="On drop" sid="254143929612194" type="MakananBerjalan" />
@@ -258,6 +267,7 @@
                                 </action>
                             </actions>
                             <sub-events>
+                                <comment>Jika TipeMakanan dan TipeWadahnya SESUAI maka HAPUS objek Makanan lalu TAMBAHKAN 1 POIN ke TargetMakanan</comment>
                                 <event-block sid="481192231285087">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="310262202676314" type="MakananBerjalan">
@@ -274,6 +284,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Jika TipeMakanan dan TipeWadahnya TIDAK SESUAI maka HAPUS objek Makanan lalu KURANG 1 POIN ke TargetMakanan</comment>
                                 <event-block sid="667838540060449">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="458007702120739" type="MakananBerjalan">
@@ -517,17 +528,36 @@
                                 <action id="-21" name="Reset global variables" sid="508581811365065" type="System" />
                             </actions>
                         </event-block>
-                        <event-block sid="327690048354765">
+                        <event-block sid="197685589241056">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="301857083664851" type="BtnPopup">
+                                <condition id="-7" name="Compare instance variable" sid="321486418054580" type="BtnPopup">
                                     <param id="0" name="Instance variable">TypeBtn</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" sid="758065861682081" type="System">
-                                    <param id="0" name="Layout">Stage 2</param>
+                                <action id="-43" name="Go to next/previous layout" sid="207511793487929" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="703897674060285">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="145637191817133" type="System">
+                                    <param id="0" name="Variable">Stage</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="837084964365729" type="BtnPopup">
+                                    <param id="0" name="Instance variable">TypeBtn</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="128348916676830" type="System">
+                                    <param id="0" name="Layout">Ending Scene</param>
                                 </action>
                             </actions>
                         </event-block>

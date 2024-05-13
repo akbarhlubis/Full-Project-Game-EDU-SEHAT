@@ -93,7 +93,7 @@
                     </properties>
                     <instance-variables>
                         <StageNum>2</StageNum>
-                        <Unlocked>true</Unlocked>
+                        <Unlocked>false</Unlocked>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Sepia">
@@ -126,7 +126,7 @@
                     </properties>
                     <instance-variables>
                         <StageNum>3</StageNum>
-                        <Unlocked>true</Unlocked>
+                        <Unlocked>false</Unlocked>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Sepia">
@@ -159,7 +159,7 @@
                     </properties>
                     <instance-variables>
                         <StageNum>4</StageNum>
-                        <Unlocked>true</Unlocked>
+                        <Unlocked>false</Unlocked>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="Sepia">
