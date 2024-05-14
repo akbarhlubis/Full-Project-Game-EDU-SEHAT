@@ -12,6 +12,10 @@
                     <param id="0" name="Variable">Stage</param>
                     <param id="1" name="Value">4</param>
                 </action>
+                <action id="4" name="Set animation" sid="531352562586544" type="MakananBerjalan">
+                    <param id="0" name="Animation">&quot;Stage4&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="550320465863743" title="Spawn Makanan berjalan Stage 4">
@@ -23,14 +27,14 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="858029314943363" type="MakananBerjalan">
-                            <param id="0" name="Frame number">random(25)</param>
+                            <param id="0" name="Frame number">random(26)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="778714072048176" type="MakananBerjalan">
                             <param id="0" name="Y">Self.Y</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <comment>Frame Makanan yang lebih dari sekian maka masuk ke jenis makanan 0 (Minuman Sehat)</comment>
+                        <comment>Mulai dari frame 0+ akan masuk ke jenis makanan 0 (Minuman Sehat)</comment>
                         <event-block sid="190794676562000">
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="836336715582238" type="MakananBerjalan">
@@ -45,7 +49,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Frame Makanan yang lebih dari sekian maka masuk ke jenis makanan 1 (Sayur dan Buah)</comment>
+                        <comment>Lalu Mulai dari frame 3+ akan maka masuk ke jenis makanan 1 (Sayur dan Buah)</comment>
                         <event-block sid="251203638280511">
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="473037452275383" type="MakananBerjalan">
@@ -60,12 +64,12 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Frame Makanan yang lebih dari sekian maka masuk ke jenis makanan 2 (Protein)</comment>
+                        <comment>Lalu dari frame 14+ maka masuk ke jenis makanan 2 (Protein)</comment>
                         <event-block sid="946444797370333">
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="539564522893580" type="MakananBerjalan">
-                                    <param id="0" name="Comparison">3</param>
-                                    <param id="1" name="Number">16</param>
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">14</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -75,10 +79,13 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Selain dari kondisi diatas maka Frame Makanan masuk ke jenis 3 (Makanan tidak sehat)</comment>
+                        <comment>maka Frame Makanan masuk ke jenis 3 (Makanan tidak sehat) dan tidak terdaftar di wadah manapun</comment>
                         <event-block sid="238296048437988">
                             <conditions>
-                                <condition id="-22" name="Else" sid="542980410503876" type="System" />
+                                <condition id="3" name="Compare frame" sid="895355782898860" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">18</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="976738056875219" type="MakananBerjalan">

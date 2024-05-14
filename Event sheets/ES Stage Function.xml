@@ -1064,7 +1064,11 @@
                         <action id="-13" name="Set time scale" sid="385066850646753" type="System">
                             <param id="0" name="Time scale">1.0</param>
                         </action>
-                        <action id="-21" name="Reset global variables" sid="914395946609447" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="914395946609447" type="System" />
+                        <action id="-9" name="Set value" sid="736489590032546" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="159006207271889">
@@ -1127,7 +1131,11 @@
                                     <param id="0" name="Time scale">1.0</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="675775295549276" type="System" />
-                                <action id="-21" name="Reset global variables" sid="748762130333138" type="System" />
+                                <action disabled="1" id="-21" name="Reset global variables" sid="748762130333138" type="System" />
+                                <action id="-9" name="Set value" sid="612090913026166" type="System">
+                                    <param id="0" name="Variable">Health</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="953848421946226">

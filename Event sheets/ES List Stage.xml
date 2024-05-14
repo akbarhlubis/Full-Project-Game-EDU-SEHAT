@@ -9,7 +9,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="832568098920735" type="TestInfoStage">
-                    <param id="0" name="Text">&quot;Stage Number: &quot; &amp; Stage &amp; &quot;Key: &quot; &amp; Key</param>
+                    <param id="0" name="Text">&quot;Stage Number: &quot; &amp; Stage</param>
                 </action>
             </actions>
             <sub-events>
@@ -47,7 +47,7 @@
         </event-block>
         <event-group description="" sid="458286532665750" title="Check Global Variable Condition">
             <sub-events>
-                <event-block sid="812745398603408">
+                <event-block disabled="1" sid="812745398603408">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="956061181384166" type="System">
                             <param id="0" name="Variable">Stage</param>
@@ -57,7 +57,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="357391385002194">
+                        <event-block disabled="1" sid="357391385002194">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="797845400295070" type="level_listBtn">
                                     <param id="0" name="Instance variable">StageNum</param>
@@ -76,7 +76,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="312020844603575">
+                <event-block disabled="1" sid="312020844603575">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="593609859024280" type="System">
                             <param id="0" name="Variable">Stage</param>
@@ -86,7 +86,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="368344820646694">
+                        <event-block disabled="1" sid="368344820646694">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="540610127315471" type="level_listBtn">
                                     <param id="0" name="Instance variable">StageNum</param>
@@ -105,7 +105,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="902795603038910">
+                <event-block disabled="1" sid="902795603038910">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="501507674804142" type="System">
                             <param id="0" name="Variable">Stage</param>
@@ -115,7 +115,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="897492722021005">
+                        <event-block disabled="1" sid="897492722021005">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="778213768671490" type="level_listBtn">
                                     <param id="0" name="Instance variable">StageNum</param>
@@ -136,6 +136,73 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="531092592189330">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="233571694129053" type="level_listBtn">
+                    <param id="0" name="Instance variable">Unlocked</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="404199599129012">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="286403242139817" type="System">
+                            <param id="0" name="Variable">Stage</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="828465057934367" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="477158945130716" type="level_listBtn">
+                            <param id="0" name="Instance variable">Unlocked</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="911829059770408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="817447025200333" type="System">
+                            <param id="0" name="Variable">Stage</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="244240044130595" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="868814498599980" type="level_listBtn">
+                            <param id="0" name="Instance variable">Unlocked</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="135342886013439">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="414008103539509" type="System">
+                            <param id="0" name="Variable">Stage</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="895482656813594" type="level_listBtn">
+                            <param id="0" name="Instance variable">StageNum</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Toggle boolean" sid="567451716917546" type="level_listBtn">
+                            <param id="0" name="Instance variable">Unlocked</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block disabled="1" sid="287309018799649">
             <conditions>
                 <condition id="11" name="On Nth touch end" sid="428085905017982" type="Touch">
@@ -238,6 +305,9 @@
                             <param id="0" name="Mode">0</param>
                             <param id="1" name="Effect">&quot;Sepia&quot;</param>
                         </action>
+                        <action id="-16" name="Set opacity" sid="794633973276104" type="level_listBtn">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="923426347088215">
@@ -258,5 +328,31 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="739446677020483">
+            <conditions>
+                <condition id="3" name="On key released" sid="231408484420008" type="Keyboard">
+                    <param id="0" name="Key">49</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="586225636512864" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="510760946851666">
+            <conditions>
+                <condition id="3" name="On key released" sid="178516852115253" type="Keyboard">
+                    <param id="0" name="Key">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="965818614069096" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

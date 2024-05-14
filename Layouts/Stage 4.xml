@@ -215,7 +215,7 @@
                         <font>Arial Black,-19,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -227,7 +227,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>666.784606934</x>
-                        <y>216.585113525</y>
+                        <y>212.585113525</y>
                         <z>0</z>
                         <width>105</width>
                         <height>38</height>

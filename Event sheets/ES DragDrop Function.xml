@@ -525,7 +525,15 @@
                                     <param id="0" name="Time scale">1.0</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="518830355811568" type="System" />
-                                <action id="-21" name="Reset global variables" sid="508581811365065" type="System" />
+                                <action disabled="1" id="-21" name="Reset global variables" sid="508581811365065" type="System" />
+                                <action id="-9" name="Set value" sid="985214266553124" type="System">
+                                    <param id="0" name="Variable">TargetMakanan</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="463448877985773" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Value">60</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="197685589241056">

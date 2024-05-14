@@ -14,6 +14,10 @@
                     <param id="0" name="Variable">Stage</param>
                     <param id="1" name="Value">3</param>
                 </action>
+                <action id="4" name="Set animation" sid="684295049263535" type="MakananBerjalan">
+                    <param id="0" name="Animation">&quot;Stage3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="899813801960470" title="Spawn Makanan berjalan Stage 3">
