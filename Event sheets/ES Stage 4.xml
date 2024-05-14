@@ -12,10 +12,6 @@
                     <param id="0" name="Variable">Stage</param>
                     <param id="1" name="Value">4</param>
                 </action>
-                <action id="4" name="Set animation" sid="531352562586544" type="MakananBerjalan">
-                    <param id="0" name="Animation">&quot;Stage4&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
             </actions>
         </event-block>
         <event-group description="" sid="550320465863743" title="Spawn Makanan berjalan Stage 4">
@@ -26,8 +22,12 @@
                         <condition id="-18" name="On created" sid="240133889558275" type="MakananBerjalan" />
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="530197811932197" type="MakananBerjalan">
+                            <param id="0" name="Animation">&quot;Stage4&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="5" name="Set frame" sid="858029314943363" type="MakananBerjalan">
-                            <param id="0" name="Frame number">random(20)</param>
+                            <param id="0" name="Frame number">random(21)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="778714072048176" type="MakananBerjalan">
                             <param id="0" name="Y">Self.Y</param>

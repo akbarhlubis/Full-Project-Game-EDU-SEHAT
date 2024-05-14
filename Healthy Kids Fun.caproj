@@ -67,7 +67,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -1292,8 +1292,8 @@
                     </frame>
                 </animation>
                 <animation framecount="25" loop="0" name="Stage3" pingpong="0" repeatcount="0" repeatto="0" sid="464152982186200" speed="0">
-                    <frame duration="1" hotspotX="0.507042" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Donat.png" />
                     <frame duration="1" hotspotX="0.506024" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\chiki 1.png" />
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Donat.png" />
                     <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\soda botol 1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\permen2 1.png" />
                     <frame duration="1" hotspotX="0.506329" hotspotY="0.507692" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Burger.png" />
@@ -1330,9 +1330,9 @@
                     </frame>
                 </animation>
                 <animation framecount="21" loop="0" name="Stage4" pingpong="0" repeatcount="0" repeatto="0" sid="113352797766729" speed="0">
-                    <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.506494" />
                     <frame duration="1" hotspotX="0.510204" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.504951" hotspotY="0.507463" />
