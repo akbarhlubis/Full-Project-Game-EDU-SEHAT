@@ -29,7 +29,7 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="802259726787153" type="MakananBerjalan">
-                            <param id="0" name="Frame number">random(24)</param>
+                            <param id="0" name="Frame number">random(25)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="728385623979431" type="MakananBerjalan">
                             <param id="0" name="Y">Self.Y</param>

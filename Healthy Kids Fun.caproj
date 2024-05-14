@@ -1051,7 +1051,7 @@
                 <instance-variable comment="0 = Tidak Sehat| 1 = Sehat" name="JenisWadah" sid="260624800869437" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="570815553656902" speed="0">
                     <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Wadah_VitA.png">
                         <collision-poly>
                             <point x="0.0216451" y="0.172131" />
@@ -1152,6 +1152,7 @@
                             <point x="0.04329" y="0.344263" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.502164" hotspotY="0.5" original-source="C:\Users\aldin\Videos\asset\asset makanan &amp; minuman sehat\Wadah Makanan Sehat.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1315,35 +1316,41 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Tomat.png" />
                     <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\ubi ungu 2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Wortel.png" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Yogurt.png" />
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.508772" original-source="C:\Users\aldin\Videos\asset\karbohidrat\Ikan.png">
+                        <collision-poly>
+                            <point x="0.118519" y="0.280702" />
+                            <point x="0.496296" y="0.0877193" />
+                            <point x="0.859259" y="0.333333" />
+                            <point x="0.933333" y="0.491228" />
+                            <point x="0.896296" y="0.754386" />
+                            <point x="0.496296" y="0.929825" />
+                            <point x="0.0740741" y="0.824561" />
+                            <point x="0.037037" y="0.491228" />
+                        </collision-poly>
+                    </frame>
                 </animation>
-                <animation framecount="26" loop="0" name="Stage4" pingpong="0" repeatcount="0" repeatto="0" sid="113352797766729" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
-                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" />
-                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.504951" hotspotY="0.507463" />
-                    <frame duration="1" hotspotX="0.510204" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
+                <animation framecount="21" loop="0" name="Stage4" pingpong="0" repeatcount="0" repeatto="0" sid="113352797766729" speed="0">
                     <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
-                    <frame duration="1" hotspotX="0.503704" hotspotY="0.508772" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Ikan.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" />
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" />
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.507463" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.508772" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\Makanan\Makanan Fix\Ikan.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.506329" hotspotY="0.507692" />
                     <frame duration="1" hotspotX="0.508475" hotspotY="0.507246" />
                     <frame duration="1" hotspotX="0.52" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.508197" />
                     <frame duration="1" hotspotX="0.526316" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.507042" hotspotY="0.508197" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" />
-                    <frame duration="1" hotspotX="0.506024" hotspotY="0.508197" />
                 </animation>
             </animation-folder>
         </object-type>

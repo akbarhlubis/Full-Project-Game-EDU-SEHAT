@@ -27,14 +27,14 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="858029314943363" type="MakananBerjalan">
-                            <param id="0" name="Frame number">random(26)</param>
+                            <param id="0" name="Frame number">random(20)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="778714072048176" type="MakananBerjalan">
                             <param id="0" name="Y">Self.Y</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <comment>Mulai dari frame 0+ akan masuk ke jenis makanan 0 (Minuman Sehat)</comment>
+                        <comment>Mulai dari frame 0+ akan masuk ke jenis makanan 0 (Karbohidrat)</comment>
                         <event-block sid="190794676562000">
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="836336715582238" type="MakananBerjalan">
@@ -54,7 +54,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="473037452275383" type="MakananBerjalan">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Number">3</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -69,7 +69,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="539564522893580" type="MakananBerjalan">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Number">14</param>
+                                    <param id="1" name="Number">11</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -84,7 +84,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="895355782898860" type="MakananBerjalan">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Number">18</param>
+                                    <param id="1" name="Number">16</param>
                                 </condition>
                             </conditions>
                             <actions>
