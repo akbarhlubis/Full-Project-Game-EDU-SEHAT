@@ -3,178 +3,119 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES Stage 4</name>
     <events>
-        <event-group description="" sid="476329034837650" title="Group2">
+        <event-block sid="448357217336911">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="985456193806364" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="707689639311705" type="System">
+                    <param id="0" name="Variable">Stage</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="550320465863743" title="Spawn Makanan berjalan Stage 4">
             <sub-events>
-                <event-block sid="987416837561549">
+                <comment>Untuk Spawner MakananBerjalan Level 4</comment>
+                <event-block sid="623679090870230">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="779835075765761" type="System" />
+                        <condition id="-18" name="On created" sid="240133889558275" type="MakananBerjalan" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="258050828625560" type="TargetMakanan">
-                            <param id="0" name="Text">TargetMakanan&amp;&quot;/20&quot;</param>
+                        <action id="4" name="Set animation" sid="530197811932197" type="MakananBerjalan">
+                            <param id="0" name="Animation">&quot;Stage4&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
-                        <action id="0" name="Set text" sid="466804114204915" type="Timer">
-                            <param id="0" name="Text">Timer&amp;&quot;.00&quot;</param>
+                        <action id="5" name="Set frame" sid="858029314943363" type="MakananBerjalan">
+                            <param id="0" name="Frame number">random(21)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="778714072048176" type="MakananBerjalan">
+                            <param id="0" name="Y">Self.Y</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="382451678714153">
+                        <comment>Mulai dari frame 0+ akan masuk ke jenis makanan 0 (Karbohidrat)</comment>
+                        <event-block sid="190794676562000">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="883139913371096" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
+                                <condition id="3" name="Compare frame" sid="836336715582238" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="607774748107324" type="MakananBerjalan">
-                                    <param id="0" name="State">1</param>
+                                <action id="-10" name="Set value" sid="369904499521149" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="314894059906124">
+                        <comment>Lalu Mulai dari frame 3+ akan maka masuk ke jenis makanan 1 (Sayur dan Buah)</comment>
+                        <event-block sid="251203638280511">
                             <conditions>
-                                <condition id="1" inverted="1" name="Is overlapping another object" sid="381281529245479" type="MakananBerjalan">
-                                    <param id="0" name="Object">BulletArea</param>
+                                <condition id="3" name="Compare frame" sid="473037452275383" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Bullet" id="5" name="Set enabled" sid="470953276588017" type="MakananBerjalan">
-                                    <param id="0" name="State">0</param>
+                                <action id="-10" name="Set value" sid="904118214071576" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Lalu dari frame 14+ maka masuk ke jenis makanan 2 (Protein)</comment>
+                        <event-block sid="946444797370333">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="539564522893580" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="695494721053655" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>maka Frame Makanan masuk ke jenis 3 (Makanan tidak sehat) dan tidak terdaftar di wadah manapun</comment>
+                        <event-block sid="238296048437988">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="895355782898860" type="MakananBerjalan">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Number">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="976738056875219" type="MakananBerjalan">
+                                    <param id="0" name="Instance variable">JenisMakanan</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="270757369597584">
-            <conditions>
-                <condition id="-18" name="On created" sid="686536077362697" type="MakananBerjalan" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="762067369438006" type="MakananBerjalan">
-                    <param id="0" name="Frame number">random(8)</param>
-                </action>
-                <action id="-2" name="Set Y" sid="560917894884665" type="MakananBerjalan">
-                    <param id="0" name="Y">Self.Y</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="211610738008737">
+                <event-block sid="400346341404577">
                     <conditions>
-                        <condition id="3" name="Compare frame" sid="209917157505490" type="MakananBerjalan">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Number">1</param>
+                        <condition id="-6" name="Every X seconds" sid="725647167888211" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Set value" sid="487289659817155" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
+                        <action id="0" name="Spawn another object" sid="190023537869887" type="Spawner">
+                            <param id="0" name="Object">MakananBerjalan</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="598437754457266" type="System">
+                            <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="515800818022737">
-                    <conditions>
-                        <condition id="3" name="Compare frame" sid="555597412567655" type="MakananBerjalan">
-                            <param id="0" name="Comparison">4</param>
-                            <param id="1" name="Number">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="632295197138782" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="467759461849086">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="568318849136414" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="427154190378052" type="MakananBerjalan">
-                            <param id="0" name="Instance variable">JenisMakanan</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="876798693233438">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="878073530887526" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="180494464046766" type="Spawner">
-                    <param id="0" name="Object">MakananBerjalan</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="799200559221602" type="System">
-                    <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="738557297489927">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="122513178870873" type="Wadah">
-                    <param id="0" name="Object">MakananBerjalan</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="809615162800158" type="MakananBerjalan">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="716306370622079">
-                    <conditions>
-                        <condition behavior="DragDrop" id="2" name="On drop" sid="181733470587587" type="MakananBerjalan" />
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="716653782734472" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="571853108942447">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="188870000769813" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="175180071268787" type="MakananBerjalan" />
-                                <action id="-10" name="Add to" sid="120477660361920" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="725864243785613">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="305501676899659" type="MakananBerjalan">
-                                    <param id="0" name="Instance variable">JenisMakanan</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">Wadah.JenisWadah</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="715225474712145" type="MakananBerjalan" />
-                                <action id="-11" name="Subtract from" sid="115666965946203" type="System">
-                                    <param id="0" name="Variable">TargetMakanan</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
+        </event-group>
+        <include>ES DragDrop Function</include>
     </events>
 </c2eventsheet>

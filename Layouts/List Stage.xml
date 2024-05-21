@@ -183,7 +183,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_kembali" uid="283">
+                <instance type="BtnKembali" uid="283">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -220,8 +220,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>165</x>
-                        <y>24</y>
+                        <x>110</x>
+                        <y>-46</y>
                         <z>0</z>
                         <width>651</width>
                         <height>30</height>

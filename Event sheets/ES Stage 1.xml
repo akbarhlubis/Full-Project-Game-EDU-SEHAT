@@ -5,13 +5,23 @@
     <events>
         <variable constant="0" name="SehatFood" sid="679389855187201" static="0" type="number">0</variable>
         <include>ES Stage Function</include>
+        <event-block sid="211017322842512">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="613196198142093" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="988214016334229" type="ItemBar">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="723096035941761">
             <conditions>
                 <condition id="-1" name="Every tick" sid="705071144216164" type="System" />
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="221440997043771" type="Textbuah">
-                    <param id="0" name="Text">SehatFood&amp;&quot;/4&quot;</param>
+                    <param id="0" name="Text">SehatFood&amp;&quot;/5&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -20,7 +30,7 @@
                         <condition id="-14" name="Compare variable" sid="117113599162937" type="System">
                             <param id="0" name="Variable">SehatFood</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">4</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                         <condition id="-14" name="Pick by unique ID" sid="571941464899216" type="pintu">
                             <param id="0" name="Unique ID">120</param>
@@ -34,37 +44,18 @@
                         <action id="11" name="Set collisions enabled" sid="623744164263212" type="NextStage">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="219437641523481" type="System">
+                            <param id="0" name="Variable">Stage</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="514734719164650">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="215784218000814" type="level_listBtn">
-                                    <param id="0" name="Instance variable">StageNum</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="656312198972991" type="level_listBtn">
-                                    <param id="0" name="Instance variable">Unlocked</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-14" name="Toggle boolean" sid="329361756677535" type="level_listBtn">
-                                    <param id="0" name="Instance variable">Unlocked</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
         <event-group description="" sid="745500115948898" title="JebakanTanah">
             <sub-events>
                 <event-block sid="837043876421975">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="835255063588195" type="CharacterStand">
-                            <param id="0" name="Object">JebakanTanah</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="254762691586552" type="JebakanTanah">
                             <param id="0" name="Animation">&quot;ON&quot;</param>
@@ -73,11 +64,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="894629368751012">
-                    <conditions>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="329117650206926" type="CharacterStand">
-                            <param id="0" name="Object">JebakanTanah</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="839345811534541" type="JebakanTanah">
                             <param id="0" name="Animation">&quot;OFF&quot;</param>
@@ -87,72 +74,28 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="255953231968090">
+        <event-block sid="589698310450731">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="793378416684805" type="Player">
-                    <param id="0" name="Object">TriggerRain</param>
-                </condition>
-                <condition disabled="1" id="-1" name="Every tick" sid="889450231532121" type="System" />
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="320767097815377" type="System">
-                    <param id="0" name="Object to create">RainDrop</param>
-                    <param id="1" name="Layer">5</param>
-                    <param id="2" name="X">random(WindowWidth+100)</param>
-                    <param id="3" name="Y">0</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="584054321800033" type="RainDrop">
-                    <param id="0" name="Angle">100 +random(-3,3)</param>
-                </action>
-                <action behavior="Bullet" id="0" name="Set speed" sid="227372371112420" type="RainDrop">
-                    <param id="0" name="Speed">int(random(600,800))</param>
-                </action>
-                <action behavior="LiteTween" disabled="1" id="10" name="Start" sid="747637293870112" type="BGSky">
-                    <param id="0" name="Start Mode">0</param>
-                    <param id="1" name="Force use current">0</param>
-                </action>
-                <action behavior="LiteTween" disabled="1" id="16" name="Set value" sid="308685038154131" type="BGSky">
-                    <param id="0" name="Value">40</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="320591488933612" type="BGSky">
-                    <param id="0" name="Opacity">40</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="481172498060993">
-            <conditions>
-                <condition id="-22" name="Else" sid="561597006645649" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="LiteTween" disabled="1" id="10" name="Start" sid="916526535789010" type="BGSky">
-                    <param id="0" name="Start Mode">0</param>
-                    <param id="1" name="Force use current">0</param>
-                </action>
-                <action behavior="LiteTween" disabled="1" id="16" name="Set value" sid="815998123695445" type="BGSky">
-                    <param id="0" name="Value">100</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="140332358182501" type="BGSky">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="358747116269856">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="593786985878978" type="RainDrop">
-                    <param id="0" name="Object">PlatformerSolid</param>
+                <condition id="1" name="Is overlapping another object" sid="266524889530726" type="Player">
+                    <param id="0" name="Object">Petunjuk</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="450861205344113" type="System">
-                    <param id="0" name="Object to create">SplashRain</param>
-                    <param id="1" name="Layer">4</param>
-                    <param id="2" name="X">RainDrop.X</param>
-                    <param id="3" name="Y">RainDrop.Y</param>
+                <action id="-3" name="Set position" sid="574238564291542" type="TextPetunjuk">
+                    <param id="0" name="X">307</param>
+                    <param id="1" name="Y">292.814</param>
                 </action>
-                <action id="1" name="Set rate" sid="251661169059919" type="SplashRain">
-                    <param id="0" name="Rate">random(1,3)</param>
+            </actions>
+        </event-block>
+        <event-block sid="365142699233118">
+            <conditions>
+                <condition id="-22" name="Else" sid="923494941308805" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="365278756980335" type="TextPetunjuk">
+                    <param id="0" name="X">307</param>
+                    <param id="1" name="Y">-70</param>
                 </action>
-                <action id="-9" name="Destroy" sid="454590624549607" type="RainDrop" />
             </actions>
         </event-block>
     </events>
