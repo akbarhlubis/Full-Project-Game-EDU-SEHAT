@@ -2051,8 +2051,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="363044586510666" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\Users\aldin\Videos\asset\karbohidrat\PopupInfoAuthor.png" />
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="363044586510666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="E:\TUGAS KULIAH\pengajuan sk skripsi\file skripsi\asset final healthy kids fun\PopupInfoAuthor. fikhopng.png">
+                        <collision-poly>
+                            <point x="0.045977" y="0.0679887" />
+                            <point x="0.5" y="0.0453258" />
+                            <point x="0.954023" y="0.0679887" />
+                            <point x="0.961686" y="0.498584" />
+                            <point x="0.94636" y="0.92068" />
+                            <point x="0.0536398" y="0.92068" />
+                            <point x="0.0383142" y="0.498584" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="E:\TUGAS KULIAH\pengajuan sk skripsi\file skripsi\asset final healthy kids fun\Group thanksto.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\Users\aldin\Videos\asset\karbohidrat\PopupInfoAuthor (1).png" />
                 </animation>
             </animation-folder>
