@@ -67,7 +67,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -2051,8 +2051,9 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="363044586510666" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\PopupInfoAuthor.png" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="363044586510666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\Users\aldin\Videos\asset\karbohidrat\PopupInfoAuthor.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\Users\aldin\Videos\asset\karbohidrat\PopupInfoAuthor (1).png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2450,18 +2451,19 @@
         <object-type name="SliderMateri" sid="547739054442466">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="110109981186749" speed="0">
+                <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="110109981186749" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 01.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 02.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 03.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 04.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 05.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 06.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 07.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 08.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 09.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 10.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\Users\aldin\Videos\asset\karbohidrat\materi makanan sehat daging.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501779" original-source="C:\users\akbar\Documents\Projek C2\Asset Pendukung\SlideMateri\Materi\Materi 03.png" />
                 </animation>
             </animation-folder>
         </object-type>

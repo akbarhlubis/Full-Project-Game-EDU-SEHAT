@@ -204,5 +204,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="553388107215691">
+            <conditions>
+                <condition id="17" name="On tap object" sid="806617881823542" type="Touch">
+                    <param id="0" name="Object">PopupInfoAuthor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="480909647405769" type="PopupInfoAuthor">
+                    <param id="0" name="Frame number">Self.AnimationFrame=0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

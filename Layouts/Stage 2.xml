@@ -1161,28 +1161,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PohonPenyerangMalam" uid="217">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4194.020507813</x>
-                        <y>287.79473877</y>
-                        <z>0</z>
-                        <width>156</width>
-                        <height>182</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="DataranMalam" uid="117">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1797,8 +1775,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1602.889892578</x>
-                        <y>55.287513733</y>
+                        <x>1616.94934082</x>
+                        <y>58.627967834</y>
                         <z>0</z>
                         <width>32.172355652</width>
                         <height>38.045085907</height>
@@ -2083,8 +2061,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5540.817382813</x>
-                        <y>139.925354004</y>
+                        <x>5556.319335938</x>
+                        <y>140.67477417</y>
                         <z>0</z>
                         <width>65</width>
                         <height>59</height>
@@ -2304,8 +2282,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>729</x>
-                        <y>281</y>
+                        <x>832.616271973</x>
+                        <y>251.391845703</y>
                         <z>0</z>
                         <width>94</width>
                         <height>69</height>
@@ -2908,28 +2886,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.505376339</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="SpawnerPeluruPohonKanan" uid="219">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4122.355957031</x>
-                        <y>234.162338257</y>
-                        <z>0</z>
-                        <width>12</width>
-                        <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -3768,7 +3724,7 @@
                 </instance>
                 <instance type="TextPetunjuk" uid="222">
                     <properties>
-                        <text>Cari 6 Makanan sehat</text>
+                        <text>Cari 6 Item Makanan sehat diatas beserta kuncinya untuk membuka item yang terkunci</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16,700,0</font>
                         <color>255,255,255</color>
@@ -3798,10 +3754,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>441</x>
-                        <y>-91</y>
+                        <x>96</x>
+                        <y>-165</y>
                         <z>0</z>
-                        <width>136</width>
+                        <width>322</width>
                         <height>46</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
